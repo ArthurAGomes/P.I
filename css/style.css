@@ -1,9 +1,47 @@
 @charset "utf-8";
-body{
-    font-family: verdana, Arial, Helvetica, sans-serif;
-    width: 30%;
+/* body{
+
+    font-family: verdana, Arial, Helvetica, sans-serif; 
+    
+} */
+
+main{
+
+    display: flex;
+    align-items: center;
+    /* max-width: 900px; */
+    width: 100%;
+
 }
 
+#esquerda_login{
 
+    width: 100%;
+    max-width: 50%;    
+    
+}
 
+#direita_chamada{
 
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+   
+}
+
+#botoes{
+
+    display: flex;
+    text-align: center;
+}
+
+#botao_pedreiro{
+    
+    width: 50%;
+}
+
+#botao_contratante{
+    width: 50%;
+}
