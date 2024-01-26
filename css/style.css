@@ -1,9 +1,10 @@
 @charset "utf-8";
-/* body{
+body{
 
-    font-family: verdana, Arial, Helvetica, sans-serif; 
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif; 
     
-} */
+}
 
 main{
 
@@ -17,7 +18,11 @@ main{
 #esquerda_login{
 
     width: 100%;
-    max-width: 50%;    
+    max-width: 50%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;   
+    align-items: center;
     
 }
 
@@ -25,10 +30,34 @@ main{
 
     width: 100%;
     max-width: 50%;
-    margin: auto;
-    display: flex;
-    align-items: center;
+    text-align: center;
+    text-wrap: stable;
    
+}
+
+nav{
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background-color: #F47907;
+    border-bottom: 5px solid gray;
+}
+
+#menu{
+    width: 100%;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#conta_pedreiro{
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
+    padding: 10px;
+}
+
+#chamada_pedreiro{
+    padding: 10px;
 }
 
 #botoes{
@@ -40,8 +69,38 @@ main{
 #botao_pedreiro{
     
     width: 50%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+
 }
 
 #botao_contratante{
+
+    background-color: gray;
     width: 50%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+
+}
+
+input{
+
+    margin: 5px;
+    border-radius: 5px;
+    width: 50%;
+    height: 25px;
+    border: 2px solid #F47907;
+    color: #F47907;
+
+}
+
+button{
+
+    background-color: #F47907; 
+    color: white; 
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: medium;
+
 }
