@@ -7,34 +7,6 @@ body{
     
 }
 
-main{
-
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-}
-
-#esquerda_login{
-
-    width: 100%;
-    max-width: 50%;
-    height: 100%; 
-    display: flex;
-    justify-content: center;   
-    align-items: center;
-    
-}
-
-#direita_chamada{
-
-    width: 100%;
-    max-width: 50%;
-    text-align: center;
-    /* text-wrap: stable; */
-   
-}
-
 nav{
     width: 100%;
     padding: 15px 0px;
