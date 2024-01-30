@@ -54,7 +54,7 @@ nav{
 
 }
 
-input{
+/* input{
 
     margin: 5px;
     border-radius: 5px;
@@ -74,7 +74,7 @@ button{
     padding: 5px 10px;
     font-size: medium;
 
-}
+} */
 
 #acessar_conta{
     font-size: 1.2em;
@@ -82,4 +82,64 @@ button{
 
 form{
     width: 100%;
+}
+
+
+footer {
+
+    padding-top: 100px;
+
+
+}
+
+#rodape {
+    background-color: #F47907;
+    display: flex;
+    padding-bottom: 10px;
+
+
+
+}
+
+#img {
+    width: 400px;
+
+}
+
+.Tirodape {
+    color: white;
+    font-weight: bold;
+    font-family: "Noto Sans";
+    padding-top: 15px;
+
+
+
+}
+
+td {
+
+    color: #FFF;
+    padding-left: 10px;
+    font-family: "Noto Sans";
+    font-size: 1.2em;
+    padding-right: 120px;
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 4px;
+}
+
+#credito {
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: #5E5E5E;
+    margin-bottom: 0%;
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
 }

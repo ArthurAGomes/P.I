@@ -1,42 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        h1,p{
+        h1 {
+            color: #000;
+            font-family: "Noto Sans";
+            font-size: 34px;
+            font-style: normal;
+            line-height: normal;
             padding-left: 30px;
         }
-        textarea{
-            background-color: coral;
+
+        p {
+            padding-left: 30px;
+            color: #000;
+            font-family: "Droid Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            
+        }
+
+        textarea {
+            background-color: #F47907BF;
+            border-radius: 15px;
+            border-color: #FFF;
+        }
+
+        main {
+            display: grid
+        }
+
+        figure {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        figcaption {
+            margin-left: 20px;
+            align-items: center;
+            font-family: "Droid Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+
+        input {
+            display: flex;
+            width: 300px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            background-color: #F47907BF;
+            border-radius: 15px;
+            border-color: #F47907BF
+        }
+
+        button{
+            background-color: #F47907BF;
+            border-radius: 15px;
+            padding: 10px;
+            width: 70px;
+            margin-left: 25%;
+            border-color: #F47907BF;
         }
     </style>
 </head>
 
+
 <body>
-    <h1>Contato</h1>
-    <p>(11) 2487-8956</p>
-    <p>portalpedreiro@gmail.com</p>
-    <form id="formulario" autocomplete="off">
-       
-        <p>
-            <label for="nome">Nome:</label>
-            <input required type="text" id="nome" name="nome">
-        </p>
-        <p>
-            <label> E-mail: </label>
-            <input required type="email" id="email" name="email">
-        </p>
-        <p>
-            <label for="assunto">Assunto:</label>
-            <input required type="text" id="assunto" name="assunto">
-        </p>
-        
-            <label>Mensagem:</label>
-            <textarea name="mensagem id=" mensagem cols="30" rows="10"></textarea>
-        
-    </form>
+    <header>
+
+        <nav>
+
+            <table id="menu">
+                <tr>
+                    <td>Cadastre-se</td>
+                    <td>Parceiros</td>
+                    <td id="logo">P|P</td>
+                    <td>Contatos</td>
+                    <td>Minha Conta</td>
+                </tr>
+            </table>
+
+        </nav>
+
+    </header>
+    <main>
+        <h1>Contato</h1>
+        <figure>
+            <img src="img/tellvector.png" alt="foto telefone">
+            <figcaption>(11) 2487-8956</figcaption>
+        </figure>
+        <figure>
+            <img src="img/vectormsg.png" alt="">
+            <figcaption>Portalpedreiro@gmail.com</figcaption>
+        </figure>
+        <form id="formulario" autocomplete="off">
+
+
+            <p>
+                <label for="nome">Nome:</label>
+                <input required type="text" id="nome" name="nome">
+            </p>
+            <p>
+                <label> E-mail: </label>
+                <input required type="email" id="email" name="email">
+            </p>
+            <p>
+                <label for="assunto">Assunto:</label>
+                <input required type="text" id="assunto" name="assunto">
+            </p>
+
+            <p>
+                <label for="assunto">Mensagem:</label>
+                <input required type="text" id="assunto" name="mensagem" style="height: 80px;">
+            </p>
+            <button>Enviar</button>
+
+        </form>
+    </main>
+    <footer>
+        <div id="rodape">
+            <table>
+
+                <tr>
+                    <td class="Tirodape">Para você</td>
+                    <td class="Tirodape">Veja mais</td>
+                    <td class="Tirodape">Empresa</td>
+                </tr>
+                <tr>
+                    <td>Entrar</td>
+                    <td>Sobre nós</td>
+                    <td>Baixe o PP</td>
+                </tr>
+                <tr>
+                    <td>Cadastro Pedreiro</td>
+                    <td>Contato</td>
+                    <td>Contratos</td>
+                </tr>
+                <tr>
+                    <td>Cadastro Contratante</td>
+                    <td>Informações</td>
+                    <td>Dúvidas</td>
+                </tr>
+                <tr>
+                    <td>Parceiros </td>
+                    <td>Seja Parceiro </td>
+                    <td>Ajuda</td>
+                </tr>
+            </table>
+
+
+            <img src="img/rodape.png" alt="" id="img">
+        </div>
+
+        <p id="credito">Desenvolvido pelo time de TI SCCP - Senac / 2024</p>
+
+    </footer>
 </body>
 
 </html>
