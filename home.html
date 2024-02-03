@@ -9,13 +9,57 @@
 
     <style>
 
-main{
-
-display: flex;
-align-items: center;
-width: 100%;
+#conta_pedreiro{
+    
+    text-align: center;
+    padding: 30px;
 
 }
+
+#chamada_pedreiro{
+    padding: 12%;
+    font-size: 2.1em;
+    color: white;
+    text-shadow: 2px 4px 5px black;
+    text-align: justify;
+}
+
+#botoes{
+
+    display: flex;
+    text-align: center;
+}
+
+#botao_pedreiro{
+    
+    width: 50%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+
+#botao_contratante{
+
+    background-color: gray;
+    width: 50%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+
+button{
+
+    background-color: #F47907; 
+    color: white; 
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: medium;
+
+}
+
 
 #esquerda_login{
 
@@ -30,12 +74,21 @@ align-items: center;
 
 #direita_chamada{
 
+/* background-color: rgba(0, 0, 0, 0.171);
+height: 100%; */
 width: 100%;
 max-width: 50%;
 text-align: center;
 /* text-wrap: stable; */
 
 }
+
+#acessar_conta{
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 4px 3px black;
+}
+
     </style>
 
 </head>
@@ -66,15 +119,15 @@ text-align: center;
 
     </div>
 
-    <main>
+    <main id="main_home">
         
         <section id="esquerda_login">            
 
             <div id="conta_pedreiro">
                 
                 
-                <h3>ACESSAR MINHA CONTA</h3>
-                <form>
+                <!-- <h3>ACESSAR MINHA CONTA</h3> -->
+                <form id="form_home">
                     <label for="conta" id="acessar_conta">ACESSAR MINHA CONTA</label>
                     
                     <input type="text" id="inputlogin" placeholder="DIGITE SEU CPF"><br>
