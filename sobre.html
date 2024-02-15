@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <title>Sobre nós</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/P.I/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         body {
             margin: 0%;
         }
 
         main {
-            margin-left: 3%;
+            padding-inline-start: 5%;
         }
 
 
@@ -31,14 +31,10 @@
             background-color: #F47907;
             display: flex;
             padding-bottom: 10px;
-
-
-
         }
 
         #img {
             width: 500px;
-
         }
 
         .Tirodape {
@@ -83,21 +79,19 @@
 
 <body>
     <header>
-
         <nav>
+            <ul id="menu">
+                <li><a class="menu-categorias" href="sobre.html">Sobre Nós</a></li>
 
-            <table id="menu">
-                <tr>
-                    <td>Cadastre-se</td>
-                    <td>Parceiros</td>
-                    <td id="logo">P|P</td>
-                    <td>Contatos</td>
-                    <td>Minha Conta</td>
-                </tr>
-            </table>
+                <li><a class="menu-categorias" href="#">Parceiros</a></li>
 
+                <li><img src="#" alt=""><a class="menu-categorias" href="home.html" style="font-size: x-large; text-decoration: none;">P|P</a></li>
+
+                <li><a class="menu-categorias" href="#">Contatos</a></li>
+                
+                <li><a class="cad-login" href="#">Minha Conta</a> <br><a class="cad-login" href="#">Cadastre-se</a></li>
+            </ul>
         </nav>
-
     </header>
 
     
@@ -150,38 +144,36 @@
     </main>
 
     <footer>
+
+        
         <div id="rodape">
-            <table>
+            <ul class="rodape1">
+                <li class="Tirodape">Para você</li>
+                <li><a href="#">Entrar</a></li>
+                <li><a href="#">Cadastro Pedreiro</a></li>
+                <li><a href="#">Cadastro Contratante</a></li>
+                <li><a href="#">Parceiros</a></li>
+            </ul>
+            <ul class="rodape1">
+                <li class="Tirodape">Veja mais</li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contrato</a></li>
+                <li><a href="#">Informações</a></li>
+                <li><a href="#">Seja Parceiro</a></li>
+            </ul>
+            <ul class="rodape1">
+                <li class="Tirodape">Empresa</li>
+                <li><a href="#">Baixe o App</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="Ajuda.html">Ajuda</a></li>
+            </ul>
 
-                <tr>
-                    <td class="Tirodape">Para você</td>
-                    <td class="Tirodape">Veja mais</td>
-                    <td class="Tirodape">Empresa</td>
-                </tr>
-                <tr>
-                    <td>Entrar</td>
-                    <td>Sobre nós</td>
-                    <td>Baixe o PP</td>
-                </tr>
-                <tr>
-                    <td>Cadastro Pedreiro</td>
-                    <td>Contato</td>
-                    <td>Contratos</td>
-                </tr>
-                <tr>
-                    <td>Cadastro Contratante</td>
-                    <td>Informações</td>
-                    <td>Dúvidas</td>
-                </tr>
-                <tr>
-                    <td>Parceiros </td>
-                    <td>Seja Parceiro </td>
-                    <td>Ajuda</td>
-                </tr>
-            </table>
+            <ul class="rodape1">
+                <li><img src="img/rodape.png" alt="" id="img"></li>
+            </ul>
 
-
-            <img src="img/rodape.png" alt="" id="img">
+            
         </div>
 
         <p id="credito">Desenvolvido pelo time de TI SCCP - Senac / 2024</p>
