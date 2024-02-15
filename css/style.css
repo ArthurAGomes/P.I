@@ -32,7 +32,6 @@ nav {
 .menu-categorias {
     text-decoration: none;
     color: white;
-    /* font-family: sans-serif; */
     font-weight: 600;
     font-size: 1.1em;
 }
@@ -45,7 +44,6 @@ nav {
 .cad-login{
     text-decoration: none;
     color: white;
-    /* font-family: sans-serif; */
     font-weight: 600;
     line-height: 25px;
 }
@@ -79,13 +77,11 @@ nav {
 
 
 /* Página de Ajuda */
-#main-ajuda {
-    margin: 0 5% ;
-    width: 100%;
-    /* padding-inline-start: 5%; */
-    
-    
+#main-ajuda {    
+    padding: 0 5% ;
 }
+
+
 
 #tutorial{
     display: flex;
@@ -123,7 +119,6 @@ button {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 
