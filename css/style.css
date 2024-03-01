@@ -111,63 +111,66 @@ button {
 }
 
 /* -------------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------- */
-
-#rodape {
-
+.rodape{
     background-color: #F47907;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-#img {
-
-    width: 400px;
-
-}
-
-.Tirodape {
-
     color: white;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 5px;
-
-}
-
-.rodape1{
-    margin: 20px 0px;
-    padding-inline-start: 0;
-    list-style-type: none;
-    color: white;
-    font-size: 1em;
-}
-
-.rodape1>li{
-
-    line-height: 25px;
+    width: 100%;
+    
     
 }
-
-.rodape1>li>a{
-    text-decoration: none;
+.rodape-conteudo  p li{
+    font-size: 20px;
+    margin-right: 7px;
+    
+}
+.rodape-conteudo li{
+    margin-left: 20px;
+}
+.rodape-conteudo{
+    padding: 17px;
     color: white;
+    display: flex;
+    margin-bottom: 15px;
+    
+    
+
+}
+.rodape-conteudo ul{
+    list-style: none;
+    margin: 0% auto;
+    font-size: 20px;
+    padding: 13px;
+
+}
+.titulos-rodape{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+#logo-rodape img{
+    min-width: 145px;
+    width: 150px;
+    margin: 0% auto;
+}
+.menu-rodape a{
+    text-decoration: none;
+    color: rgb(247, 239, 239);
+}
+.menu-rodape a:hover{
+    color: gray;
 }
 
-.rodape1>li>a:hover{
-    text-decoration: underline;
-}
 
-#credito {
-    margin-top: 0px;
-    padding: 10px;
+
+/* .assinatura {
+    color: white;
+    background-color: #7f7f80;
     text-align: center;
-    background-color: #5E5E5E;
-    color: #FFF;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-
+    height: auto;
+    padding: 1%;
 }
+ 
+.assinatura p {
+    margin-top: 3px;
+ 
+} */
