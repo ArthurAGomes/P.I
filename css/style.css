@@ -1,11 +1,14 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
+    font-family: 'Noto Sans';
     width: 100%;
     height: 750px;
     margin: 0px;
-    font-family: sans-serif;
-    
+    /* font-family: sans-serif; */
+
     /* background-image: url(https://jcmoreira.adv.br/wp-content/uploads/2018/08/pedreiro-1.jpg);
     background-size: cover; */
 }
@@ -15,7 +18,7 @@ body {
 nav {
     background-color: #F47907;
     padding: 15px;
-    
+
 }
 
 #menu {
@@ -26,7 +29,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding-inline-start: 0;
-    
+
 }
 
 .menu-categorias {
@@ -41,14 +44,14 @@ nav {
 
 }
 
-.cad-login{
+.cad-login {
     text-decoration: none;
     color: white;
     font-weight: 600;
     line-height: 25px;
 }
 
-.cad-login:hover{
+.cad-login:hover {
     text-decoration: underline 2px;
 }
 
@@ -56,14 +59,14 @@ nav {
 
 /* Página Inicial */
 #main_home {
-    
+
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
 }
 
-#form_home > input{
+#form_home>input {
     margin: 5px;
     border-radius: 20px;
     width: 80%;
@@ -77,23 +80,23 @@ nav {
 
 
 /* Página de Ajuda */
-#main-ajuda {    
-    padding: 0 5% ;
+#main-ajuda {
+    padding: 0 5%;
 }
 
 
 
-#tutorial{
+#tutorial {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#tutorial>div{
+#tutorial>div {
     text-align: center;
 }
 
-#lista-beneficios>li{
+#lista-beneficios>li {
     line-height: 25px;
 }
 
@@ -105,80 +108,65 @@ button {
     color: white;
     border: 0;
     border-radius: 20px;
-    padding:  10px 15px;
+    padding: 10px 15px;
     font-size: 1.1em;
 
 }
 
 /* -------------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------- */
-.rodape{
-    background-color: #F47907;
-    color: white;
-    width: 100%;
-    align-items: center;
+
+.rodape {
+    background-color: #262626;
+    color: grey;
+    font-weight: 300px;
+    padding-top: 5px;
+}
+
+.menu-rodape ul {
+    padding-inline-start: 0px;
+    
+
+
+
+}
+
+.menu-rodape li {
+    display: none;
+    list-style-type: none;
     
 }
-.rodape-conteudo  p li{
-    font-size: 16px;
-    margin-right: 7px;
-    
+
+.redes img {
+    width: 30px;
 }
-.rodape-conteudo li{
-    margin-left: 20px;
-}
-.rodape-conteudo{
-    padding: 17px;
-    color: white;
+
+.titulos-rodape {
     display: block;
-    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 20px auto;
+    
+}
+
+.menu-rodape h3 {
     text-align: center;
-    
-    
-
-}
-.rodape-conteudo ul{
-    list-style: none;
-    margin: 0% auto;
-    font-size: 12px;
-    padding: 13px;
-
-}
-.titulos-rodape{
-    font-weight: bold;
+    font-weight: 300;
     text-transform: uppercase;
-    font-size: 15px;
-}
-#logo-rodape img{
-    min-width: 145px;
-    width: 150px;
-    margin: 0% auto;
-}
-.menu-rodape a{
-    text-decoration: none;
-    color: rgb(247, 239, 239);
-}
-.menu-rodape a:hover{
-    color: gray;
+    
 }
 
-
-.redes img{
-    max-width: 100px;
-    width: 100px;
-    }
-
+.menu-rodape hr {
+    border: 1px grey solid;
+}
 .redes{
-    margin-left: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding-top: 16px;
 }
 
- .assinatura {
-    color: white;
-    background-color: #7f7f80;
-    text-align: center;
-    height: auto;
-    padding: 1%;
-}
- 
-.assinatura p {
-    margin-top: 3px;
+.redes a{
+    margin-right: 12px;
+    justify-content: center;
 }
