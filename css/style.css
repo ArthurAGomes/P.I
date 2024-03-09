@@ -133,8 +133,6 @@ button {
 .menu-rodape li {
     list-style-type: none;
     text-align: center;
-
-
 }
 
 .menu-rodape li a {
@@ -177,11 +175,19 @@ button {
 
 }
 
+.redes li {
+    list-style: none;
+}
+
 .redes a {
- justify-content: center;
+    justify-content: center;
 }
 
 .redes-icones p {
+    display: none;
+}
+
+#redes-sociais {
     display: none;
 }
 
@@ -204,15 +210,77 @@ button {
 }
 
 @media screen and (min-width:600px) {
-.rodape-conteudo{
-   display: flex;
-   justify-content: space-between;
-   padding: 0 40px;
+    .rodape-conteudo {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .panel {
+        display: block;
+    }
+
+    .menu-rodape hr {
+        display: none;
+    }
+
+    .redes {
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .redes p {
+        display: block;
+    }
+
+    .redes-icones {
+        display: flex;
+    }
+
+    .redes-icones a {
+        text-decoration: none;
+        color: white;
+    }
 }
-.panel{
-    display: block;
-}
-.menu-rodape hr {
-    display: none;
-}
+
+@media screen and (min-width:960px) {
+    .rodape-conteudo {
+        display: flex;
+        padding-top: 10px;
+        text-align: center;
+        justify-content: center;
+        
+        
+    }
+    .menu-rodape{
+        padding-left: 100px;
+    }
+
+    .redes {
+        display: list-item;
+        list-style: none;
+    }
+
+    .redes a {
+        text-decoration: none;
+
+    }
+
+    #redes-sociais {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Noto Sans';
+        font-weight: 200;
+    }
+
+    .conteudo-geral-footer {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 80px;
+        
+
+    }
 }
