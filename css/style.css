@@ -212,9 +212,10 @@ button {
 @media screen and (min-width:600px) {
     .rodape-conteudo {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0 40px;
         text-align: center;
+        flex-wrap: wrap;
     }
 
     .panel {
@@ -228,6 +229,10 @@ button {
     .redes {
         justify-content: space-around;
         display: flex;
+    }
+
+    #redes-posicao{
+        width: 100%;
     }
 
     .redes p {
@@ -246,20 +251,30 @@ button {
 
 @media screen and (min-width:960px) {
     .rodape-conteudo {
+        width: 100%;
         display: flex;
-        padding-top: 10px;
-        text-align: center;
-        justify-content: center;
-        
+        padding: 10px 0;
+        flex-wrap: nowrap;
+        /* justify-content: space-around; */
+        text-align: center;    
+
         
     }
     .menu-rodape{
-        padding-left: 100px;
+        /* padding-left: 100px; */
+        justify-content:space-around;
     }
 
     .redes {
         display: list-item;
         list-style: none;
+        
+    }
+
+    #redes-posicao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .redes a {
@@ -278,8 +293,10 @@ button {
 
     .conteudo-geral-footer {
         display: flex;
-        justify-content: space-around;
-        margin-right: 80px;
+        padding: 0 10%;
+        /* overflow: hidden; */
+        /* justify-content: space-around; */
+        /* margin-right: 80px; */
         
 
     }
