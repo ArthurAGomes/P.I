@@ -6,8 +6,9 @@ body {
     font-family: 'Noto Sans';
     font-size: 1.1em;
     width: 100%;
-    height: 750px;
+    /* height: 750px; */
     margin: 0px;
+    
     /* overflow: hidden; */
     /* font-family: sans-serif; */
 
@@ -150,7 +151,7 @@ button {
     display: block;
     justify-content: center;
     align-items: center;
-    margin: 0%;
+    /* margin: 0%; */
     padding: 20px auto;
 
 }
@@ -216,6 +217,10 @@ button {
         padding: 0 40px;
         text-align: center;
         flex-wrap: wrap;
+        
+    }
+    .menu-rodape li a:hover{
+        color: #F47907;
     }
 
     .panel {
@@ -234,11 +239,16 @@ button {
     #redes-posicao{
         width: 100%;
     }
-
+    .redes-icones p:hover{
+        color: #F47907;
+        transition: background-color 05s
+    }
     .redes p {
         display: block;
     }
-
+    .redes img{
+        width: 60px;
+    }
     .redes-icones {
         display: flex;
     }
@@ -250,21 +260,32 @@ button {
 }
 
 @media screen and (min-width:960px) {
+  
+    .rodape{
+        padding-top: 0;
+    }
     .rodape-conteudo {
         width: 100%;
         display: flex;
-        padding: 10px 0;
         flex-wrap: nowrap;
-        /* justify-content: space-around; */
-        text-align: center;    
-
-        
+        align-items: baseline;
+        margin: 0;
+        }
+    .rodape-conteudo li{
+        font-size: 20px;
+    }
+   .titulos-rodape{
+        font-size: 24px;
     }
     .menu-rodape{
-        /* padding-left: 100px; */
-        justify-content:space-around;
+       
+        padding: 10px 10px;
+        width: 460px;
     }
-
+    .menu-rodape li a:hover{
+        color: #F47907;
+    }
+    
     .redes {
         display: list-item;
         list-style: none;
@@ -281,7 +302,9 @@ button {
         text-decoration: none;
 
     }
-
+  .redes img{
+    width: 60px;
+  }
     #redes-sociais {
         display: block;
         justify-content: center;
@@ -294,10 +317,10 @@ button {
     .conteudo-geral-footer {
         display: flex;
         padding: 0 10%;
-        /* overflow: hidden; */
-        /* justify-content: space-around; */
-        /* margin-right: 80px; */
-        
+        justify-content: center;
+        }
 
-    }
+      .assinatura{
+        font-size: 20px;
+      } 
 }
