@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato Mobile</title>
+ 
+    <style>
+        body {
+            font-size: 20px;
+        }
+ 
+        h1 {
+            text-align: center;
+            background-color: #0CA4F2;
+            border-radius: 5px;
+        }
+ 
+        h2 {
+            padding-left: 10px;
+        }
+ 
+        .input-boxc {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            text-indent: 10px;
+        }
+ 
+        .input-boxc input {
+            background-color: #0CA4F2;
+            border: none;
+            color: white;
+            height: 40px;
+            border-radius: 20px;
+            text-indent: 10px;
+        }
+ 
+        .continue-buttonc {
+            text-align: center;
+            padding: 20px;
+        }
+ 
+        .continue-buttonc button {
+            background-color: #0CA4F2;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+        }
+ 
+        .input-radioc {
+            display: flex;
+            gap: 25px;
+        }
+ 
+        #ftoc input {
+            display: none;
+        }
+ 
+        #ftoc {
+            display: flex;
+            padding-bottom: 20px;
+ 
+        }
+ 
+        .aqv {
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            width: 60px;
+            background-color: rgba(128, 128, 128, 0.41);
+            text-align: center;
+            border-radius: 5px;
+            border-style: dashed;
+            margin: 5px;
+        }
+ 
+        .input-checkc {
+ 
+            padding: 10px 0;
+ 
+ 
+        }
+ 
+        .input-checkc input {
+            display: none;
+ 
+ 
+        }
+ 
+        .input-checkc input+label:before {
+            background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 4px;
+            background-color: white;
+            border: 1px solid gray;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            margin-bottom: 5px;
+ 
+        }
+ 
+        .input-checkc input:checked+label::before {
+            background-color: #0CA4F2;
+ 
+ 
+        }
+ 
+ 
+        .input-radioc input {
+            display: none;
+        }
+ 
+        .input-radioc input+label::before {
+            background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+            content: "";
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            background-color: white;
+            border: 1px solid gray;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            margin-bottom: 5px;
+ 
+ 
+ 
+        }
+ 
+        .input-radioc input:checked+label::before {
+            background-color: #0CA4F2;
+ 
+ 
+        }
+    </style>
+</head>
+ 
+<body>
+    <header></header>
+ 
+    <main>
+        <h1>Contratante</h1>
+ 
+        <form action="#" method="post">
+ 
+            <div class="input-boxc">
+                <label for="nome">Nome/Nome social</label>
+                <input required type="text" id="nome" name="nome">
+            </div>
+ 
+            <div class="input-boxc">
+                <label for="senha">Senha</label>
+                <input required type="password" id="senha" name="senha">
+            </div>
+ 
+            <div class="input-boxc">
+                <label for="cpf">CPF</label>
+                <input required type="tel" id="cpf" name="cpf">
+            </div>
+ 
+            <div class="input-radioc">
+ 
+                <div>
+                    <input type="radio" id="homem" name="genero">
+                    <label for="homem">Homem</label>
+                </div>
+                <div>
+                    <input type="radio" id="mulher" name="genero">
+                    <label for="mulher">Mulher</label>
+                </div>
+                <div>
+                    <input type="radio" id="outro" name="genero">
+                    <label for="outro">Outro</label>
+                </div>
+            </div>
+            <div class="input-checkc">
+                <div>
+                    <input type="checkbox" id="pf" name="interesse">
+                    <label for="pf">Pessoa Física</label>
+                </div>
+ 
+                <div>
+                    <input type="checkbox" id="pj" name="interesse">
+                    <label for="pj">Pessoa Jurídica</label>
+                </div>
+            </div>
+ 
+ 
+            <div class="input-groupc">
+ 
+                <div class="input-boxc">
+                    <label for="cep">CEP</label>
+                    <input required type="tel" id="cep" name="cep">
+                </div>
+ 
+                <div class="input-boxc">
+                    <label for="cidade">Cidade</label>
+                    <input required type="text" id="cidade" name="cidade">
+                </div>
+ 
+                <div class="input-boxc">
+                    <label for="estado">Estado</label>
+                    <input required type="text" id="estado" name="estado">
+                </div>
+ 
+                <div class="input-boxc">
+                    <label for="bairro">Bairro</label>
+                    <input required type="text" id="bairro" name="bairro">
+                </div>
+ 
+                <div class="input-boxc">
+                    <label for="rua">Rua</label>
+                    <input required type="text" id="rua" name="rua">
+                </div>
+            </div>
+ 
+            <h2>Adicionar Fotos</h2>
+            <div id="ftoc">
+ 
+                <label for="arquivo1" class="aqv">+</label>
+                <input type="file" id="arquivo1" name="arquivo1">
+ 
+                <label for="arquivo2" class="aqv">+</label>
+                <input type="file" id="arquivo2" name="arquivo2">
+ 
+                <label for="arquivo3" class="aqv">+</label>
+                <input type="file" id="arquivo3" name="arquivo3">
+ 
+ 
+            </div>
+ 
+            <div class="input-checkc">
+                <div>
+                    <input type="checkbox" id="aceitar" name="interesse">
+                    <label for="aceitar">Li e aceito os termos e condições.</label>
+                </div>
+ 
+                <div>
+                    <input type="checkbox" id="declaro" name="interesse">
+                    <label for="declaro">Declaro que as informações são verdadeiras.</label>
+                </div>
+ 
+                <div class="continue-buttonc">
+                    <button id="botao" type="submit">CADASTRAR</button>
+                </div>
+            </div>
+        </form>
+    </main>
+ 
+    <footer></footer>
+</body>
+ 
+</html>
