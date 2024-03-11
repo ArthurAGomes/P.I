@@ -2,112 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Geral -----------------------------------------------------*/
+
 body {
     font-family: 'Noto Sans';
     font-size: 1.1em;
     width: 100%;
-    /* height: 750px; */
+    height: 750px;
     margin: 0px;
-    
-    /* overflow: hidden; */
-    /* font-family: sans-serif; */
-
-    /* background-image: url(https://jcmoreira.adv.br/wp-content/uploads/2018/08/pedreiro-1.jpg);
-    background-size: cover; */
 }
-
-/* -------------------------------------------------------------------------NAV------------------------------------------------------------------------------------- */
-
-nav {
-    background-color: #F47907;
-    padding: 15px;
-
-}
-
-#menu {
-
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-inline-start: 0;
-
-}
-
-.menu-categorias {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 1.1em;
-}
-
-.menu-categorias:hover {
-    text-decoration: underline 2px;
-
-}
-
-.cad-login {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    line-height: 25px;
-}
-
-.cad-login:hover {
-    text-decoration: underline 2px;
-}
-
-/* -------------------------------------------------------------------------MAIN------------------------------------------------------------------------------------ */
-
-/* Página Inicial */
-#main_home {
-
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-#form_home>input {
-    margin: 5px;
-    border-radius: 20px;
-    width: 80%;
-    height: 40px;
-    text-indent: 20px;
-    font-weight: bold;
-    color: #F47907;
-    border: 2px solid #F47907;
-    color: #F47907;
-}
-
-
-/* Página de Ajuda */
-#main-ajuda {
-    padding: 0 5%;
-}
-
-
-
-#tutorial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#tutorial>div {
-    text-align: center;
-}
-
-#lista-beneficios>li {
-    line-height: 25px;
-}
-
-/* ------------------------------------------------------ Configurações gerais ---------------------------------------------------- */
 
 button {
 
-    background-color: #F47907;
+    background-color: #F29D30;
     color: white;
     border: 0;
     border-radius: 20px;
@@ -116,7 +23,107 @@ button {
 
 }
 
-/* -------------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------- */
+main {
+    padding: 2%;
+}
+
+/* Header ---------------------------------------------------*/
+header {
+    max-height: 90px;
+    overflow: hidden;
+}
+
+/* Nav-lateral ----------------------------------------------*/
+.menu-itens {
+    display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    /*Cria o icone de menu-hamburguer*/
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+.change .bar1 {
+    /*Altera a forma do icone de menu-hamburgue para um X*/
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.abrir {
+    /*Abre o menu-hamburguer*/
+    padding-top: 5%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    left: 0;
+    background-color: #3d3b3b;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+nav {
+    background-color: #F29D30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    height: 85px;
+
+}
+
+#logo {
+    max-width: 70px;
+    width: 100%;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#avatar-minha-conta {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.menu-lateral {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.menu-lateral a {
+
+    margin: 10% 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+}
+
+/* Footer --------------------------------------------------*/
 
 .rodape {
     background-color: #3d3b3b;
@@ -143,8 +150,6 @@ button {
 
 .redes img {
     width: 45px;
-
-
 }
 
 .titulos-rodape {
@@ -184,7 +189,7 @@ button {
     justify-content: center;
 }
 
-.redes-icones p {
+.redes-icones div {
     display: none;
 }
 
@@ -210,6 +215,126 @@ button {
     overflow: hidden;
 }
 
+/* Home ---------------------------------------------------- */
+
+#home-main{
+    background-image: url(../img/home-pedreiro2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#categorias-home{
+    
+    display: flex;
+    gap: 2%;
+    margin-top: 5px;
+}
+
+.categorias-home-escolha{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#pedreiro{
+    background-color: #F29D30;
+    color: white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#contratante{
+    background-color: #3d3b3b;
+    color: grey;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#login-home{
+    text-align: center;
+    padding: 25% 0;
+    margin: 15% 0;
+    overflow: hidden;
+}
+
+.conteudo-login-campos{
+    margin: 25px 0;
+}
+
+.conteudo-login-campos input{
+    line-height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #F29D30;
+    width: 90%;
+    text-indent: 20px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.conteudo-login-campos label{
+    font-size: 1.7em;
+    color: white;
+    font-weight: bold;
+    text-shadow: #3d3b3b 2px 2px 2px;
+    /* margin: 10px 0; */
+}
+
+.login-extra{
+    font-size: 1.3em;
+    color: white;
+    text-shadow: #3d3b3b 2px 2px 2px;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+#botao-entrar-login{
+    font-size: 1.4em;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#baixe-app{
+    height: 650px;
+    width: 100%;
+}
+
+#baixe-app h2{
+    text-shadow: #3d3b3b 2px 2px 2px;
+    color: white;
+    padding: 1%;
+}
+
+/* SobreNos -------------------------------------------------*/
+
+/* Página de Ajuda ------------------------------------------*/
+#main-ajuda {
+    padding: 0 5%;
+}
+
+#tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tutorial>div {
+    text-align: center;
+}
+
+#lista-beneficios>li {
+    line-height: 25px;
+}
+
+/* MediaQuery */
+
 @media screen and (min-width:600px) {
     .rodape-conteudo {
         display: flex;
@@ -217,9 +342,10 @@ button {
         padding: 0 40px;
         text-align: center;
         flex-wrap: wrap;
-        
+
     }
-    .menu-rodape li a:hover{
+
+    .menu-rodape li a:hover {
         color: #F47907;
     }
 
@@ -236,19 +362,30 @@ button {
         display: flex;
     }
 
-    #redes-posicao{
+    .redes-posicao {
         width: 100%;
     }
-    .redes-icones p:hover{
-        color: #F47907;
-        transition: background-color 05s
+
+    .redes-icones a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 1em; */
     }
-    .redes p {
+
+    .redes-icones a:hover {
+        color: #F47907;
+        transition: background-color 5s
+    }
+
+    .redes div {
         display: block;
     }
-    .redes img{
+
+    .redes img {
         width: 60px;
     }
+
     .redes-icones {
         display: flex;
     }
@@ -260,67 +397,98 @@ button {
 }
 
 @media screen and (min-width:960px) {
-  
-    .rodape{
+
+    .rodape {
         padding-top: 0;
     }
+
     .rodape-conteudo {
+        padding: 0;
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
-        align-items: baseline;
+        align-items: center;
+        justify-content: space-between;
         margin: 0;
-        }
-    .rodape-conteudo li{
+    }
+
+    .rodape-conteudo li {
         font-size: 20px;
     }
-   .titulos-rodape{
+
+    .titulos-rodape {
         font-size: 24px;
     }
-    .menu-rodape{
-       
-        padding: 10px 10px;
-        width: 460px;
-    }
-    .menu-rodape li a:hover{
+
+    .menu-rodape li a:hover {
         color: #F47907;
     }
-    
+
+    .menu-rodape {
+        width: fit-content;
+        height: 210px;
+    }
+
     .redes {
         display: list-item;
         list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
         
     }
 
-    #redes-posicao{
+    .redes-icones a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 1em; */
+    }
+
+    .redes-icones a img {
+        width: 100%;
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    #redes-posicao {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
 
     .redes a {
         text-decoration: none;
 
     }
-  .redes img{
-    width: 60px;
-  }
+
+    .redes img {
+        width: 60px;
+    }
+
     #redes-sociais {
         display: block;
         justify-content: center;
         text-align: center;
         text-transform: uppercase;
         font-family: 'Noto Sans';
-        font-weight: 200;
+        font-weight: 200px;
     }
 
     .conteudo-geral-footer {
         display: flex;
         padding: 0 10%;
         justify-content: center;
-        }
+    }
 
-      .assinatura{
+    .assinatura {
         font-size: 20px;
-      } 
+        border-top: solid rgb(68, 68, 68) 2px;
+        padding: 10px;
+    }
+
+    #credito{
+        margin: 0;
+    }
 }

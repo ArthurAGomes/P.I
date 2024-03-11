@@ -1,247 +1,90 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <title>Home - PP</title>
+    
+    </head>
+<body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <header>
+        <nav id="menu-principal">
+            <div class="menu-icon" id="menu-hamburguer" onclick="abrirNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+           
+            <a href="#" class="menu-itens">Sobre Nós</a>
+            <a href="#" class="menu-itens">Parceiros</a>
+            
+            <img id="logo" src="#" alt="logo"> 
+            
+            <a href="#" class="menu-itens">Contato</a>
+            <a href="#" class="menu-itens">Minha Conta</a>
+            
+            <div id="avatar-minha-conta"></div>
+        </nav>
+        <div id="menuLateral" class="menu-lateral">
+            <a href="#">Sobre Nós</a>
+            <a href="#">Parceiros</a>
+            <a href="#">Contato</a>
+            <a href="#">Minha Conta</a>
+            <a href="#">Minha Conta</a>
+            <a href="#">Minha Conta</a>
+        </div>
+    </header>
 
-    <style>
-        body {
-            background-image: url(https://jcmoreira.adv.br/wp-content/uploads/2018/08/pedreiro-1.jpg);
-            background-size: cover;
-        }
+    <main id="home-main">
 
-        nav{
-            border-bottom: 5px solid gray;
-        }
+        <section id="categorias-home">
+            <a href="" id="pedreiro" onclick="" class="categorias-home-escolha">Pedreiro</a>
+            <a href="" id="contratante" onclick="" class="categorias-home-escolha">Contratante</a>
+        </section>
+        <article id="login-home">
 
-        #conta_pedreiro {
+            <div id="conteudo-login">
 
-            text-align: center;
-            padding: 30px;
+                <div  class="conteudo-login-campos" id="conteudo-cpf">
+                    <label for="cpf">Informe seu CPF</label>
+                    <input type="number" required placeholder="Digite seu CPF">
+                </div>
+                <div  class="conteudo-login-campos" id="senha">
+                    <label for="senha">Digite sua Senha</label>
+                    <input type="password" required placeholder="Digite sua senha">
+                </div>
+                <button id="botao-entrar-login">Entrar</button>
+                <a href="#" class="login-extra">Esqueceu minha senha</a>
+                <a href="#" class="login-extra">Cadastre-se!</a>
 
-        }
+            </div>
 
-        #lembrar-senha {
-            color: white;
-            font-size: 1.5em;
-            text-shadow: 3px 2px 2px black;
-        }
+        </article>
 
-        #lembrar-senha>strong>a{
-            text-decoration: none;
-            color: white;
-        }
+        <section id="baixe-app">
+            <div>
+                <h2>Seja bem vindo ao PP. Aqui você constrói oportunidades com apenas um clique!</h2>
+                <button>Baixe o APP</button>
+            </div>
+        </section>
 
-        #chamada_pedreiro {
-            padding: 12%;
-            font-size: 2.1em;
-            color: white;
-            text-shadow: 2px 4px 5px black;
-            text-align: justify;
-        }
-
-        #botoes {
-
-            display: flex;
-            text-align: center;
-        }
-
-        #botao_pedreiro {
-
-            width: 50%;
-            border-radius: 0px 0px 10px 10px;
-            padding: 10px;
-            font-size: 1.5em;
-
-        }
-
-        #botao_contratante {
-
-            background-color: gray;
-            width: 50%;
-            border-radius: 0px 0px 10px 10px;
-            padding: 10px;
-            font-size: 1.5em;
-
-        }
+        <article id="parceiros-conteudo-home">
+            <figure>
+                <!-- <img src="img/parceiros.png" alt="" id="parceiros-banner"> -->
+                <figcaption>Os parceiros PP trazem qualidade e economia para a sua obra. <button id="btn-vejaMais-parceiros">Veja mais!</button></figcaption>
+            </figure>
+        </article>
 
         
 
-
-        #esquerda_login {
-
-            width: 100%;
-            max-width: 50%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        #direita_chamada {
-
-            
-            width: 100%;
-            max-width: 50%;
-            text-align: center;
-            
-
-        }
-
-        #acessar_conta {
-            font-size: 3em;
-            color: white;
-            text-shadow: 2px 4px 3px black;
-        }
-    </style>
-
-</head>
-
-<body>
-
-    <header>
-        <nav>
-            <ul id="menu">
-                <li><a class="menu-categorias" href="sobre.html">Sobre Nós</a></li>
-
-                <li><a class="menu-categorias" href="#">Parceiros</a></li>
-
-                <li><img src="#" alt=""><a class="menu-categorias" href="home.html"
-                        style="font-size: x-large; text-decoration: none;">P|P</a></li>
-
-                <li><a class="menu-categorias" href="#">Contatos</a></li>
-
-                <li><a class="cad-login" href="#">Minha Conta</a> <br><a class="cad-login" href="#">Cadastre-se</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="botoes">
-
-        <button id="botao_pedreiro">Sou Pedreiro</button>
-        <button id="botao_contratante">Sou Contratante</button>
-
-    </div>
-
-    <main id="main_home">
-
-        <section id="esquerda_login">
-
-            <div id="conta_pedreiro">
-
-                <form id="form_home">
-                    <label for="conta" id="acessar_conta">ACESSAR MINHA CONTA</label>
-
-                    <input type="text" id="inputlogin" placeholder="DIGITE SEU CPF"><br>
-                    <input type="password" id="inputsenha" placeholder="DIGITE SUA SENHA">
-
-
-                </form>
-                <p id="lembrar-senha">Esqueceu sua senha? <strong><a href="#">Clique Aqui</a></strong></p>
-
-                <button><strong>ENTRAR</strong></button>
-
-            </div>
-
-        </section>
-
-        <section id="direita_chamada">
-
-            <div id="chamada_pedreiro">
-
-                <h3>Deixe que as oportunidades te encontrem com a ajuda do PP! Receba ofertas de trabalho sem sair de
-                    casa no seu celular. Baixe agora!</h3>
-            </div>
-
-        </section>
-
     </main>
-
-    <footer>
-
-
-        <div id="rodape">
-            <ul class="rodape1">
-                <li class="Tirodape">Para você</li>
-                <li><a href="#">Entrar</a></li>
-                <li><a href="#">Cadastro Pedreiro</a></li>
-                <li><a href="#">Cadastro Contratante</a></li>
-                <li><a href="#">Parceiros</a></li>
-            </ul>
-            <ul class="rodape1">
-                <li class="Tirodape">Veja mais</li>
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Contrato</a></li>
-                <li><a href="#">Informações</a></li>
-                <li><a href="#">Seja Parceiro</a></li>
-            </ul>
-            <ul class="rodape1">
-                <li class="Tirodape">Empresa</li>
-                <li><a href="#">Baixe o App</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Dúvidas</a></li>
-                <li><a href="Ajuda.html">Ajuda</a></li>
-            </ul>
-
-            <ul class="rodape1">
-                <li><img src="img/rodape.png" alt="" id="img"></li>
-            </ul>
-        </div>
-
-        <p id="credito">Desenvolvido pelo time de TI SCCP - Senac / 2024</p>
-
-    </footer>
-
-</body>
-
-</html>
-
-
- -->
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>agora foi</title>
-
-</head>
-
-<body>
-    <header>
-
-        <nav>
-            <a href="#" class="itens">Sobre Nós</a>
-            <a href="#" class="itens">Parceiros</a>
-            <h1>
-                <a href="#"><img src="PI/img/logo-color.png" alt="logo"> </a>
-            </h1>
-            <a href="#" class="itens">Informações</a>
-            <a href="#" class="itens">Minha Conta</a>
-        </nav>
-
-    </header>
-    <aside id="categorias">
-        <p>Pedreiro</p>
-        <p>Contratante</p>
-    </aside>
-    <main>
-        <h3>Deixe que as oportunidades te encontrem com a ajuda do PP!</h3>
-
-    </main>
-
+    
     <footer class="rodape">
         <div class="conteudo-geral-footer">
             <div class="rodape-conteudo">
@@ -261,8 +104,8 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Empresa</h3>
                         <div class="panel">
-                            <li><a href="#">Baixe o App</a></li>
                             <li><a href="contato.html">Contato</a></li>
+                            <li><a href="#">Baixe o App</a></li>
                             <li><a href="duvidas.html">Dúvidas</a></li>
                             <li><a href="Ajuda.html">Ajuda</a></li>
                         </div>
@@ -274,45 +117,35 @@
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
                             <li><a href="#">Sobre nós</a></li>
-                            <li><a href="contratos.html">Contrato</a></li>
                             <li><a href="duvidas.html">Informações</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
+                            <li><a href="contratos.html">Contrato</a></li>
                         </div>
                     </ul>
                     <hr>
                 </div>
-                <div id="redes-posicao">
+                <div id="redes-posicao" class="menu-rodape">
                     <ul class="redes">
                         <h3 class="titulos-rodape" id="redes-sociais">Redes sociais</h3>
                         <li class="redes-icones">
-                                <a href="#"><img src="img/tiktok.png" alt="">
-                                    <a href="#">
-                                        <p>@PortalPedreiro</p>
-                                    </a>
-                                </a>
+                            <a href="#"><img src="img/tiktok.png" alt="">
+                            <div>@PortalPedreiro</div>
+                            </a>
                         
                         </li>
                         <li class="redes-icones">
                             <a href="#"><img src="img/instagram-icon.png" alt="">
-                                <a href="#">
-                                    <p>@PortalPedreiro</p>
-                                </a>
+                            <div>@PortalPedreiro</div>
                             </a>
                         </li>
                         <li class="redes-icones">
                             <a href="#"><img src="img/youtube-icon.png" alt="">
-                                <a href="#">
-                                    <p>@PortalPedreiro</p>
-                                </a>
+                                <div>@PortalPedreiro</div>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-
-
-
-        </div>
         </div>
 
         <div class="assinatura">
