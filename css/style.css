@@ -314,6 +314,118 @@ nav {
 
 /* SobreNos -------------------------------------------------*/
 
+
+/* ---------------------Cadastro Contratante-------------------------------- */
+
+.contratoc {
+    font-size: 20px;
+}
+
+#h1c {
+    text-align: center;
+    background-color: #0CA4F2;
+    color: white;
+    border-radius: 5px;
+}
+
+#h2c{
+    padding-left: 10px;
+}
+
+.input-boxc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    text-indent: 10px;
+}
+
+.input-boxc input {
+    background-color: #0CA4F2;
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 10px;
+}
+
+.continue-buttonc {
+    text-align: center;
+    padding: 20px;
+}
+
+.continue-buttonc button {
+    font-size: 15px;
+    background-color: #0CA4F2;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.input-radioc {
+    display: flex;
+    gap: 25px;
+}
+
+#ftoc input {
+    display: none;
+}
+
+#ftoc {
+    display: flex;
+    padding-bottom: 20px;
+
+}
+
+.aqv {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+    background-color: rgba(128, 128, 128, 0.41);
+    text-align: center;
+    border-radius: 5px;
+    border-style: dashed;
+    margin: 5px;
+}
+
+.input-checkc {
+
+    padding: 10px 0;
+
+
+}
+
+.input-checkc input, .input-radioc input {
+    display: none;
+
+
+}
+
+.input-checkc input+label:before,  .input-radioc input+label::before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 5px;
+
+}
+
+.input-checkc input:checked+label::before, .input-radioc input:checked+label::before {
+    background-color: #0CA4F2;
+
+
+}
+
+
 /* Página de Ajuda ------------------------------------------*/
 #main-ajuda {
     padding: 0 5%;
@@ -334,6 +446,9 @@ nav {
 }
 
 /* MediaQuery */
+
+
+/* MediaQuery-Cadastro Contrantante */
 
 @media screen and (min-width:600px) {
     .rodape-conteudo {
@@ -394,6 +509,29 @@ nav {
         text-decoration: none;
         color: white;
     }
+
+    /* -----Cadastro Contratante----- */
+
+    #nome, #rua{
+        width: 600px;
+    }
+     
+        .input-boxc input {
+            width: 250px;
+        }
+    
+        .input-groupc{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+
+     .contratoc form{
+        max-width: 600px;
+     }
+
 }
 
 @media screen and (min-width:960px) {
@@ -491,4 +629,50 @@ nav {
     #credito{
         margin: 0;
     }
+
+     /* -----Cadastro Contratante----- */
+
+     .contratoc form{
+        max-width: 930px;
+     }
+
+     .input-groupc {
+        display: flex;
+        flex-wrap: wrap;
+    }
+ 
+ 
+    #nome {
+        width: 930px;
+       align-items: center;
+    }
+ 
+    #rua {
+        width: 930px;
+       align-items: center;
+    }
+ 
+ 
+    .input-boxc input {
+        width: 400px;
+        align-items: center;
+    }
+ 
+    .input-boxc {
+        
+    }
+ 
+ 
+ 
+    .input-checkc input+label:before,  .input-radioc input+label::before {
+      
+ 
+    }
+
+ 
+ 
+ 
+ 
+ 
+ 
 }
