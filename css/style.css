@@ -10,6 +10,8 @@ body {
     width: 100%;
     height: 750px;
     margin: 0px;
+    font-family: "Noto Sans";
+    font-weight: 300;
 }
 
 button {
@@ -314,6 +316,14 @@ nav {
 
 /* SobreNos -------------------------------------------------*/
 
+.sobreNos img{
+    width: 100%;
+    border-radius: 10px;
+}
+.titulos-sobreNos{
+    font-weight: 700;
+}
+
 /* Página de Ajuda ------------------------------------------*/
 #main-ajuda {
     padding: 0 5%;
@@ -370,7 +380,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* font-size: 1em; */
+       
     }
 
     .redes-icones a:hover {

@@ -3,76 +3,115 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sobre nós</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Home - PP</title>
+
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <ul id="menu">
-                <li><a class="menu-categorias" href="sobre.html">Sobre Nós</a></li>
+        <nav id="menu-principal">
+            <div class="menu-icon" id="menu-hamburguer" onclick="abrirNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
 
-                <li><a class="menu-categorias" href="#">Parceiros</a></li>
+            <a href="#" class="menu-itens">Sobre Nós</a>
+            <a href="#" class="menu-itens">Parceiros</a>
 
-                <li><img src="#" alt=""><a class="menu-categorias" href="home.html"
-                        style="font-size: x-large; text-decoration: none;">P|P</a></li>
+            <img id="logo" src="#" alt="logo">
 
-                <li><a class="menu-categorias" href="#">Contatos</a></li>
+            <a href="#" class="menu-itens">Contato</a>
+            <a href="#" class="menu-itens">Minha Conta</a>
 
-                <li><a class="cad-login" href="#">Minha Conta</a> <br><a class="cad-login" href="#">Cadastre-se</a></li>
-            </ul>
+            <div id="avatar-minha-conta"></div>
         </nav>
+        <div id="menuLateral" class="menu-lateral">
+            <a href="#">Sobre Nós</a>
+            <a href="#">Parceiros</a>
+            <a href="#">Contato</a>
+            <a href="#">Minha Conta</a>
+            <a href="#">Minha Conta</a>
+            <a href="#">Minha Conta</a>
+        </div>
     </header>
 
 
-    <main>
+    <main class="sobreNos">
+       
+        <div class="bg-sobreNos">
         <h1>Saiba mais sobre o PP </h1>
-        <h2>História</h2>
-        <p>
-            João, um pedreiro dedicado de longa data, percebeu a mudança no cenário da indústria da construção e teve a
-            ideia de
-            criar uma plataforma online chamada "Portal Pedreiro" para conectar pedreiros qualificados com clientes que
-            procuram
-            serviços de construção. Depois de reunir uma equipe de desenvolvedores jovens e entusiasmados, eles
-            trabalharam
-            incansavelmente para dar vida à sua visão.
-        </p>
-        <p>
-            Apesar de enfrentarem desafios e contratempos, lançaram o site e o
-            aplicativo mobile “Portal Pedreiro”, ganhando força gradativamente. A plataforma conectou pedreiros aos
-            clientes,
-            transformando a indústria da construção. Com o tempo, o “Portal Pedreiro” expandiu-se internacionalmente,
-            oferecendo
-            formação e educação aos pedreiros. O legado de João como inovador do setor foi firmemente estabelecido,
-            melhorando a
-            vida dos pedreiros e dos clientes e revitalizando o mercado da construção. Sua jornada estava apenas
-            começando,
-            com
-            um futuro promissor pela frente.
-        </p>
-        <h2>Missão</h2>
-        <p>Conectar pedreiros talentosos a clientes em busca de serviços de construção confiáveis, facilitando a busca
-            de
-            empregos para pedreiros e tornando a vida dos clientes mais simples e segura. Nossa missão é revitalizar a
-            indústria da construção, promovendo o crescimento econômico e a confiança no setor.</p>
-        <h2>Visão</h2>
-        <p>Ser a plataforma líder no mercado que transforma a maneira como a construção é realizada, promovendo o
-            sucesso
-            dos pedreiros e a satisfação dos clientes. Nossa visão é ser reconhecida como a principal fonte de
-            oportunidades
-            na indústria da construção, unindo comunidades e criando um futuro mais brilhante para todos os envolvidos.
-        </p>
-        <h2>Valores</h2>
-        <p>Integridade: Agimos com honestidade e transparência em todas as interações, mantendo a confiança dos nossos
-            usuários.</p>
-        <p>Missão da empresa: Estamos empenhados em apoiar os pedreiros em busca de empregos e os clientes em busca de
-            profissionais de construção confiáveis. Nós nos esforçamos para entregar qualidade e excelência em tudo o
-            que
-            fazemos.</p>
-        <p>Inovação: Buscamos constantemente aprimorar nossos serviços e tecnologia para atender às necessidades em
-            constante evolução da indústria da construção.</p>
+        <div>
+            <h2 class="titulos-sobreNos">História</h2>
+            <p>
+                João, um pedreiro dedicado de longa data, percebeu a mudança no cenário da indústria da construção e
+                teve a
+                ideia de
+                criar uma plataforma online chamada "Portal Pedreiro" para conectar pedreiros qualificados com clientes
+                que
+                procuram
+                serviços de construção. Depois de reunir uma equipe de desenvolvedores jovens e entusiasmados, eles
+                trabalharam
+                incansavelmente para dar vida à sua visão.
+            </p>
+            <img src="img/imagem20.png" alt="SobreNos-Imagem Pedreiro">
+            <p>
+                Apesar de enfrentarem desafios e contratempos, lançaram o site e o
+                aplicativo mobile “Portal Pedreiro”, ganhando força gradativamente. A plataforma conectou pedreiros aos
+                clientes,
+                transformando a indústria da construção. Com o tempo, o “Portal Pedreiro” expandiu-se
+                internacionalmente,
+                oferecendo
+                formação e educação aos pedreiros. O legado de João como inovador do setor foi firmemente estabelecido,
+                melhorando a
+                vida dos pedreiros e dos clientes e revitalizando o mercado da construção. Sua jornada estava apenas
+                começando,
+                com
+                um futuro promissor pela frente.
+            </p>
+        </div>
+        <div>
+            <h2 class="titulos-sobreNos">Missão</h2>
+            <p>Conectar pedreiros talentosos a clientes em busca de serviços de construção confiáveis, facilitando a
+                busca
+                de
+                empregos para pedreiros e tornando a vida dos clientes mais simples e segura. Nossa missão é revitalizar
+                a
+                indústria da construção, promovendo o crescimento econômico e a confiança no setor.</p>
+                <img src="img/imagem6.png" alt="imagem-pag-missao">
+            <h2>Visão</h2>
+            <p>Ser a plataforma líder no mercado que transforma a maneira como a construção é realizada, promovendo o
+                sucesso
+                dos pedreiros e a satisfação dos clientes. Nossa visão é ser reconhecida como a principal fonte de
+                oportunidades
+                na indústria da construção, unindo comunidades e criando um futuro mais brilhante para todos os
+                envolvidos.
+            </p> 
+            
+        </div>
+        <div>
+            <h2 class="titulos-sobreNos">Valores</h2>
+            <p>Integridade: Agimos com honestidade e transparência em todas as interações, mantendo a confiança dos
+                nossos
+                usuários.</p>
+            <p>Missão da empresa: Estamos empenhados em apoiar os pedreiros em busca de empregos e os clientes em busca
+                de
+                profissionais de construção confiáveis. Nós nos esforçamos para entregar qualidade e excelência em tudo
+                o
+                que
+                fazemos.</p>
+            <p>Inovação: Buscamos constantemente aprimorar nossos serviços e tecnologia para atender às necessidades em
+                constante evolução da indústria da construção.</p>
+                <img src="img/imagem5.png" alt="img-valores-sobrenos">
+        </div>
+        </div>
     </main>
 
     <footer class="rodape">
@@ -119,13 +158,13 @@
                         <h3 class="titulos-rodape" id="redes-sociais">Redes sociais</h3>
                         <li class="redes-icones">
                             <a href="#"><img src="img/tiktok.png" alt="">
-                            <div>@PortalPedreiro</div>
+                                <div>@PortalPedreiro</div>
                             </a>
-                        
+
                         </li>
                         <li class="redes-icones">
                             <a href="#"><img src="img/instagram-icon.png" alt="">
-                            <div>@PortalPedreiro</div>
+                                <div>@PortalPedreiro</div>
                             </a>
                         </li>
                         <li class="redes-icones">
