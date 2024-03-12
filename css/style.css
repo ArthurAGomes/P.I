@@ -124,99 +124,6 @@ nav {
     color: white;
     display: block;
 }
-
-/* Footer --------------------------------------------------*/
-
-.rodape {
-    background-color: #3d3b3b;
-    color: rgb(255, 255, 255);
-    font-weight: 300px;
-    padding-top: 5px;
-    overflow: hidden;
-    font-family: "Noto Sans";
-}
-
-.menu-rodape ul {
-    padding-inline-start: 0px;
-}
-
-.menu-rodape li {
-    list-style-type: none;
-    text-align: center;
-}
-
-.menu-rodape li a {
-    text-decoration: none;
-    color: gray;
-}
-
-.redes img {
-    width: 45px;
-}
-
-.titulos-rodape {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    /* margin: 0%; */
-    padding: 20px auto;
-
-}
-
-.menu-rodape h3 {
-    text-align: center;
-    font-weight: 200;
-    text-transform: uppercase;
-
-}
-
-.menu-rodape hr {
-    border: 1px rgb(110, 109, 109) solid;
-}
-
-.redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    gap: 10px;
-
-}
-
-.redes li {
-    list-style: none;
-}
-
-.redes a {
-    justify-content: center;
-}
-
-.redes-icones div {
-    display: none;
-}
-
-#redes-sociais {
-    display: none;
-}
-
-.assinatura {
-    text-align: center;
-    color: rgb(110, 109, 109);
-    justify-content: center;
-    padding: 0 10px;
-}
-
-#logo-footer {
-    margin-top: 0;
-    text-align: center;
-    justify-content: center;
-}
-
-.panel {
-    display: none;
-    overflow: hidden;
-}
-
 /* Home ---------------------------------------------------- */
 
 #home-main{
@@ -317,9 +224,6 @@ nav {
 /* SobreNos -------------------------------------------------*/
 .sobreNos{
     background-image: url(../img/imagem8.png);
-   
-    
-    
 }
 .bg-sobreNos{
     background-color:rgba(255, 255, 255, 0.5);
@@ -341,6 +245,115 @@ nav {
 .titulos-sobreNos{
     font-weight: 700;
 }
+/* ---------------------Cadastro Contratante-------------------------------- */
+
+.contratoc {
+    font-size: 20px;
+}
+
+#h1c {
+    text-align: center;
+    background-color: #0CA4F2;
+    color: white;
+    border-radius: 5px;
+}
+
+#h2c{
+    padding-left: 10px;
+}
+
+.input-boxc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    text-indent: 10px;
+}
+
+.input-boxc input {
+    background-color: #0CA4F2;
+    border: none;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 10px;
+}
+
+.continue-buttonc {
+    text-align: center;
+    padding: 20px;
+}
+
+.continue-buttonc button {
+    font-size: 15px;
+    background-color: #0CA4F2;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.input-radioc {
+    display: flex;
+    gap: 25px;
+}
+
+#ftoc input {
+    display: none;
+}
+
+#ftoc {
+    display: flex;
+    padding-bottom: 20px;
+
+}
+
+.aqv {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+    background-color: rgba(128, 128, 128, 0.41);
+    text-align: center;
+    border-radius: 5px;
+    border-style: dashed;
+    margin: 5px;
+}
+
+.input-checkc {
+
+    padding: 10px 0;
+
+
+}
+
+.input-checkc input, .input-radioc input {
+    display: none;
+
+
+}
+
+.input-checkc input+label:before,  .input-radioc input+label::before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 5px;
+
+}
+
+.input-checkc input:checked+label::before, .input-radioc input:checked+label::before {
+    background-color: #0CA4F2;
+
+
+}
 
 /* Página de Ajuda ------------------------------------------*/
 #main-ajuda {
@@ -360,6 +373,98 @@ nav {
 #lista-beneficios>li {
     line-height: 25px;
 }
+/* Footer --------------------------------------------------*/
+
+.rodape {
+    background-color: #3d3b3b;
+    color: rgb(255, 255, 255);
+    font-weight: 300px;
+    padding-top: 5px;
+    overflow: hidden;
+    font-family: "Noto Sans";
+}
+
+.menu-rodape ul {
+    padding-inline-start: 0px;
+}
+
+.menu-rodape li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu-rodape li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.redes img {
+    width: 45px;
+}
+
+.titulos-rodape {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0%; */
+    padding: 20px auto;
+
+}
+
+.menu-rodape h3 {
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+
+}
+
+.menu-rodape hr {
+    border: 1px rgb(110, 109, 109) solid;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+
+}
+
+.redes li {
+    list-style: none;
+}
+
+.redes a {
+    justify-content: center;
+}
+
+.redes-icones div {
+    display: none;
+}
+
+#redes-sociais {
+    display: none;
+}
+
+.assinatura {
+    text-align: center;
+    color: rgb(110, 109, 109);
+    justify-content: center;
+    padding: 0 10px;
+}
+
+#logo-footer {
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
+}
+
 
 /* MediaQuery */
 
