@@ -274,18 +274,14 @@ nav {
     width: 100%;
     max-width: 500px;
     text-align: center;
-    /* height: 450px; */
-    /* padding: 15% 0; */
-    margin: auto 0;
+    margin: auto ;
     overflow: hidden;
 }
 
 .conteudo-login-campos{
     margin: 20px 0;
-
+    width: 100%;
 }
-
-
 
 .conteudo-login-campos input{
     line-height: 40px;
@@ -331,26 +327,49 @@ nav {
     max-width: 500px;
 }
 
-#baixe-app h2{
+.subtitulos-sombra{
     text-shadow: #3d3b3b 2px 2px 2px;
     color: white;
     padding: 1%;
+    text-transform: uppercase;
 }
 
 #baixe-app button{
     background: #F2182B;
 }
 
+#parceiro-pp-home{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/imagem9.png);
+    padding: 10px 0;
+}
+
+#parceiro-pp-home h2{
+    width: 100%;
+    padding: 0 2%;
+    text-align: center;
+    color: white;
+}
 .cartao-parceiros{
+    display: block;
     max-width: 300px;
     width: 100%;
+    height: 400px;
     text-align: center;
-    margin: auto;
+    margin: 10px ;
     background-color: #3d3b3b;
+    box-shadow: 0 4px 8px 0;
+    position: relative;
+    
 }
 
 .cartao-parceiros h4{
     color: white;
+    text-transform: uppercase;
 }
 
 .cartao-parceiros img{
@@ -359,17 +378,36 @@ nav {
 
 .cartao-parceiros .info-parceiros{
     color: gray;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .cartao-parceiros button{
     border: none;
-    padding: 5px;
+    padding: 15px 0;
     width: 100%;
     background-color: #3DF267;
     font-size: 1.2em;
     border-radius: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
+#seja-parceiro-home{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#seja-parceiro-home img{
+    width: 100%;
+    margin: 5px 0;
+}
+
+#parceiros-banner button{
+    margin: 5px 0;
+}
+
 
 /* SobreNos -------------------------------------------------*/
 
