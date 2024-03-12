@@ -218,17 +218,32 @@ nav {
 /* Home ---------------------------------------------------- */
 
 #home-main{
-    background-image: url(../img/home-pedreiro2.png);
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#fundo-main{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../img/home-pedreiro3.jfif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 2%;
+    width: 100%;
 }
 
+
 #categorias-home{
-    
+   
     display: flex;
     gap: 2%;
     margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .categorias-home-escolha{
@@ -255,15 +270,22 @@ nav {
 }
 
 #login-home{
+    
+    width: 100%;
+    max-width: 500px;
     text-align: center;
-    padding: 25% 0;
-    margin: 15% 0;
+    /* height: 450px; */
+    /* padding: 15% 0; */
+    margin: auto 0;
     overflow: hidden;
 }
 
 .conteudo-login-campos{
-    margin: 25px 0;
+    margin: 20px 0;
+
 }
+
+
 
 .conteudo-login-campos input{
     line-height: 40px;
@@ -271,6 +293,7 @@ nav {
     border-radius: 10px;
     border: 3px solid #F29D30;
     width: 90%;
+    max-width: 700px;
     text-indent: 20px;
     text-transform: uppercase;
     font-size: 1.1em;
@@ -282,7 +305,7 @@ nav {
     color: white;
     font-weight: bold;
     text-shadow: #3d3b3b 2px 2px 2px;
-    /* margin: 10px 0; */
+    
 }
 
 .login-extra{
@@ -302,14 +325,50 @@ nav {
 }
 
 #baixe-app{
-    height: 650px;
+    /* height: 650px; */
+    margin: 20px;
     width: 100%;
+    max-width: 500px;
 }
 
 #baixe-app h2{
     text-shadow: #3d3b3b 2px 2px 2px;
     color: white;
     padding: 1%;
+}
+
+#baixe-app button{
+    background: #F2182B;
+}
+
+.cartao-parceiros{
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: #3d3b3b;
+}
+
+.cartao-parceiros h4{
+    color: white;
+}
+
+.cartao-parceiros img{
+    width: 100%;
+}
+
+.cartao-parceiros .info-parceiros{
+    color: gray;
+    font-size: 1.1em;
+}
+
+.cartao-parceiros button{
+    border: none;
+    padding: 5px;
+    width: 100%;
+    background-color: #3DF267;
+    font-size: 1.2em;
+    border-radius: 0;
 }
 
 /* SobreNos -------------------------------------------------*/
