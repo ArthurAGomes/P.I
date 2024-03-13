@@ -25,12 +25,17 @@ button {
 
 main {
     padding: 2%;
+    margin-top: 60px;
+    overflow-x: 1000;
 }
 
 /* Header ---------------------------------------------------*/
 header {
     max-height: 90px;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Nav-lateral ----------------------------------------------*/
@@ -63,55 +68,53 @@ header {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-.abrir {
-    /*Abre o menu-hamburguer*/
-    padding-top: 5%;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 90px;
-    left: 0;
-    background-color: #3d3b3b;
-    overflow-x: hidden;
-    transition: 0.5s;
-    text-align: center;
-}
-
 nav {
     background-color: #F29D30;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 10%;
-    height: 85px;
+    height: 60px;
+}
 
+#meu-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#nome-logo{
+    display: none;
+    /* text-align: center;
+    color: white;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 1px 0; */
 }
 
 #logo {
-    max-width: 70px;
+    max-width: 60px;
     width: 100%;
-    height: 70px;
-    border-radius: 50%;
-    background-color: white;
 }
 
 #avatar-minha-conta {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background-color: white;
     border-radius: 50%;
 }
 
 .menu-lateral {
 
-    height: 100%;
-    width: 0;
+    height: 0;
+    width: 250px;
     position: fixed;
     z-index: 1;
-    top: 90px;
+    top: 60px;
     left: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; 
+    transition: 0.5s;
+    text-align: center;
 }
 
 .menu-lateral a {
@@ -122,6 +125,29 @@ nav {
     color: white;
     display: block;
 }
+
+.menu-lateral h3{
+    color: white;
+    font-size: 2em;
+
+}
+
+.abrir {
+    /*Abre o menu-hamburguer*/
+    padding-top: 5%;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    background-color: #3d3b3be8;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    /* text-indent: 20px; */
+}
+
 
 /* Footer --------------------------------------------------*/
 
@@ -240,8 +266,8 @@ nav {
 #categorias-home{
    
     display: flex;
-    gap: 2%;
-    margin-top: 5px;
+    gap: 3%;
+    margin: 15px 0;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -323,7 +349,7 @@ nav {
 }
 
 #baixe-app{
-    margin-top: 20px;
+    margin: 10px 0;
     width: 100%;
     max-width: 500px;
 }
@@ -346,6 +372,9 @@ nav {
     justify-content: center;
     align-items: center;
     background-image: url(../img/imagem9.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px 0;
     border-radius: 10px 10px 0 0;
 }
@@ -365,7 +394,6 @@ nav {
     margin: 10px ;
     background-color: #3d3b3b;
     box-shadow: 0 4px 8px 0;
-    position: relative;
     
 }
 
@@ -381,8 +409,14 @@ nav {
 }
 
 .info-parceiros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     color: gray;
     font-size: 1em;
+    height: 100px;
+    padding: 0 10px;
 }
 
 .cartao-parceiros button{
@@ -392,7 +426,6 @@ nav {
     background-color: #3DF267;
     font-size: 1.2em;
     border-radius: 0;
-    position: absolute;
     bottom: 0;
     left: 0;
 }
