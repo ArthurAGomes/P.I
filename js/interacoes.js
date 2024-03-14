@@ -12,3 +12,15 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+ 
+
+let meuMenu = document.getElementById("menu-hamburguer")
+var menuLat = document.getElementById("menuLateral")
+
+function abrirNav(){
+  
+  meuMenu.classList.toggle("change");
+  menuLat.classList.toggle("abrir");
+  // .toggle.style.width="250px";
+
+}

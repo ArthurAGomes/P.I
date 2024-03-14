@@ -1,9 +1,7 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Geral -----------------------------------------------------*/
-
 body {
     font-family: 'Noto Sans';
     font-size: 1.1em;
@@ -29,13 +27,13 @@ main {
     padding: 2%;
 }
 
-/* Header ---------------------------------------------------*/
+/*---------------------------------------------------------- Header -------------------------------------------------------*/
 header {
     max-height: 90px;
     overflow: hidden;
 }
 
-/* Nav-lateral ----------------------------------------------*/
+/* --------------------------------------------------------------Nav-lateral ----------------------------------------------*/
 .menu-itens {
     display: none;
 }
@@ -220,19 +218,151 @@ nav {
     color: white;
     padding: 1%;
 }
-
 /* SobreNos -------------------------------------------------*/
-.sobreNos{
+.sobreNos {
     /* background-image: url(../img/imagem8.png); */
     background-color: white;
 }
 
-.sobreNos img{
+.sobreNos img {
     width: 100%;
     border-radius: 10px;
 }
-.titulos-sobreNos{
+
+.titulos-sobreNos {
     font-weight: 700;
+}
+
+/* ------------------------Cadastro Pedreiro------------------------------------------- */
+.pedreirope {
+    font-size: 20px;
+
+}
+
+#h1pe {
+    background-color: #f47907;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.input-radiope1 {
+    display: flex;
+    gap: 25px;
+}
+
+.input-boxpe input {
+
+    background-color: #f47907;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-indent: 10px;
+    height: 40px;
+}
+
+.input-boxpe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    text-indent: 10px;
+
+}
+
+.input-radiope {
+    padding-bottom: 20px;
+}
+
+.continue-buttonpe {
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.continue-buttonpe button {
+    background-color: #f47907;
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+
+#ftope input {
+    display: none;
+}
+
+#ftope {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.aqvpe {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 60px;
+    background-color: rgba(128, 128, 128, 0.41);
+    text-align: center;
+    border-radius: 5px;
+    border-style: dashed;
+    margin: 5px;
+}
+
+.input-checkpe {
+
+    padding: 10px 0;
+
+
+}
+
+.input-checkpe input {
+    display: none;
+
+
+}
+
+.input-checkpe input+label:before,
+.input-radiope1 input+label::before,
+.input-radiope input+label::before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 5px;
+
+}
+
+.input-checkpe input:checked+label::before {
+    background-color: #f47907;
+
+
+}
+
+
+.input-radiope1 input,
+.input-radiope input {
+    display: none;
+}
+
+
+
+.input-radiope1 input:checked+label::before,
+.input-radiope input:checked+label::before {
+    background-color: #f47907;
+
+
 }
 /* ---------------------Cadastro Contratante-------------------------------- */
 
@@ -247,7 +377,7 @@ nav {
     border-radius: 5px;
 }
 
-#h2c{
+#h2c {
     padding-left: 10px;
 }
 
@@ -317,13 +447,15 @@ nav {
 
 }
 
-.input-checkc input, .input-radioc input {
+.input-checkc input,
+.input-radioc input {
     display: none;
 
 
 }
 
-.input-checkc input+label:before,  .input-radioc input+label::before {
+.input-checkc input+label:before,
+.input-radioc input+label::before {
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
     content: "";
     width: 25px;
@@ -338,13 +470,13 @@ nav {
 
 }
 
-.input-checkc input:checked+label::before, .input-radioc input:checked+label::before {
+.input-checkc input:checked+label::before,
+.input-radioc input:checked+label::before {
     background-color: #0CA4F2;
 
 
 }
-
-/* Página de Ajuda ------------------------------------------*/
+/* Página duvidas ------------------------------------------*/
 #main-ajuda {
     padding: 0 5%;
 }
@@ -362,7 +494,28 @@ nav {
 #lista-beneficios>li {
     line-height: 25px;
 }
-/* Footer --------------------------------------------------*/
+/* --------------------------------------------------------------------Informação------------------------------------- */
+.informacao-conteudo h1 h2 {
+    text-align: center;
+}
+
+.informacao-conteudo video , img {
+    margin: 0 auto;
+    border-radius: 5px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.informacao-conteudo ul {
+    padding-left: 20px;
+}
+
+.informacao-conteudo li {
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------------------Footer --------------------------------------------------*/
 
 .rodape {
     background-color: #3d3b3b;
@@ -455,9 +608,33 @@ nav {
 }
 
 
-/* MediaQuery */
+/*-------------------------------------------------------------- MediaQuery ---------------------------------------------------------------------*/
 
 @media screen and (min-width:600px) {
+    /* ---------------------------------------------------------Cadastro Contratante-------------------------------------------- */
+
+    #nome,
+    #rua {
+        width: 600px;
+    }
+
+    .input-boxc input {
+        width: 250px;
+    }
+
+    .input-groupc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+
+    .contratoc form {
+        max-width: 600px;
+    }
+
+    /* ---------------------------------------Footer--------------------------------------------- */
     .rodape-conteudo {
         display: flex;
         justify-content: space-around;
@@ -492,7 +669,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-       
+
     }
 
     .redes-icones a:hover {
@@ -516,10 +693,38 @@ nav {
         text-decoration: none;
         color: white;
     }
+
 }
 
 @media screen and (min-width:960px) {
+    .contratoc form {
+        max-width: 930px;
+    }
 
+    .input-groupc {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    #nome {
+        width: 930px;
+        align-items: center;
+    }
+
+    #rua {
+        width: 930px;
+        align-items: center;
+    }
+
+
+    .input-boxc input {
+        width: 400px;
+        align-items: center;
+    }
+
+
+    /* -------------------------Footer------------------------------------------------------- */
     .rodape {
         padding-top: 0;
     }
@@ -557,7 +762,7 @@ nav {
         margin: 0;
         padding: 0;
         height: 100%;
-        
+
     }
 
     .redes-icones a {
@@ -610,7 +815,7 @@ nav {
         padding: 10px;
     }
 
-    #credito{
+    #credito {
         margin: 0;
     }
 }
