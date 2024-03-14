@@ -234,18 +234,16 @@ nav {
 }
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
-.pedreirope {
-    font-size: 20px;
-
-}
-
-#h1pe {
+#titulo-cadastro-pedreiro {
     background-color: #f47907;
+    color: white;
     border-radius: 5px;
     text-align: center;
-    color: white;
 }
-
+.cadastro-pedreiro h2{
+    border-radius: 5px;
+    text-align: center;
+}
 .input-radiope1 {
     display: flex;
     gap: 25px;
@@ -285,9 +283,8 @@ nav {
     background-color: #f47907;
     color: white;
     border: none;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
-    font-size: 15px;
 }
 
 
@@ -300,7 +297,7 @@ nav {
     padding-bottom: 20px;
 }
 
-.aqvpe {
+ .aqvpe {
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -315,19 +312,38 @@ nav {
 }
 
 .input-checkpe {
-
     padding: 10px 0;
-
-
 }
 
 .input-checkpe input {
     display: none;
+}
 
+.input-checkpe input+label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 5px;
 
 }
 
-.input-checkpe input+label:before,
+.input-checkpe input:checked+label::before {
+    background-color: #f47907;
+}
+
+
+.input-radiope1 input,
+.input-radiope input {
+    display: none;
+}
+
 .input-radiope1 input+label::before,
 .input-radiope input+label::before {
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
@@ -342,27 +358,12 @@ nav {
     margin-right: 8px;
     margin-bottom: 5px;
 
-}
-
-.input-checkpe input:checked+label::before {
-    background-color: #f47907;
-
 
 }
-
-
-.input-radiope1 input,
-.input-radiope input {
-    display: none;
-}
-
-
 
 .input-radiope1 input:checked+label::before,
 .input-radiope input:checked+label::before {
     background-color: #f47907;
-
-
 }
 /* ---------------------Cadastro Contratante-------------------------------- */
 
