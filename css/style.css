@@ -377,14 +377,10 @@ nav {
     border-radius: 5px;
 }
 
-#h2c {
-    padding-left: 10px;
-}
-
 .input-boxc {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     text-indent: 10px;
 }
 
@@ -414,6 +410,11 @@ nav {
 .input-radioc {
     display: flex;
     gap: 25px;
+    margin-left: 5px;
+}
+
+.input-checkc{
+    margin-left: 5px;
 }
 
 #ftoc input {
@@ -476,6 +477,12 @@ nav {
 
 
 }
+
+.input-radioc{
+   padding-bottom: 20px;
+}
+
+
 /* Página duvidas ------------------------------------------*/
 #main-ajuda {
     padding: 0 5%;
@@ -634,6 +641,7 @@ nav {
         max-width: 600px;
     }
 
+
     /* ---------------------------------------Footer--------------------------------------------- */
     .rodape-conteudo {
         display: flex;
@@ -694,6 +702,25 @@ nav {
         color: white;
     }
 
+}
+
+@media screen and (min-width:750px) {
+    /* -----------cadastro contratante---------------- */
+    .contratoc form{  
+         max-width: 100%;
+        }
+
+ 
+}
+
+@media screen and (min-width:960px) {
+/* ----------------cadastro contratante---------------------- */
+
+
+.containerc{
+    display: flex;
+    gap: 20px;
+}
 }
 
 @media screen and (min-width:960px) {
