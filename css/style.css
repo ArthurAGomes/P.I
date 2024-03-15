@@ -17,7 +17,7 @@ button {
     background-color: #F29D30;
     color: white;
     border: 0;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px 15px;
     font-size: 1.1em;
 
@@ -94,7 +94,7 @@ nav {
 }
 
 #logo {
-    max-width: 60px;
+    max-width: 50px;
     width: 100%;
 }
 
@@ -106,11 +106,7 @@ nav {
 
 #nome-logo{
     display: none;
-    /* text-align: center;
-    color: white;
-    font-size: 1.7em;
-    font-weight: bold;
-    padding: 1px 0; */
+    
 }
 
 #avatar-minha-conta {
@@ -188,8 +184,8 @@ nav {
 #categorias-home{
    
     display: flex;
-    gap: 3%;
-    margin: 15px 0;
+    gap: 2%;
+    margin: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -203,6 +199,8 @@ nav {
     border-radius: 10px;
     font-size: 1.1em;
     font-weight: bold;
+    /* background-color: #3d3b3b;
+    height: 30px; */
 }
 
 #pedreiro{
@@ -213,15 +211,15 @@ nav {
 }
 
 #contratante{
-    background-color: #3d3b3b;
-    color: grey;
+    background-color: #0CA4F2;
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
     
 }
 
 #baixe-app{
-    margin: 10px auto;
+    margin: 30px auto;
     width: 100%;
     /* max-width: 500px; */
     text-align: center;
@@ -285,9 +283,9 @@ nav {
 .subtitulos-sombra{
     text-shadow: #3d3b3b 2px 2px 2px;
     color: white;
-    padding: 1%;
+    padding: 2%;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 
@@ -321,6 +319,7 @@ nav {
     margin: 10px ;
     background-color: #3d3b3b;
     box-shadow: 0 4px 8px 0;
+    border-radius: 15px;
     
 }
 
@@ -334,6 +333,7 @@ nav {
 .cartao-parceiros img{
     width: 100%;
     height: 200px;
+    border-radius: 15px 15px 0 0;
 }
 
 .info-parceiros{
@@ -353,7 +353,7 @@ nav {
     width: 100%;
     background-color: #3DF267;
     font-size: 1.2em;
-    border-radius: 0;
+    border-radius: 0 0 15px 15px;
     /* bottom: 0; */
     /* left: 0; */
 }
@@ -785,28 +785,7 @@ nav {
 /*-------------------------------------------------------------- MediaQuery ---------------------------------------------------------------------*/
 
 @media screen and (min-width:600px) {
-    /* ---------------------------------------------------------Cadastro Contratante-------------------------------------------- */
-
-    #nome,
-    #rua {
-        width: 600px;
-    }
-
-    .input-boxc input {
-        width: 250px;
-    }
-
-    .input-groupc {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-    }
-
-
-    .contratoc form {
-        max-width: 600px;
-    }
+    
 
     /* ---------------------------------------Header/Nav --------------------------------------------- */
 
@@ -881,15 +860,80 @@ nav {
 
 }
 
+
+
+/* ---------------------------------------------------------Cadastro Contratante-------------------------------------------- */
+
+#nome,
+#rua {
+    width: 600px;
+}
+
+.input-boxc input {
+    width: 250px;
+}
+
+.input-groupc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.contratoc form {
+    max-width: 600px;
+}
+
+
+
 @media screen and (min-width:750px) {
+    
+    /* ---------------------------------------Header/Nav --------------------------------------------- */
+
+    #menu-principal{
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    #menuLateral{
+        display: none;
+    }
+
+    #menu-hamburguer{
+        display: none;
+    }
+
+    #avatar-minha-conta{
+        display: none;
+    }
+
+    .menu-itens{
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    #nome-logo{
+        text-align: center;
+        color: white;
+        font-size: 1.4em;
+        font-weight: bold;
+        padding: 1px 0;
+    }
+
+    
+    
     /* -----------cadastro contratante---------------- */
     .contratoc form{  
          max-width: 100%;
     }
 
-    .containerc{
+    /* .containerc{
 
-    }
+    } */
 }
 
 @media screen and (min-width:900px) {
@@ -990,6 +1034,26 @@ nav {
     }
 
     @media screen and (min-width:960px) {
+
+        /* -----------Main/Home */
+        .cartao-parceiros{
+            max-width: 350px;
+            height: 325px;
+        }
+        
+        .cartao-parceiros img{
+            height: 150px;
+        }
+        
+        .cartao-parceiros h4{
+            font-size: 1.1em;
+        }
+        
+        .info-parceiros{
+            font-size: 1.1em;
+            padding: 0 6%;
+        }
+
         /* ----------------cadastro contratante---------------------- */
         
         
@@ -1025,4 +1089,31 @@ nav {
         }
         
         }
+}
+
+@media screen and (min-width:960px) {
+
+    /* -----------Main/Home */
+
+    .cartao-parceiros{
+        max-width: 250px;
+        height: 330px;
+    }
+
+    .info-parceiros{
+        font-size: 1em;
+    }
+
+    .cartao-parceiros h4{
+        font-size: 1em;
+    }
+
+    #baixe-app{
+        margin: 0;
+    }
+
+    #baixe-app h2{
+        margin: 0;
+    }
+
 }
