@@ -400,16 +400,12 @@ nav {
 
 }
 /* SobreNos ------------------------------------------------------------------------------*/
-.sobreNos {
-    /* background-image: url(../img/imagem8.png); */
-    background-color: white;
-}
 
-/* SobreNos ------------------------------------------------------------------------------*/
 .sobreNos img {
     width: 100%;
     border-radius: 10px;
 }
+
 
 /* -----------------------CONTRATO------------------------------------------------------ */
 
@@ -1104,12 +1100,10 @@ img {
             align-items: center;
         }
         
-        }
+       
 }
 
-@media screen and (min-width:960px) {
-
-    /* -----------Main/Home */
+ /* -----------Main/Home */
 
     .cartao-parceiros{
         max-width: 250px;
@@ -1131,9 +1125,20 @@ img {
     #baixe-app h2{
         margin: 0;
     }
-
-    }
 /*----------- Sobre Nos---------------*/
+.sobreNos-conteudo{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.sobre-conteudo{
+    width: 30%;
+    border: #000000 solid 1px;
+    margin: 10px 3px;
 
 }
+
+}
+
