@@ -220,11 +220,19 @@ nav {
 }
 
 #pedreiro {
-    background-color: #F29D30;
+    /* background-color: #F29D30; */
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    background-color: #3d3b3b59;
+    border-radius: 10px;
+    padding: 10px 0;
 }
+ 
+#baixe-app h2{
+    margin: 0;
+}
+
 
 #contratante {
     background-color: #0CA4F2;
@@ -405,7 +413,20 @@ nav {
     width: 100%;
     border-radius: 10px;
 }
-
+#text_sobreNos{
+    display: none;
+    overflow: hidden;
+}
+.sobreNos-conteudo{
+    margin: 10px 10px;
+}
+.titulos-sobreNos{
+    background-color: #3d3b3bef ;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: white;
+    text-align: center;
+}
 
 /* -----------------------CONTRATO------------------------------------------------------ */
 
@@ -1109,6 +1130,15 @@ img {
         max-width: 250px;
         height: 330px;
     }
+    #baixe-app{
+        margin: 10px;
+        padding: 1%;
+        border-radius: 10px;
+    }
+ 
+    #baixe-app h2{
+        margin: 0;
+    }
 
     .info-parceiros{
         font-size: 1em;
@@ -1135,10 +1165,44 @@ img {
 
 .sobre-conteudo{
     width: 30%;
-    border: #000000 solid 1px;
-    margin: 10px 3px;
-
+    
 }
-
+.titulos-sobreNos:hover{
+    /* background-color: #000000; */
+    box-shadow: #4d4b4b 1px 1px 1px 1px;
+}
+.img-lado{
+max-width: 300px;
+}
+#valores-img{
+    margin: 65% 0;
+}
+}
+@media screen and (min-width:1000px) {
+ 
+    #nome,
+    #rua {
+        width: 800px;
+    }
+ 
+    .input-boxc input {
+        width: 350px;
+        /* margin-right: 40px; */
+    }
+ 
+    .input-groupc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+ 
+    }
+ 
+    form{
+        width: 800px;
+    }
+ 
+    .continue-buttonc button{
+        cursor: pointer;
+    }
 }
 

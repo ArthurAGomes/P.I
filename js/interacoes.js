@@ -23,3 +23,18 @@ function abrirNav(){
   menuLat.classList.toggle("abrir");
   // .toggle.style.width="250px";
 }
+// acordeon sobre nos
+var aco= document.getElementsByClassName("vejaMais");
+var o;
+for (o = 0; o < aco.length; o++){
+ 
+  aco[0].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var descer = this.nextElementSibling;
+    if (descer.style.display === "block") {
+      descer.style.display = "none";
+    } else {
+      descer.style.display = "block";
+    }
+  });
+}
