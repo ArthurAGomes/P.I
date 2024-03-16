@@ -1,84 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        h1 {
-            color: #000;
-            /* font-family: "Noto Sans"; */
-            /* font-size: 34px;
-            font-style: normal;
-            line-height: normal; */
-            padding-left: 30px;
-        }
-
-        p {
-            padding-left: 30px;
-            color: #000;
-            /* font-family: "Droid Sans"; */
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            
-        }
-
-        textarea {
-            background-color: #F47907BF;
-            border-radius: 15px;
-            border-color: #FFF;
-        }
-
-        main {
-            /* display: grid; */
-            padding-inline-start: 5%;
-        }
-
-        figure {
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
-
-        figcaption {
-            margin-left: 20px;
-            align-items: center;
-            /* font-family: "Droid Sans"; */
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            text-transform: uppercase;
-        }
-
-        input {
-            display: flex;
-            width: 300px;
-            height: 40px;
-            justify-content: center;
-            align-items: center;
-            background-color: #F47907BF;
-            border-radius: 15px;
-            border-color: #F47907BF
-        }
-
-        #botao_contato{
-            background-color: #F47907BF;
-            border-radius: 15px;
-            padding: 10px;
-            
-            margin: 10px 30px;
-            border-color: #F47907BF;
-            color: white;
-            font-size: 1.2em;
-        }
-    </style>
 </head>
-
-
 <body>
     <header>
         <nav id="menu-principal">
@@ -88,62 +15,60 @@
                 <div class="bar3"></div>
             </div>
            
-            <a href="#" class="menu-itens">Sobre Nós</a>
-            <a href="#" class="menu-itens">Parceiros</a>
+            <a href="sobre.html" class="menu-itens">Sobre Nós</a>
+            <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
             
             <div id="meu-logo">
-                <a href="index.html"><img id="logo" src="img/brick4.png" alt="logo"></a>
+                <a href="#"><img id="logo" src="img/brick4.png" alt="logo"></a>
                 <div id="nome-logo">Portal Pedreiro</div>
             </div>
             
-            <a href="#" class="menu-itens">Contato</a>
+            <a href="contato.html" class="menu-itens">Contato</a>
             <a href="#" class="menu-itens">Minha Conta</a>
             
             <div id="avatar-minha-conta"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
-            <a href="#">Sobre Nós</a>
-            <a href="#">Parceiros</a>
-            <a href="#">Contato</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="seja-parceiro.html">Parceiros</a>
+            <a href="contato.html">Contato</a>
             <a href="#">Dúvidas</a>
             <a href="#">Minha Conta</a>
         </div>
-    </header>
-    
+    </header> 
     <main>
         <h1>Contato</h1>
-        <figure>
-            <img src="img/tellvector.png" alt="foto telefone">
-            <figcaption>(11) 2487-8956</figcaption>
-        </figure>
-        <figure>
-            <img src="img/vectormsg.png" alt="">
-            <figcaption>Portalpedreiro@gmail.com</figcaption>
-        </figure>
-        <form id="formulario" autocomplete="off">
-
-
-            <p>
-                <label for="nome">Nome:</label>
-                <input required type="text" id="nome" name="nome">
-            </p>
-            <p>
-                <label> E-mail: </label>
-                <input required type="email" id="email" name="email">
-            </p>
-            <p>
-                <label for="assunto">Assunto:</label>
-                <input required type="text" id="assunto" name="assunto">
-            </p>
-
-            <p>
-                <label for="assunto">Mensagem:</label>
-                <input required type="text" id="assunto" name="mensagem" style="height: 80px;">
-            </p>
-            <button id="botao_contato">Enviar</button>
-
-        </form>
+        <div class="contatos-info">
+            <div class="contato">
+                <figure><img src="img/tellvector.png" alt="vector-celular"></figure>
+               
+                    <p>(11) 2487-8956</p>
+               
+            </div>
+        </div>
+        <div class="contatos-info">
+            <div class="contato">
+                <figure><img src="img/mensagem-vector.png" alt="vector-mensagem"></figure>
+                <figcaption>
+                    <p>Portalpedreiro@gmail.com</p>
+                </figcaption>
+            </div>
+        </div>
+        <div class="container-contato">
+            <form>
+                <h3>Formulario de contato</h3>
+                <label>Nome</label>
+                <input type="text">
+                <label>E-mail:</label>
+                <input type="text">
+                <label>Assunto:</label>
+                <input type="text">
+                <label>Mensagem</label>
+                <textarea name="Mensagem" id="" cols="30" rows="10"></textarea>
+                <button>Enviar</button>
+            </form>
+        </div>
     </main>
     <footer class="rodape">
         <div class="conteudo-geral-footer">
@@ -177,7 +102,7 @@
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
                             <li><a href="sobre.html"">Sobre nós</a></li>
-                            <li><a href="informacao.html">Informações</a></li>
+                            <li><a href=" informacao.html">Informações</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
                             <li><a href="contratos.html">Contrato</a></li>
                         </div>
@@ -189,13 +114,13 @@
                         <h3 class="titulos-rodape" id="redes-sociais">Redes sociais</h3>
                         <li class="redes-icones">
                             <a href="#"><img src="img/tiktok.png" alt="">
-                            <div>@PortalPedreiro</div>
+                                <div>@PortalPedreiro</div>
                             </a>
-                        
+
                         </li>
                         <li class="redes-icones">
                             <a href="#"><img src="img/instagram-icon.png" alt="">
-                            <div>@PortalPedreiro</div>
+                                <div>@PortalPedreiro</div>
                             </a>
                         </li>
                         <li class="redes-icones">
@@ -214,7 +139,5 @@
         </div>
     </footer>
     <script src="js/interacoes.js"></script>
-
 </body>
-
 </html>
