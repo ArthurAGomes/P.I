@@ -399,6 +399,11 @@ nav {
     background-color: #3df267;
 
 }
+/* SobreNos ------------------------------------------------------------------------------*/
+.sobreNos {
+    /* background-image: url(../img/imagem8.png); */
+    background-color: white;
+}
 
 /* SobreNos ------------------------------------------------------------------------------*/
 .sobreNos img {
@@ -549,7 +554,8 @@ nav {
 
 /* ---------------------Cadastro Contratante-------------------------------- */
 
-.contratoc {
+
+.cadastroc {
     font-size: 20px;
 }
 
@@ -563,7 +569,7 @@ nav {
 .input-boxc {
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 2rem; */
+    margin-bottom: 1rem;
     text-indent: 10px;
 }
 
@@ -880,11 +886,11 @@ img {
 
 #nome,
 #rua {
-    width: 600px;
+    width: 90vw;
 }
 
 .input-boxc input {
-    width: 250px;
+    width: 90vw;
 }
 
 .input-groupc {
@@ -894,10 +900,6 @@ img {
 
 }
 
-
-.contratoc form {
-    max-width: 600px;
-}
 
 
 
@@ -938,11 +940,11 @@ img {
         padding: 1px 0;
     }
 
-
-
+    
+    
     /* -----------cadastro contratante---------------- */
-    .contratoc form {
-        max-width: 100%;
+    .contratoc form{  
+         max-width: 100%;
     }
 
     /* .containerc{
@@ -951,7 +953,7 @@ img {
 }
 
 @media screen and (min-width:900px) {
-
+    
     /* -------------------------Footer------------------------------------------------------- */
     .rodape {
         padding-top: 0;
@@ -1050,27 +1052,85 @@ img {
     @media screen and (min-width:960px) {
 
         /* -----------Main/Home */
-
-        .cartao-parceiros {
-            max-width: 250px;
-            height: 330px;
+        .cartao-parceiros{
+            max-width: 350px;
+            height: 325px;
+        }
+        
+        .cartao-parceiros img{
+            height: 150px;
+        }
+        
+        .cartao-parceiros h4{
+            font-size: 1.1em;
+        }
+        
+        .info-parceiros{
+            font-size: 1.1em;
+            padding: 0 6%;
         }
 
-        .info-parceiros {
-            font-size: 1em;
+        /* ----------------cadastro contratante---------------------- */
+        
+        
+        .containerc{
+            display: flex;
+            gap: 20px;
         }
+        
+        .contratoc form {
+            max-width: 930px;
+        }
+        
+        .input-groupc {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        
+        #nome {
+            width: 930px;
+            align-items: center;
+        }
+        
+        #rua {
+            width: 930px;
+            align-items: center;
+        }
+        
+        
+        .input-boxc input {
+            width: 400px;
+            align-items: center;
+        }
+        
+        }
+}
 
-        .cartao-parceiros h4 {
-            font-size: 1em;
-        }
+@media screen and (min-width:960px) {
 
-        #baixe-app {
-            margin: 0;
-        }
+    /* -----------Main/Home */
 
-        #baixe-app h2 {
-            margin: 0;
-        }
+    .cartao-parceiros{
+        max-width: 250px;
+        height: 330px;
+    }
+
+    .info-parceiros{
+        font-size: 1em;
+    }
+
+    .cartao-parceiros h4{
+        font-size: 1em;
+    }
+
+    #baixe-app{
+        margin: 0;
+    }
+
+    #baixe-app h2{
+        margin: 0;
+    }
 
     }
 /*----------- Sobre Nos---------------*/
