@@ -98,15 +98,15 @@ nav {
     width: 100%;
 }
 
-#meu-logo{
+#meu-logo {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-#nome-logo{
+#nome-logo {
     display: none;
-    
+
 }
 
 #avatar-minha-conta {
@@ -124,7 +124,7 @@ nav {
     z-index: 1;
     top: 60px;
     left: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     transition: 0.5s;
     text-align: center;
 }
@@ -138,7 +138,7 @@ nav {
     display: block;
 }
 
-.menu-lateral h3{
+.menu-lateral h3 {
     color: white;
     font-size: 2em;
 
@@ -157,18 +157,19 @@ nav {
     overflow-x: hidden;
     transition: 0.5s;
     text-align: center;
-    
+
 }
+
 /* Home ---------------------------------------------------- */
 
-#home-main{
-    
+#home-main {
+
     display: flex;
     flex-wrap: wrap;
     padding: 0;
 }
 
-#fundo-main{
+#fundo-main {
     display: flex;
     flex-wrap: wrap;
     background-image: url(../img/home-pedreiro3.jfif);
@@ -181,8 +182,8 @@ nav {
 }
 
 
-#categorias-home{
-   
+#categorias-home {
+
     display: flex;
     gap: 2%;
     margin: 0;
@@ -191,7 +192,7 @@ nav {
     width: 100%;
 }
 
-.categorias-home-escolha{
+.categorias-home-escolha {
     width: 50%;
     max-width: 300px;
     text-align: center;
@@ -203,47 +204,47 @@ nav {
     height: 30px; */
 }
 
-#pedreiro{
+#pedreiro {
     background-color: #F29D30;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-#contratante{
+#contratante {
     background-color: #0CA4F2;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    
+
 }
 
-#baixe-app{
+#baixe-app {
     margin: 30px auto;
     width: 100%;
     /* max-width: 500px; */
     text-align: center;
 }
 
-#baixe-app button{
+#baixe-app button {
     background: #F2182B;
 }
 
-#login-home{
-    
+#login-home {
+
     width: 100%;
     max-width: 500px;
     text-align: center;
-    margin: 20px auto ;
+    margin: 20px auto;
     overflow: hidden;
 }
 
-.conteudo-login-campos{
+.conteudo-login-campos {
     margin: 20px 0;
     width: 100%;
 }
 
-.conteudo-login-campos input{
+.conteudo-login-campos input {
     line-height: 40px;
     background-color: white;
     border-radius: 10px;
@@ -256,15 +257,15 @@ nav {
     margin-top: 10px;
 }
 
-.conteudo-login-campos label{
+.conteudo-login-campos label {
     font-size: 1.7em;
     color: white;
     font-weight: bold;
     text-shadow: #3d3b3b 2px 2px 2px;
-    
+
 }
 
-.login-extra{
+.login-extra {
     font-size: 1.3em;
     color: white;
     text-shadow: #3d3b3b 2px 2px 2px;
@@ -273,14 +274,14 @@ nav {
     margin: 10px 0;
 }
 
-#botao-entrar-login{
+#botao-entrar-login {
     font-size: 1.1em;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 
-.subtitulos-sombra{
+.subtitulos-sombra {
     text-shadow: #3d3b3b 2px 2px 2px;
     color: white;
     padding: 2%;
@@ -290,7 +291,7 @@ nav {
 
 
 
-#parceiro-pp-home{
+#parceiro-pp-home {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -304,39 +305,40 @@ nav {
     border-radius: 10px 10px 0 0;
 }
 
-#parceiro-pp-home h2{
+#parceiro-pp-home h2 {
     width: 100%;
     padding: 0 2%;
     text-align: center;
     color: white;
 }
-.cartao-parceiros{
+
+.cartao-parceiros {
     display: block;
     max-width: 300px;
     width: 100%;
     height: 380px;
     text-align: center;
-    margin: 10px ;
+    margin: 10px;
     background-color: #3d3b3b;
     box-shadow: 0 4px 8px 0;
     border-radius: 15px;
-    
+
 }
 
-.cartao-parceiros h4{
+.cartao-parceiros h4 {
     color: white;
     text-transform: uppercase;
     margin: 0;
     padding-top: 10px;
 }
 
-.cartao-parceiros img{
+.cartao-parceiros img {
     width: 100%;
     height: 200px;
     border-radius: 15px 15px 0 0;
 }
 
-.info-parceiros{
+.info-parceiros {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -347,7 +349,7 @@ nav {
     padding: 0 15px;
 }
 
-.cartao-parceiros button{
+.cartao-parceiros button {
     border: none;
     padding: 10px 0;
     width: 100%;
@@ -358,30 +360,31 @@ nav {
     /* left: 0; */
 }
 
-#seja-parceiro-home{
+#seja-parceiro-home {
     width: 100%;
     padding: 0;
     margin: 10px 0;
 }
 
-#seja-parceiro-home img{
+#seja-parceiro-home img {
     width: 100%;
     margin: 5px 0;
     border-radius: 10px;
 }
 
-#parceiro-banner-conteudo{
+#parceiro-banner-conteudo {
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-#parceiros-banner-conteudo button{
+#parceiros-banner-conteudo button {
     margin: 10px 0;
     display: block;
     background-color: #3df267;
-    
+
 }
+
 /* SobreNos ------------------------------------------------------------------------------*/
 .sobreNos {
     /* background-image: url(../img/imagem8.png); */
@@ -410,10 +413,12 @@ nav {
     border-radius: 5px;
     text-align: center;
 }
-.cadastro-pedreiro h2{
+
+.cadastro-pedreiro h2 {
     border-radius: 5px;
     text-align: center;
 }
+
 .input-radiope1 {
     display: flex;
     gap: 25px;
@@ -467,7 +472,7 @@ nav {
     padding-bottom: 20px;
 }
 
- .aqvpe {
+.aqvpe {
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -535,9 +540,11 @@ nav {
 .input-radiope input:checked+label::before {
     background-color: #f47907;
 }
+
 /* ---------------------Cadastro Contratante-------------------------------- */
 
-.contratoc {
+
+.cadastroc {
     font-size: 20px;
 }
 
@@ -551,7 +558,7 @@ nav {
 .input-boxc {
     display: flex;
     flex-direction: column;
-    /* margin-bottom: 2rem; */
+    margin-bottom: 1rem;
     text-indent: 10px;
 }
 
@@ -584,7 +591,7 @@ nav {
     margin-left: 5px;
 }
 
-.input-checkc{
+.input-checkc {
     margin-left: 5px;
 }
 
@@ -645,8 +652,8 @@ nav {
 
 }
 
-.input-radioc{
-   padding-bottom: 20px;
+.input-radioc {
+    padding-bottom: 20px;
 }
 
 
@@ -668,12 +675,14 @@ nav {
 #lista-beneficios>li {
     line-height: 25px;
 }
+
 /* --------------------------------------------------------------------Informação------------------------------------- */
 .informacao-conteudo h1 h2 {
     text-align: center;
 }
 
-.informacao-conteudo video , img {
+.informacao-conteudo video,
+img {
     margin: 0 auto;
     border-radius: 5px;
     display: block;
@@ -785,11 +794,11 @@ nav {
 /*-------------------------------------------------------------- MediaQuery ---------------------------------------------------------------------*/
 
 @media screen and (min-width:600px) {
-    
+
 
     /* ---------------------------------------Header/Nav --------------------------------------------- */
 
-    #nome-logo{
+    #nome-logo {
         text-align: center;
         color: white;
         font-size: 1.5em;
@@ -866,11 +875,11 @@ nav {
 
 #nome,
 #rua {
-    width: 600px;
+    width: 90vw;
 }
 
 .input-boxc input {
-    width: 250px;
+    width: 90vw;
 }
 
 .input-groupc {
@@ -881,34 +890,30 @@ nav {
 }
 
 
-.contratoc form {
-    max-width: 600px;
-}
-
 
 
 @media screen and (min-width:750px) {
-    
+
     /* ---------------------------------------Header/Nav --------------------------------------------- */
 
-    #menu-principal{
+    #menu-principal {
         justify-content: space-around;
         padding: 0;
     }
 
-    #menuLateral{
+    #menuLateral {
         display: none;
     }
 
-    #menu-hamburguer{
+    #menu-hamburguer {
         display: none;
     }
 
-    #avatar-minha-conta{
+    #avatar-minha-conta {
         display: none;
     }
 
-    .menu-itens{
+    .menu-itens {
         display: block;
         text-decoration: none;
         color: white;
@@ -916,7 +921,7 @@ nav {
         font-weight: bold;
     }
 
-    #nome-logo{
+    #nome-logo {
         text-align: center;
         color: white;
         font-size: 1.4em;
@@ -924,20 +929,60 @@ nav {
         padding: 1px 0;
     }
 
-    
-    
+}
+
+@media screen and (min-width:840px) {
+
     /* -----------cadastro contratante---------------- */
-    .contratoc form{  
-         max-width: 100%;
+
+    form{
+        margin: 50px;
+    }
+    #nome,
+    #rua {
+        width: 90vw;
     }
 
-    /* .containerc{
+    .input-boxc input {
+        width: 300px;
+        /* margin-right: 40px; */
+     } 
 
-    } */
+    .input-groupc {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+
+    }
+
+    .form{
+        width: 100%;
+        max-width: 800px;
+    }
+
 }
 
 @media screen and (min-width:900px) {
-    
+
+    /* --------------------------------cadastro contratante--------------------- */
+    #nome,
+    #rua {
+        width: 91vw;
+    }
+
+    .input-boxc input {
+        width: 30vw;
+        /* margin-right: 40px; */
+    }
+
+    .input-groupc {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+
     /* -------------------------Footer------------------------------------------------------- */
     .rodape {
         padding-top: 0;
@@ -976,7 +1021,7 @@ nav {
         margin: 0;
         padding: 0;
         height: 100%;
-        
+
     }
 
     .redes-icones a {
@@ -1029,90 +1074,60 @@ nav {
         padding: 10px;
     }
 
-    #credito{
+    #credito {
         margin: 0;
     }
 
     @media screen and (min-width:960px) {
 
         /* -----------Main/Home */
-        .cartao-parceiros{
+        .cartao-parceiros {
             max-width: 350px;
             height: 325px;
         }
-        
-        .cartao-parceiros img{
+
+        .cartao-parceiros img {
             height: 150px;
         }
-        
-        .cartao-parceiros h4{
+
+        .cartao-parceiros h4 {
             font-size: 1.1em;
         }
-        
-        .info-parceiros{
+
+        .info-parceiros {
             font-size: 1.1em;
             padding: 0 6%;
         }
 
         /* ----------------cadastro contratante---------------------- */
-        
-        
-        .containerc{
-            display: flex;
-            gap: 20px;
-        }
-        
-        .contratoc form {
-            max-width: 930px;
-        }
-        
-        .input-groupc {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        
-        #nome {
-            width: 930px;
-            align-items: center;
-        }
-        
-        #rua {
-            width: 930px;
-            align-items: center;
-        }
-        
-        
-        .input-boxc input {
-            width: 400px;
-            align-items: center;
-        }
-        
-        }
+
+
+
+    }
 }
 
 @media screen and (min-width:960px) {
 
     /* -----------Main/Home */
 
-    .cartao-parceiros{
+    .cartao-parceiros {
         max-width: 250px;
         height: 330px;
     }
 
-    .info-parceiros{
+    .info-parceiros {
         font-size: 1em;
     }
 
-    .cartao-parceiros h4{
+    .cartao-parceiros h4 {
         font-size: 1em;
     }
 
-    #baixe-app{
+    #baixe-app {
         margin: 0;
     }
 
-    #baixe-app h2{
+    #baixe-app h2 {
         margin: 0;
     }
 
