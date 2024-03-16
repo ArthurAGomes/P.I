@@ -21,7 +21,6 @@ button {
     border-radius: 10px;
     padding: 10px 15px;
     font-size: 1.1em;
-
 }
 
 main {
@@ -432,7 +431,9 @@ nav {
     text-align: center;
 }
 
-
+.vejaMais {
+    cursor: pointer;
+}
 
 /* -----------------------CONTRATO------------------------------------------------------ */
 
@@ -451,19 +452,23 @@ nav {
     display: flex;
     align-items: center;
 }
+
 .contato-label {
     display: block;
     font-weight: 700;
 }
-#textareaContato{
+
+#textareaContato {
     border-radius: 10px;
     width: 240px;
 }
+
 .contato-input {
     border-radius: 10px;
     height: 30px;
     width: 240px;
-    
+    border: 1px solid;
+
 }
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
@@ -737,25 +742,18 @@ nav {
 }
 
 /* --------------------------------------------------------------------Informação------------------------------------- */
-.informacao-conteudo h1 h2 {
-    text-align: center;
+
+.painelDuvidas {
+    display: none;
+    cursor: pointer;
+    margin: auto 10px;
 }
 
-.informacao-conteudo video,
-img {
-    margin: 0 auto;
-    border-radius: 5px;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.informacao-conteudo ul {
-    padding-left: 20px;
-}
-
-.informacao-conteudo li {
-    margin-bottom: 10px;
+.accordionDuvidas {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 3vmax;
+    margin: 10px 10px;
 }
 
 /* ------------------------------------------------------------------------Footer --------------------------------------------------*/
