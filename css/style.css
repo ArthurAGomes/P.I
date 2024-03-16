@@ -432,22 +432,39 @@ nav {
     text-align: center;
 }
 
+
+
 /* -----------------------CONTRATO------------------------------------------------------ */
 
 /* -------------------------Contato------------------------------ */
-.contatos-info{
+.contatos-info {
     margin: 0 0;
 }
+
 .contato figure {
     width: 30px;
     margin: 0px 0;
     padding: 0 10px;
 }
+
 .contato {
     display: flex;
     align-items: center;
 }
-
+.contato-label {
+    display: block;
+    font-weight: 700;
+}
+#textareaContato{
+    border-radius: 10px;
+    width: 240px;
+}
+.contato-input {
+    border-radius: 10px;
+    height: 30px;
+    width: 240px;
+    
+}
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
 #titulo-cadastro-pedreiro {
