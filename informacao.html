@@ -5,36 +5,92 @@
     <meta charset="UTF-8">
     <title>Informação</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<header>
+    <nav id="menu-principal">
+        <div class="menu-icon" id="menu-hamburguer" onclick="abrirNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <a href="sobre.html" class="menu-itens">Sobre Nós</a>
+        <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
+
+        <div id="meu-logo">
+            <a href="#"><img id="logo" src="img/brick4.png" alt="logo"></a>
+            <div id="nome-logo">Portal Pedreiro</div>
+        </div>
+
+        <a href="contato.html" class="menu-itens">Contato</a>
+        <a href="#" class="menu-itens">Minha Conta</a>
+
+        <div id="avatar-minha-conta"></div>
+    </nav>
+    <div id="menuLateral" class="menu-lateral">
+        <h3>Portal Pedreiro</h3>
+        <a href="sobre.html">Sobre Nós</a>
+        <a href="seja-parceiro.html">Parceiros</a>
+        <a href="contato.html">Contato</a>
+        <a href="#">Dúvidas</a>
+        <a href="#">Minha Conta</a>
+    </div>
+</header>
 
 <body>
     <main class="informacao-conteudo">
-        <h1>Dúvidas</h1>
-        <h2>O portal pedreiro realiza reformas em casa?</h2>
-        <p>Não, as reformas são realizadas por profissionais cadastrados no portal de pedreiro, sendo de
-            responsabilidade de ambas as partes os termos para a realização do serviço, valores e tempo especulado.</p>
-        <h2>Como faço para agendar uma visita pelo PP?</h2>
-        <p>É possível agendar uma visita na aba de contratante, inserindo o CEP e depois no ícone de buscar. Escolhendo
-            o profissional, basta apertar em "achei" e ele entrará em contato.</p>
-        <h2>Quais as formas de pagamentos oferecidos?</h2>
-        <p>As formas de pagamentos oferecidos são débito/Pix, dinheiro e cartão de crédito. Condicionado à opção com que
-            o profissional trabalha.</p>
-        <h2>Qual o prazo para o término da obra?</h2>
-        <p>O prazo será estabelecido de comum acordo entre o profissional e o contratante, podendo firmar isso em um
-            contrato ou não.</p>
+        <div class="duvidas">
+            <h1 class="">Dúvidas</h1>
+            <hr class="barras">
+        <div class="accordions">
+            <div class="accordionDuvidas">
+                    <span class="spanDuvidas">O Portal Pedreiro realizar reformas em casa?</span>
+                </div>
+                <div class="painelDuvidas">
+                    <p>Não, as reformas são realizadas por profissionais cadastrados no Portal Pedreiro, sendo de resposabilidades de ambas as partes os termos para a realização do serviço, valores e tempo especulado.</p>
+                </div>
+            <div class="accordionDuvidas">
+                     <span class="spanDuvidas">Quais as formas de pagamentos oferecidas?</span>
+                </div>
+                <div class="painelDuvidas">
+                    <p>As formas de pagamentos são: cartão, dinheiro e PIX
+                        ou conforme a disponibilidade do profissional</p>
+                </div>
+            <div class="accordionDuvidas">
+                     <span class="spanDuvidas">Como faço para agendar uma visita com
+                        o profissional?</span>
+                </div>
+                <div class="painelDuvidas">
+                    <p>A visita pode ser agendada pelo Portal Pedreiro na aba do chat ou mandando mensagem para o próprio contato do profissional</p>
+                </div>
+            <div class="accordionDuvidas">
+                     <span class="spanDuvidas">Qual o prazo para o término da obra?</span>
+                </div>
+                <div class="painelDuvidas">
+                    <p>O prazo será estabelecido de comum acordo entre o profissional e o contratante, podendo
+                        firmar isso em um
+                        contrato ou não.</p>
+                </div>
+        </div>
+       </div>
+        </div>
         <h1>Informações</h1>
         <h2>Benefícios para você:</h2>
         <ul>
-            <li>Qualidade Garantida: Conte com pedreiros experientes e comprometidos com a entrega de resultados de alta
+            <li>Qualidade Garantida: Conte com pedreiros experientes e comprometidos com a entrega de resultados
+                de alta
                 qualidade.</li>
-            <li>Economia de Tempo e Dinheiro: Evite surpresas desagradáveis, planeje seu orçamento com precisão e
+            <li>Economia de Tempo e Dinheiro: Evite surpresas desagradáveis, planeje seu orçamento com precisão
+                e
                 economize
                 tempo na busca pelo profissional ideal.</li>
-            <li> Seus Sonhos: De pequenas reformas a grandes construções, tenha a certeza de que seus projetos serão
+            <li> Seus Sonhos: De pequenas reformas a grandes construções, tenha a certeza de que seus projetos
+                serão
                 realizados
                 por especialistas comprometidos.</li>
-            <li>Experiência Sem Estresse: Desfrute de uma experiência tranquila e sem complicações, com a garantia de
+            <li>Experiência Sem Estresse: Desfrute de uma experiência tranquila e sem complicações, com a
+                garantia de
                 que o
                 profissional escolhido é confiável e qualificado.</li>
         </ul>
@@ -88,7 +144,7 @@
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
                             <li><a href="sobre.html"">Sobre nós</a></li>
-                            <li><a href="informacao.html">Informações</a></li>
+                            <li><a href=" informacao.html">Informações</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
                             <li><a href="contratos.html">Contrato</a></li>
                         </div>

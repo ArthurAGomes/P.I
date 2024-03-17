@@ -21,7 +21,6 @@ button {
     border-radius: 10px;
     padding: 10px 15px;
     font-size: 1.1em;
-
 }
 
 main {
@@ -229,8 +228,10 @@ nav {
     border-radius: 10px;
     padding: 10px 0;
 }
- 
 
+#baixe-app h2 {
+    margin: 0;
+}
 
 
 #contratante {
@@ -417,32 +418,70 @@ nav {
     background-color: #3df267;
 
 }
+
 /* SobreNos ------------------------------------------------------------------------------*/
 
 .sobreNos img {
     width: 100%;
     border-radius: 10px;
 }
-#text_sobreNos{
+
+#text_sobreNos {
     display: none;
     overflow: hidden;
 }
-.sobreNos-conteudo{
+
+.sobreNos-conteudo {
     margin: 10px 10px;
 }
-.titulos-sobreNos{
-    background-color: #3d3b3bef ;
+
+.titulos-sobreNos {
+    background-color: #3d3b3bef;
     border-radius: 10px;
     padding: 10px 10px;
     color: white;
     text-align: center;
 }
 
+.vejaMais {
+    cursor: pointer;
+}
+
 /* -----------------------CONTRATO------------------------------------------------------ */
 
+/* -------------------------Contato------------------------------ */
+.contatos-info {
+    margin: 0 0;
+}
 
+.contato figure {
+    width: 30px;
+    margin: 0px 0;
+    padding: 0 10px;
+}
 
+.contato {
+    display: flex;
+    align-items: center;
+}
 
+.contato-label {
+    display: block;
+    font-weight: 700;
+}
+
+#textareaContato {
+    border-radius: 10px;
+    width: 240px;
+}
+
+.contato-input {
+    border-radius: 10px;
+    height: 30px;
+    width: 240px;
+    border: 1px solid;
+
+}
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
 #titulo-cadastro-pedreiro {
@@ -715,25 +754,18 @@ nav {
 }
 
 /* --------------------------------------------------------------------Informação------------------------------------- */
-.informacao-conteudo h1 h2 {
-    text-align: center;
+
+.painelDuvidas {
+    display: none;
+    cursor: pointer;
+    margin: auto 10px;
 }
 
-.informacao-conteudo video,
-img {
-    margin: 0 auto;
-    border-radius: 5px;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.informacao-conteudo ul {
-    padding-left: 20px;
-}
-
-.informacao-conteudo li {
-    margin-bottom: 10px;
+.accordionDuvidas {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 3vmax;
+    margin: 10px 10px;
 }
 
 /* ------------------------------------------------------------------------Footer --------------------------------------------------*/
@@ -967,11 +999,11 @@ img {
         padding: 1px 0;
     }
 
-    
-    
+
+
     /* -----------cadastro contratante---------------- */
-    .contratoc form{  
-         max-width: 100%;
+    .contratoc form {
+        max-width: 100%;
     }
 
     /* .containerc{
@@ -980,7 +1012,7 @@ img {
 }
 
 @media screen and (min-width:900px) {
-    
+
     /* -------------------------Footer------------------------------------------------------- */
     .rodape {
         padding-top: 0;
@@ -1078,69 +1110,70 @@ img {
     @media screen and (min-width:960px) {
 
         /* -----------Main/Home */
-        .cartao-parceiros{
+        .cartao-parceiros {
             max-width: 350px;
             height: 325px;
         }
-        
-        .cartao-parceiros img{
+
+        .cartao-parceiros img {
             height: 150px;
         }
-        
-        .cartao-parceiros h4{
+
+        .cartao-parceiros h4 {
             font-size: 1.1em;
         }
-        
-        .info-parceiros{
+
+        .info-parceiros {
             font-size: 1.1em;
             padding: 0 6%;
         }
 
         /* ----------------cadastro contratante---------------------- */
-        
-        
-        .containerc{
+
+
+        .containerc {
             display: flex;
             gap: 20px;
         }
-        
+
         .contratoc form {
             max-width: 930px;
         }
-        
+
         .input-groupc {
             display: flex;
             flex-wrap: wrap;
         }
-        
-        
+
+
         #nome {
             width: 930px;
             align-items: center;
         }
-        
+
         #rua {
             width: 930px;
             align-items: center;
         }
-        
-        
+
+
         .input-boxc input {
             width: 400px;
             align-items: center;
         }
-        
-       
-}
 
- /* -----------Main/Home */
 
-    .cartao-parceiros{
+    }
+
+    /* -----------Main/Home */
+
+    .cartao-parceiros {
         max-width: 250px;
         height: 330px;
     }
 
-    #baixe-app{
+    #baixe-app {
+        margin: 10px;
         padding: 1%;
         border-radius: 10px;
     }
@@ -1149,62 +1182,73 @@ img {
         margin: 0 0 5px 0;
     } */
 
-    .info-parceiros{
+    .info-parceiros {
         font-size: 1em;
     }
 
-    .cartao-parceiros h4{
+    .cartao-parceiros h4 {
         font-size: 1em;
     }
 
-/*----------- Sobre Nos---------------*/
-.sobreNos-conteudo{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    #baixe-app {
+        margin: 0;
+    }
+
+    #baixe-app h2 {
+        margin: 0;
+    }
+
+    /*----------- Sobre Nos---------------*/
+    .sobreNos-conteudo {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .sobre-conteudo {
+        width: 30%;
+
+    }
+
+    .titulos-sobreNos:hover {
+        /* background-color: #000000; */
+        box-shadow: #4d4b4b 1px 1px 1px 1px;
+    }
+
+    .img-lado {
+        max-width: 300px;
+    }
+
+    #valores-img {
+        margin: 65% 0;
+    }
 }
 
-.sobre-conteudo{
-    width: 30%;
-    
-}
-.titulos-sobreNos:hover{
-    /* background-color: #000000; */
-    box-shadow: #4d4b4b 1px 1px 1px 1px;
-}
-.img-lado{
-max-width: 300px;
-}
-#valores-img{
-    margin: 65% 0;
-}
-}
 @media screen and (min-width:1000px) {
- 
+
     #nome,
     #rua {
         width: 800px;
     }
- 
+
     .input-boxc input {
         width: 350px;
         /* margin-right: 40px; */
     }
- 
+
     .input-groupc {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
- 
+
     }
- 
-    form{
+
+    form {
         width: 800px;
     }
- 
-    .continue-buttonc button{
+
+    .continue-buttonc button {
         cursor: pointer;
     }
 }
-
