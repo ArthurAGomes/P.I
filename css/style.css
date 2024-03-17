@@ -205,6 +205,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
 
 .categorias-home-escolha {
@@ -224,14 +225,12 @@ nav {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #3d3b3b59;
+    background-color: #F29D30;
     border-radius: 10px;
     padding: 10px 0;
 }
  
-#baixe-app h2{
-    margin: 0;
-}
+
 
 
 #contratante {
@@ -243,14 +242,24 @@ nav {
 }
 
 #baixe-app {
-    margin: 30px auto;
+    /* margin: 10px auto; */
+    margin: 20px;
     width: 100%;
     /* max-width: 500px; */
     text-align: center;
+    background-color: #3d3b3b59;
+    border-radius: 10px;
+    padding: 10px 0;
 }
 
 #baixe-app button {
     background: #F2182B;
+}
+
+#baixe-app h2{
+    margin: 0 0 15px 0;
+    padding: 0 10px;
+    font-size: 1.2em;
 }
 
 #login-home {
@@ -258,7 +267,7 @@ nav {
     width: 100%;
     max-width: 500px;
     text-align: center;
-    margin: 20px auto;
+    margin: 10px auto;
     overflow: hidden;
 }
 
@@ -275,17 +284,18 @@ nav {
     width: 90%;
     max-width: 700px;
     text-indent: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 1.1em;
     margin-top: 10px;
 }
 
-.conteudo-login-campos label {
+.conteudo-login-campos h2 {
     font-size: 1.7em;
     color: white;
     font-weight: bold;
     text-shadow: #3d3b3b 2px 2px 2px;
-
+    text-transform: uppercase;
+    margin: 0;
 }
 
 .login-extra {
@@ -1016,7 +1026,6 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* font-size: 1em; */
     }
 
     .redes-icones a img {
@@ -1130,15 +1139,15 @@ img {
         max-width: 250px;
         height: 330px;
     }
+
     #baixe-app{
-        margin: 10px;
         padding: 1%;
         border-radius: 10px;
     }
  
-    #baixe-app h2{
-        margin: 0;
-    }
+    /* #baixe-app h2{
+        margin: 0 0 5px 0;
+    } */
 
     .info-parceiros{
         font-size: 1em;
@@ -1148,13 +1157,6 @@ img {
         font-size: 1em;
     }
 
-    #baixe-app{
-        margin: 0;
-    }
-
-    #baixe-app h2{
-        margin: 0;
-    }
 /*----------- Sobre Nos---------------*/
 .sobreNos-conteudo{
     display: flex;
