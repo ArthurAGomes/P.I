@@ -6,7 +6,7 @@ body {
     font-family: 'Noto Sans';
     font-size: 1.1em;
     width: 100%;
-    height: 750px;
+    /* height: 750px; */
     margin: 0px;
     font-family: "Noto Sans";
     font-weight: 300;
@@ -768,6 +768,52 @@ nav {
     margin: 10px 10px;
 }
 
+/* ------ Seja Parceiro -------------------------------------- */
+
+#main-seja-parceiro{
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+#main-seja-parceiro h1{
+    margin: 0 10px;
+}
+#informativo-seja-parceiro{
+    background-color: #3d3b3b;
+    color: white;
+    padding: 5%;
+    /* width: 50%; */
+    margin: 2% 0;
+    font-size: 1.1em;
+}
+
+
+#conteudo-form-parceiros{
+    padding: 2%;
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+
+#conteudo-form-parceiros input, #conteudo-form-parceiros button{
+    display: block;
+}
+
+#conteudo-form-parceiros input{
+    width: 100%;
+    padding: 0;
+    border: none;
+    line-height: 40px;
+    text-indent: 10px;
+    font-size: 1.1em;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+
+#conteudo-form-parceiros label{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
 /* ------------------------------------------------------------------------Footer --------------------------------------------------*/
 
 .rodape {
@@ -1178,9 +1224,9 @@ nav {
         border-radius: 10px;
     }
  
-    /* #baixe-app h2{
+    #baixe-app h2{
         margin: 0 0 5px 0;
-    } */
+    }
 
     .info-parceiros {
         font-size: 1em;
@@ -1188,14 +1234,6 @@ nav {
 
     .cartao-parceiros h4 {
         font-size: 1em;
-    }
-
-    #baixe-app {
-        margin: 0;
-    }
-
-    #baixe-app h2 {
-        margin: 0;
     }
 
     /*----------- Sobre Nos---------------*/

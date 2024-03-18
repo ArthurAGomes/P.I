@@ -21,32 +21,38 @@
                 <div class="bar3"></div>
             </div>
            
-            <a href="#" class="menu-itens">Sobre Nós</a>
-            <a href="#" class="menu-itens">Parceiros</a>
+            <a href="sobre.html" class="menu-itens">Sobre Nós</a>
+            <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
             
-            <img id="logo" src="#" alt="logo"> 
+            <div id="meu-logo">
+                <a href="#"><img id="logo" src="img/brick4.png" alt="logo"></a>
+                <div id="nome-logo">Portal Pedreiro</div>
+            </div>
             
-            <a href="#" class="menu-itens">Contato</a>
+            <a href="contato.html" class="menu-itens">Contato</a>
             <a href="#" class="menu-itens">Minha Conta</a>
             
             <div id="avatar-minha-conta"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
-            <a href="#">Sobre Nós</a>
-            <a href="#">Parceiros</a>
-            <a href="#">Contato</a>
-            <a href="#">Minha Conta</a>
-            <a href="#">Minha Conta</a>
+            <h3>Portal Pedreiro</h3>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="seja-parceiro.html">Parceiros</a>
+            <a href="contato.html">Contato</a>
+            <a href="#">Dúvidas</a>
             <a href="#">Minha Conta</a>
         </div>
     </header>
 
-    <main>
+    <main id="main-seja-parceiro">
         <h1>Seja um Parceiro PP</h1>
-        <p>O PP atua como um intermediário entre prestadores de serviços e contratantes, mas além disso contamos com a parceiria de empresas que veem no PP uma oportunidade de crescer e também fazer parte da união desses polos. Sendo assim, o PP está sempre aberto a novas parceirias que possam beneficiar nossos usuários e parceiros.</p>
-        <p>Entre em contato para saber mais sobre a parceiria e se torne um Parceiro PP</p>
+        <hr class="barras">
+        <section id="informativo-seja-parceiro">
+            <p>O PP atua como um intermediário entre prestadores de serviços e contratantes, mas além disso contamos com a parceiria de empresas que veem no PP uma oportunidade de crescer e também fazer parte da união desses polos. Sendo assim, o PP está sempre aberto a novas parceirias que possam beneficiar nossos usuários e parceiros.</p>
+            <p>Entre em contato para saber mais sobre a parceiria e se torne um Parceiro PP</p>
+        </section>
         <div id="conteudo-form-parceiros">
-            <form action="" >
+            
                 <label for="nome-empresa">Nome da Empresa</label>
                 <input type="text" id="nome-empresa" name="nome-empresa" placeholder="Digite o nome da Empresa" required>
 
@@ -63,7 +69,7 @@
                 <input type="textarea" id="msg-empresa" name="msg-empresa" placeholder="Deixe uma mensagem" required>
 
                 <button id="botao-enviar-parceria">Enviar</button>
-            </form>
+            
         </div>
 
     </main>
@@ -75,7 +81,7 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Para você</h3>
                         <div class="panel">
-                            <li><a href="login.html">Entrar</a></li>
+                            <li><a href="#" style="color: red;">Entrar</a></li>
                             <li><a href="cadastrope.html">Cadastro P</a></li>
                             <li><a href="cadastroco.html">Cadastro C</a></li>
                             <li><a href="seja-parceiro.html">Parceiros</a></li>
@@ -88,9 +94,9 @@
                         <h3 class="titulos-rodape accordion">Empresa</h3>
                         <div class="panel">
                             <li><a href="contato.html">Contato</a></li>
-                            <li><a href="#">Baixe o App</a></li>
-                            <li><a href="informacao.html">Dúvidas</a></li>
-                            <li><a href="Ajuda.html">Ajuda</a></li>
+                            <li><a href="#" style="color: red;">Baixe o App</a></li>
+                            <li><a href="duvidas.html" style="color: orange;">Dúvidas</a></li>
+                            <li><a href="Ajuda.html" style="color: orange;">Ajuda</a></li>
                         </div>
                     </ul>
                     <hr>
@@ -99,8 +105,8 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
-                            <li><a href="sobre.html"">Sobre nós</a></li>
-                            <li><a href="informacao.html">Informações</a></li>
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="duvidas.html"  style="color: orange;">Informações</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
                             <li><a href="contratos.html">Contrato</a></li>
                         </div>
