@@ -450,19 +450,32 @@ nav {
 /* -----------------------CONTRATO------------------------------------------------------ */
 
 /* -------------------------Contato------------------------------ */
-.contatos-info {
+.contato.main{
+  margin: 20px 20px;  
+  
+}
+
+.asside-contato{
+    margin: 10px 10px;
+}
+.asside-contato img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.contatos-info{
+    width: 100%;
+}
+.contato figure{
     margin: 0 0;
 }
-
-.contato figure {
+.contato img{
     width: 30px;
-    margin: 0px 0;
-    padding: 0 10px;
 }
-
 .contato {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .contato-label {
@@ -472,13 +485,13 @@ nav {
 
 #textareaContato {
     border-radius: 10px;
-    width: 240px;
+    width: 100%;
 }
 
 .contato-input {
     border-radius: 10px;
     height: 30px;
-    width: 240px;
+    width: 100%;
     border: 1px solid;
 
 }
@@ -1313,6 +1326,10 @@ nav {
 
     #valores-img {
         margin: 65% 0;
+    }
+    /* --------------Contato------------- */
+    .conteudo-contato{
+        display: flex;
     }
 }
 
