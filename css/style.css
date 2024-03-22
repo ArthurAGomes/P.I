@@ -450,8 +450,8 @@ nav {
 /* -----------------------CONTRATO------------------------------------------------------ */
 
 /* -------------------------Contato------------------------------ */
-.contato.main{
-  margin: 20px 20px;  
+.contato-main{
+  margin: auto 10px;  
   
 }
 
@@ -494,6 +494,9 @@ nav {
     width: 100%;
     border: 1px solid;
 
+}
+#button-contato{
+    text-align: end;
 }
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
@@ -1338,9 +1341,43 @@ nav {
         margin: 65% 0;
     }
     /* --------------Contato------------- */
+    .contato-main{
+        margin:auto 10px;
+    }
     .conteudo-contato{
         display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
+    
+    .contato p{
+        font-size: 1.1em;
+    }
+    .form-contato{
+        margin: -10px 10px;
+    }
+    .asside-contato{
+       width: 80%; 
+    }
+    #h3-contato{
+        font-weight: 600;
+        font-size: 1.3em;
+        background-color: #3d3b3b;
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+    }
+    #btn-contato{
+        margin: 10px 10px;
+    }
+    #button-contato{
+        text-align: end;
+    }
+    .contato img{
+        width: 35px;
+    }
+
+
 }
 
 @media screen and (min-width:1000px) {
