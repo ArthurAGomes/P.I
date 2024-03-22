@@ -849,6 +849,16 @@ nav {
     background-color: #2cb317;
 }
 
+/* ----------------- Area-pedreiro */
+
+#info-perfil-pedreiro{
+    width: 100%;
+}
+
+#info-perfil-pedreiro input{
+    width: 100%;
+}
+
 /* ------------------------------------------------------------------------Footer --------------------------------------------------*/
 
 .rodape {
