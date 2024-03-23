@@ -672,7 +672,8 @@ nav {
     border-radius: 5px;
 }
 
-.input-boxc {
+.input-boxc, .cadastroc p {
+    /* font-weight: bold; */
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -999,12 +1000,23 @@ nav {
         /* margin-right: 40px; */
     }
 
+    .input-checkc{
+        gap: 8vw;
+        margin-left: 2%;
+    }
+
     .input-groupc {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px 3vw;
+        gap: 0px 3vw;
         /* justify-content: space-between; */
 
+    }
+
+    .containerc1{
+        display: flex;
+        /* justify-content: space-around; */
+        /* gap: 20vw; */
     }
 
 
@@ -1422,7 +1434,7 @@ nav {
         margin-top: 1px;
         border-radius: 20px;
         width: 100%;
-        height: 600px;
+        height: 540px;
 
     }
 
@@ -1472,5 +1484,9 @@ nav {
         margin: 8px;  */
         background-color: rgba(22, 22, 22, 0.363);
         cursor: pointer;
+    }
+
+    .containerc1{
+        display: block;
     }
 }
