@@ -12,10 +12,34 @@ body {
     font-weight: 300;
     background-image: url(../img/brick-wall2.png);
 }
+h1{
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 800;
+    unicode-bidi: isolate;
+}
+
+label{
+    display: block;
+    font-weight: 800;
+    padding-bottom: 2px;
+}
+input{
+    padding: 5%;
+    margin: 2% 0;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: solid 2px;
+}
 
 button {
-
-    background-color: #F29D30;
+     background-color: #F29D30;
     color: white;
     border: 0;
     border-radius: 10px;
@@ -29,19 +53,13 @@ main {
     overflow-x: 1000;
 }
 
-.titulo-estilo {
-    /* text-shadow: #3d3b3b 2px 2px 2px; */
-    color: #000000;
-    padding: 2%;
-    text-transform: uppercase;
-    font-size: 1.3em;
-}
-
 .barras {
     border: 2px solid #3d3b3b;
     border-radius: 10px;
 
 }
+
+
 
 /*---------------------------------------------------------- Header -------------------------------------------------------*/
 header {
@@ -451,13 +469,9 @@ nav {
 
 /* -------------------------Contato------------------------------ */
 .contato-main{
-  margin: auto 10px;  
-  
+  margin: 40px 10px;  
 }
 
-.asside-contato{
-    margin: 10px 10px;
-}
 .asside-contato img{
     width: 100%;
     border-radius: 10px;
@@ -478,11 +492,6 @@ nav {
     gap: 10px;
 }
 
-.contato-label {
-    display: block;
-    font-weight: 700;
-}
-
 #textareaContato {
     border-radius: 10px;
     width: 100%;
@@ -493,11 +502,15 @@ nav {
     height: 30px;
     width: 100%;
     border: 1px solid;
+    padding-block: 0px;
+    padding-inline: 0px;
+    margin-bottom: 5px;
 
 }
 #button-contato{
     text-align: end;
 }
+
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
 #titulo-cadastro-pedreiro {
@@ -1341,23 +1354,37 @@ nav {
         margin: 65% 0;
     }
     /* --------------Contato------------- */
+    .geral-contato{
+        display: flex;
+        
+    }
+    
     .contato-main{
-        margin:auto 10px;
+        margin: 30px 10px;
     }
     .conteudo-contato{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-    }
+        width: 100%;
+        }
+
+        #textareaContato{
+            padding-block: 0px;
+            padding-inline: 0px;
+        }
+   
     
     .contato p{
         font-size: 1.1em;
     }
-    .form-contato{
-        margin: -10px 10px;
-    }
+    
     .asside-contato{
-       width: 80%; 
+       width: 90%; 
+       margin: 0px;
+    }
+    .form-contato{
+        width: 100%;
     }
     #h3-contato{
         font-weight: 600;
@@ -1366,6 +1393,7 @@ nav {
         padding: 10px;
         color: white;
         border-radius: 10px;
+        /* width: 100%; */
     }
     #btn-contato{
         margin: 10px 10px;
@@ -1377,6 +1405,9 @@ nav {
         width: 35px;
     }
 
+    #button-contato{
+        text-align: center;
+    }
 
 }
 
@@ -1399,9 +1430,9 @@ nav {
 
     }
 
-    form {
+    /* form {
         width: 800px;
-    }
+    } */
 
     .continue-buttonc button {
         cursor: pointer;
