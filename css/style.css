@@ -506,7 +506,7 @@ nav {
 }
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
-#titulo-cadastro-pedreiro {
+/* #titulo-cadastro-pedreiro {
     background-color: #f47907;
     color: white;
     border-radius: 5px;
@@ -516,8 +516,13 @@ nav {
 .cadastro-pedreiro h2 {
     border-radius: 5px;
     text-align: center;
-}
+} */
 
+.container-pe{
+    font-size: 20px;
+    max-width: 100%;
+  
+}
 .input-radiope1 {
     display: flex;
     gap: 25px;
@@ -987,8 +992,29 @@ nav {
 
 /*-------------------------------------------------------------- MediaQuery ---------------------------------------------------------------------*/
 
+
 @media screen and (min-width:550px) {
 
+    /* -------------------------------------CADASTRO PEDREIRO----------------------------------------------------------------------------------- */
+    #nome,
+    #rua {
+        width: 96vw;
+    }
+
+    .input-boxpe input {
+        width: 46vw;
+        /* margin-right: 40px; */
+    }
+
+    .input-grouppe {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 3vw;
+        /* justify-content: space-between; */
+
+    }
+
+/* ---------------------------------------cadastro contratante------------------------------ */
     #nome,
     #rua {
         width: 96vw;
