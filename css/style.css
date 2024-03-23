@@ -12,10 +12,33 @@ body {
     font-weight: 300;
     background-image: url(../img/brick-wall2.png);
 }
+h1{
+    display: block;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 800;
+    unicode-bidi: isolate;
+}
+
+label{
+    display: block;
+    font-weight: 800;
+    padding-bottom: 2px;
+}
+input{
+    margin: 2% 0;
+    font-size: 1.1em;
+    border-radius: 10px;
+    border: solid 2px;
+}
 
 button {
-
-    background-color: #F29D30;
+     background-color: #F29D30;
     color: white;
     border: 0;
     border-radius: 10px;
@@ -29,19 +52,13 @@ main {
     overflow-x: 1000;
 }
 
-.titulo-estilo {
-    /* text-shadow: #3d3b3b 2px 2px 2px; */
-    color: #000000;
-    padding: 2%;
-    text-transform: uppercase;
-    font-size: 1.3em;
-}
-
 .barras {
     border: 2px solid #3d3b3b;
     border-radius: 10px;
 
 }
+
+
 
 /*---------------------------------------------------------- Header -------------------------------------------------------*/
 header {
@@ -450,16 +467,11 @@ nav {
 /* -----------------------CONTRATO------------------------------------------------------ */
 
 /* -------------------------Contato------------------------------ */
-.contato-main {
-    margin: auto 10px;
-
+.contato-main{
+  margin: 40px 10px;  
 }
 
-.asside-contato {
-    margin: 10px 10px;
-}
-
-.asside-contato img {
+.asside-contato img{
     width: 100%;
     border-radius: 10px;
 
@@ -483,11 +495,6 @@ nav {
     gap: 10px;
 }
 
-.contato-label {
-    display: block;
-    font-weight: 700;
-}
-
 #textareaContato {
     border-radius: 10px;
     width: 100%;
@@ -498,12 +505,16 @@ nav {
     height: 30px;
     width: 100%;
     border: 1px solid;
+    padding-block: 0px;
+    padding-inline: 0px;
+    margin-bottom: 5px;
 
 }
 
 #button-contato {
     text-align: end;
 }
+
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
 #titulo-cadastro-pedreiro {
@@ -1375,26 +1386,38 @@ nav {
     }
 
     /* --------------Contato------------- */
-    .contato-main {
-        margin: auto 10px;
+    .geral-contato{
+        display: flex;
+        
+    }
+    
+    .contato-main{
+        margin: 30px 10px;
     }
 
     .conteudo-contato {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-    }
+        width: 100%;
+        }
 
-    .contato p {
+        #textareaContato{
+            padding-block: 0px;
+            padding-inline: 0px;
+        }
+   
+    
+    .contato p{
         font-size: 1.1em;
     }
-
-    .form-contato {
-        margin: -10px 10px;
+    
+    .asside-contato{
+       width: 90%; 
+       margin: 0px;
     }
-
-    .asside-contato {
-        width: 80%;
+    .form-contato{
+        width: 100%;
     }
 
     #h3-contato {
@@ -1404,6 +1427,7 @@ nav {
         padding: 10px;
         color: white;
         border-radius: 10px;
+        /* width: 100%; */
     }
 
     #btn-contato {
@@ -1418,6 +1442,9 @@ nav {
         width: 35px;
     }
 
+    #button-contato{
+        text-align: center;
+    }
 
 }
 
