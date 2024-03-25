@@ -67,6 +67,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 /* --------------------------------------------------------------Nav-lateral ----------------------------------------------*/
@@ -115,7 +116,7 @@ header {
 }
 
 nav {
-    background-color: #F29D30;
+    background-color: #3d3b3b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,10 +130,11 @@ nav {
     width: 100%;
 }
 
-#meu-logo {
+#meu-logo a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 #nome-logo {
@@ -141,9 +143,10 @@ nav {
 }
 
 #avatar-minha-conta {
-    width: 45px;
-    height: 45px;
-    background-color: white;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/avatar2.png);
+    background-size: cover;
     border-radius: 50%;
 }
 
@@ -207,17 +210,20 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 1% 2% 7% 2%;
+    padding: 2% 2% 2% 2%;
     width: 100%;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
+}
+
+#fundo-main div{
+    width: 100%;
 }
 
 
 #categorias-home {
 
     display: flex;
-    gap: 1%;
-    margin: 0;
+    margin: 10px 0;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -226,12 +232,13 @@ nav {
 
 .categorias-home-escolha {
     width: 50%;
-    max-width: 300px;
+    max-width: 250px;
     text-align: center;
     padding: 10px;
-    border-radius: 10px;
-    font-size: 1em;
-    font-weight: bold;
+    border-radius: 0px;
+    font-size: .8em;
+    font-weight: 700;
+    /* font-weight: bold; */
     /* background-color: #3d3b3b;
     height: 30px; */
 }
@@ -239,96 +246,122 @@ nav {
 #pedreiro {
     /* background-color: #F29D30; */
     color: white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     background-color: #F29D30;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
     padding: 10px 0;
 }
 
-#baixe-app h2 {
-    margin: 0;
-}
-
-
 #contratante {
-    background-color: #ccc;
+    background-color: #3d3b3b;
     color: white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
-
+    border-radius: 0px 10px 10px 0px;
 }
 
 #baixe-app {
     /* margin: 10px auto; */
-    margin: 20px;
+    /* margin: 20px; */
     width: 100%;
     /* max-width: 500px; */
     text-align: center;
-    background-color: #3d3b3b59;
+    /* background-color: #3d3b3b59; */
     border-radius: 10px;
     padding: 10px 0;
 }
 
 #baixe-app button {
-    background: #F2182B;
+    display: none;
+    background: #F1282B;
+    box-shadow:  1px 1px 12px 0px rgba(0, 0, 0, 0.617);
+}
+
+#baixe-app h1{
+    margin: 0;
 }
 
 #baixe-app h2 {
-    margin: 0 0 15px 0;
+    /* display: none; */
+    margin: 0;
     padding: 0 10px;
-    font-size: 1.2em;
+    font-size: 1em;
+    color: #3d3b3b;
+    text-shadow: none;
+    /* font-weight: 700; */
+    text-transform: none;
 }
 
 #login-home {
-
-    width: 100%;
+    /* display: none; */
+    border-radius: 10px;
+    background-color: #3d3b3b;
+    /* width: 100%; */
     max-width: 500px;
     text-align: center;
     margin: 10px auto;
     overflow: hidden;
+    border: 2px solid #F29D30;
 }
 
 .conteudo-login-campos {
-    margin: 20px 0;
+    margin: 30px 0;
     width: 100%;
 }
 
 .conteudo-login-campos input {
-    line-height: 40px;
-    background-color: white;
+    line-height: 35px;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    border: 3px solid #F29D30;
+    border: none;
+    border-bottom: 2px solid #F29D30;
     width: 90%;
-    max-width: 700px;
+    max-width: 400px;
     text-indent: 20px;
     /* text-transform: uppercase; */
-    font-size: 1.1em;
-    margin-top: 10px;
+    font-size: .8em;
+    font-weight: 700;
+    margin: 0;
+    
+}
+
+/* .conteudo-login-campos input:{
+    font-size: .9em;
+    color: #3d3b3b;
+    box-shadow: none;
+    
+} */
+
+.conteudo-login-campos input::placeholder{
+    color: #3d3b3b5c;
 }
 
 .conteudo-login-campos h2 {
-    font-size: 1.7em;
+    font-size: 1em;
     color: white;
     font-weight: bold;
     text-shadow: #3d3b3b 2px 2px 2px;
     text-transform: uppercase;
-    margin: 0;
+    margin: 20px;
 }
 
+
 .login-extra {
-    font-size: 1.3em;
+    font-size: .8em;
+    /* font-weight: 600; */
     color: white;
     text-shadow: #3d3b3b 2px 2px 2px;
-    display: block;
+    /* display: block; */
     text-decoration: none;
-    margin: 10px 0;
+    /* margin: 10px 0; */
 }
 
 #botao-entrar-login {
-    font-size: 1.1em;
+    font-size: .8em;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 
@@ -354,13 +387,16 @@ nav {
     background-size: cover;
     padding: 30px 0;
     border-radius: 10px 10px 0 0;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.819);
+    
 }
 
 #parceiro-pp-home h2 {
-    width: 100%;
+    width: 100%; 
     padding: 0 2%;
     text-align: center;
     color: white;
+    
 }
 
 .cartao-parceiros {
@@ -373,6 +409,7 @@ nav {
     background-color: #3d3b3b;
     box-shadow: 0 4px 8px 0;
     border-radius: 15px;
+    
 
 }
 
@@ -423,15 +460,19 @@ nav {
     border-radius: 10px;
 }
 
-#parceiro-banner-conteudo {
-    width: 100%;
-    margin: 0;
+#parceiros-banner-conteudo {
+    width:90%;
+    margin: 0 auto;
     padding: 0;
+}
+
+#parceiros-banner-conteudo figcaption p{
+    font-weight: 600;
 }
 
 #parceiros-banner-conteudo button {
     margin: 10px 0;
-    display: block;
+    /* display: block; */
     background-color: #3df267;
 
 }
@@ -1172,6 +1213,27 @@ nav {
         padding: 1px 0;
     }
 
+    /* ----------Home-Seja Parceiro */
+    #seja-parceiro-home figure{
+        position: relative;
+        overflow: hidden;
+        
+    }
+    
+    #seja-parceiro-home figcaption{
+        position: absolute;
+        left: 0;
+        bottom: 60px;
+        background-color: #3d3b3b7b;
+        padding:  10px 8%;
+        color: white;
+        width: 100%;
+    }
+
+    #seja-parceiro-home figcaption p, #seja-parceiro-home figcaption h2{
+        margin: 0;
+    }
+
 
     /* -------------- Página Parceiros ------------- */
 
@@ -1207,6 +1269,30 @@ nav {
 }
 
 @media screen and (min-width:900px) {
+
+/* ------------------Header/Home----------- */
+
+#fundo-main{
+    justify-content: right;
+    /* transform: scaleX(-1); */
+}
+
+#fundo-main div{
+    width: auto;
+    min-width: 300px;
+}
+
+#pedreiro, #contratante{
+    font-size: .6em;
+    font-weight: 700;
+}
+
+.conteudo-login-campos h2{
+    font-size: .8em;
+}
+
+
+
 
     /* -------------------------Footer------------------------------------------------------- */
     .rodape {
@@ -1304,25 +1390,6 @@ nav {
 
     @media screen and (min-width:960px) {
 
-        /* -----------Main/Home */
-        .cartao-parceiros {
-            max-width: 350px;
-            height: 325px;
-        }
-
-        .cartao-parceiros img {
-            height: 150px;
-        }
-
-        .cartao-parceiros h4 {
-            font-size: 1.1em;
-        }
-
-        .info-parceiros {
-            font-size: 1.1em;
-            padding: 0 6%;
-        }
-
         /* ----------------cadastro contratante----------------------
 
 
@@ -1362,6 +1429,25 @@ nav {
 
     /* -----------Main/Home */
 
+    /* -----------Main/Home */
+    /* .cartao-parceiros {
+        max-width: 350px;
+        height: 325px;
+    }
+
+    .cartao-parceiros img {
+        height: 150px;
+    }
+
+    .cartao-parceiros h4 {
+        font-size: 1.1em;
+    }
+
+    .info-parceiros {
+        font-size: 1.1em;
+        padding: 0 6%;
+    } */
+
     .cartao-parceiros {
         max-width: 250px;
         height: 330px;
@@ -1374,7 +1460,7 @@ nav {
     }
 
     #baixe-app h2 {
-        margin: 0 0 5px 0;
+        margin: 0;
     }
 
     .info-parceiros {
@@ -1388,14 +1474,14 @@ nav {
     /*----------- Sobre Nos---------------*/
     .sobreNos-conteudo {
         display: flex;
-        width: 100%;
+        gap: 10px;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
     .sobre-conteudo {
-        width: 30%;
-
+        width: 40%;
+        max-width: 500px;
     }
 
     .titulos-sobreNos:hover {
@@ -1403,13 +1489,13 @@ nav {
         box-shadow: #4d4b4b 1px 1px 1px 1px;
     }
 
-    .img-lado {
+    /* .img-lado {
         max-width: 300px;
-    }
+    } */
 
-    #valores-img {
+    /* #valores-img {
         margin: 65% 0;
-    }
+    } */
 
     /* --------------Contato------------- */
     .geral-contato{

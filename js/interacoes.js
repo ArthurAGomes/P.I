@@ -61,25 +61,64 @@ for (i = 0; i < acc.length; i++) {
 
 function escolherPedreiro(){
 
-  
 
-  document.getElementById("contratante").style.backgroundColor = "#ccc"
+  document.getElementById("contratante").style.backgroundColor = "#3d3b3b"
 
   document.getElementById("pedreiro").style.backgroundColor = "#F29D30"
 
-  document.getElementById("menu-principal").style.backgroundColor = "#F29D30"
+  document.getElementById("fundo-main").style.backgroundImage = "url(img/home-pedreiro3.jfif)"
 
-  document.getElementById("fundo-main").style.backgroundImage = "url(../img/home-pedreiro3.jfif)"
+  document.getElementById("login-home").style.borderColor = "#F29D30"
+
+  document.getElementById("senha-login").style.borderColor = "#F29D30"
+
+  document.getElementById("cpf-login").style.borderColor = "#F29D30"
+
+  document.getElementById("botao-entrar-login").style.backgroundColor = "#F29D30"
   
 }
 
 function escolherContratante(){
-  document.getElementById("pedreiro").style.backgroundColor = "#ccc"
+
+  let formContratante = ""
+
+  document.getElementById("pedreiro").style.backgroundColor = "#3d3b3b"
 
   document.getElementById("contratante").style.backgroundColor = "#0CA4F2"
 
-  document.getElementById("menu-principal").style.backgroundColor = "#0CA4F2"
+  document.getElementById("fundo-main").style.backgroundImage = "url(img/home-contratante-1.png)"
 
-  document.getElementById("fundo-main").style.backgroundImage = url("../img/home-contratante-1.png")
+  document.getElementById("login-home").style.borderColor = "#0CA4F2"
+
+  document.getElementById("senha-login").style.borderColor = "#0CA4F2"
+
+  document.getElementById("cpf-login").style.borderColor = "#0CA4F2"
+
+  document.getElementById("botao-entrar-login").style.backgroundColor = "#0CA4F2"
+
+
+formContratante += ''
 
 }
+
+function acessarConta(){
+  document.getElementById("login-home").style.display = "block"
+}
+
+const cpfLogin = document.getElementById("cpf-login")
+
+cpfLogin.addEventListener("keypress", function(){
+
+  let cpfFormatado = cpfLogin.value.length
+
+  if (cpfLogin === String){
+    cpfLogin = "";
+  }
+
+  if (cpfFormatado === 3 || cpfFormatado === 7){
+    cpfLogin.value += ".";
+  } else if (cpfFormatado === 11){
+    cpfLogin.value += "-";
+  }
+
+})

@@ -9,7 +9,36 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav id="menu-principal">
+            <div class="menu-icon" id="menu-hamburguer" onclick="abrirNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+           
+            <a href="sobre.html" class="menu-itens">Sobre Nós</a>
+            <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
+            
+            <div id="meu-logo">
+                <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
+                <div id="nome-logo">Portal Pedreiro</div></a>
+            </div>
+            
+            <a href="contato.html" class="menu-itens">Contato</a>
+            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
+            
+            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
+        </nav>
+        <div id="menuLateral" class="menu-lateral">
+            <h3>Portal Pedreiro</h3>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="seja-parceiro.html">Parceiros</a>
+            <a href="contato.html">Contato</a>
+            <a href="#">Dúvidas</a>
+            <a href="#">Minha Conta</a>
+        </div>
+    </header>
 
     <main class="cadastro-pedreiro">
         <h1 id="titulo-cadastro-pedreiro">Pedreiro</h1>

@@ -25,14 +25,14 @@
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
             
             <div id="meu-logo">
-                <a href="#"><img id="logo" src="img/brick4.png" alt="logo"></a>
-                <div id="nome-logo">Portal Pedreiro</div>
+                <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
+                <div id="nome-logo">Portal Pedreiro</div></a>
             </div>
             
             <a href="contato.html" class="menu-itens">Contato</a>
-            <a href="#" class="menu-itens">Minha Conta</a>
+            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
             
-            <div id="avatar-minha-conta"></div>
+            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
@@ -44,43 +44,63 @@
         </div>
     </header>
 
+    
+
     <main id="home-main">
+        <section id="baixe-app">
+            <div>
+                <!-- <h1>Portal Pedreiro</h1><hr class="barras"> -->
+                <h2 class="subtitulos-sombra">Aqui você constrói oportunidades com apenas um clique!</h2>
+                <button>Baixe o Portal Pedreiro</button>
+            </div>
+        </section>
 
         <div id="fundo-main">
-            <section id="baixe-app">
-                <div>
-                    <h2 class="subtitulos-sombra">Seja bem vindo ao PP! Aqui você constrói oportunidades com apenas um clique!</h2>
-                    <button>Baixe o APP do PP</button>
-                </div>
-            </section>
-
-            <section id="categorias-home">
-                <!-- <div class="categorias-home-escolha"></div> -->
-                <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
-                <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha" disable>Contratante</button>
-                <!-- <div class="categorias-home-escolha"></div> -->
-            </section>
     
-            <article id="login-home">
-                <div id="conteudo-login">
-                    <div  class="conteudo-login-campos" id="conteudo-cpf">
-                        <h2>Acessar sua conta</h2>
-                        <input type="number" required placeholder="Digite seu CPF">
+            <div>
+                <section id="categorias-home">
+                    <!-- <div class="categorias-home-escolha"></div> -->
+                    <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
+                    <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha" disable>Contratante</button>
+                    <!-- <div class="categorias-home-escolha"></div> -->
+                </section>
+                <article id="login-home">
+                    <div id="conteudo-login">
+
+                        <div  class="conteudo-login-campos" id="conteudo-cpf">
+
+                            <h2>Acessar sua conta</h2>
+                            <input type="text" required placeholder="Digite seu CPF" id="cpf-login" maxlength="14" autocomplete="off" minlength="14">
+
+                        </div>
+
+                        <div  class="conteudo-login-campos" id="senha">
+
+                            <input type="password" required placeholder="Digite sua senha" id="senha-login" autocomplete="off" maxlength="15" minlength="8">
+                           
+                            <div id="conteudo-login-extra" >
+                                <a href="#" class="login-extra">Esqueci minha senha!</a>
+                                <a href="#" class="login-extra">Cadastre-se!</a>
+                            </div>
+
+                        </div>
+                        <button id="botao-entrar-login">Entrar</button>
                     </div>
-                    <div  class="conteudo-login-campos" id="senha">
-                        <input type="password" required placeholder="Digite sua senha">
-                    </div>
-                    <button id="botao-entrar-login">Entrar</button>
-                    <a href="#" class="login-extra">Esqueci minha senha!</a>
-                    <a href="#" class="login-extra">Cadastre-se!</a>
-                </div>
-            </article>
+                </article>
+            </div>
+            <!--  -->
         </div>
 
         <article id="seja-parceiro-home">
             <figure id="parceiros-banner-conteudo">
-                <img src="img/parceiros.png" alt="">
-                <figcaption>Faça parte do PP como um dos nosso parceiros! <br>A nossa equipe está pronta para encarar novos desafios e alçar novos voos com parceiros confiáveis<button>Seja um Parceiro PP</button></figcaption>
+                
+                <img src="img/parceiros2.png" alt="Imagem de Parceiros">
+                <figcaption>
+                    <h2>Seja Parceiro</h2>
+                    <p>Faça parte do PP como um dos nosso parceiros!</p> 
+                    <p>A nossa equipe está pronta para encarar novos desafios e alçar novos voos com parceiros confiáveis</p>
+                    <button>Seja um Parceiro Portal Pedreiro</button>
+                </figcaption>
             </figure>
         </article>
 

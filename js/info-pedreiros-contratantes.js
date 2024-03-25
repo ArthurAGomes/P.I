@@ -2,7 +2,7 @@ let pedreiros = [
     {
         nome: "Joaquim Barbosa",
         cpf: 46687990945,
-        senha: 72485689,
+        senha: document.getElementById("senha").value, //https://emn178.github.io/online-tools/sha256.html
         cep: "02856030",
         pagamento: "Pix, Dinheiro",
         dias: "Sabado e/ou Domingo",
