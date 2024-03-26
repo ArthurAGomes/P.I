@@ -50,6 +50,18 @@
             <div class="fotoco">
 
                 <form action="#" method="post" id="formco">
+                    <div class="input-radioc">
+
+                        <div>
+                            <input type="radio" id="pf" name="pessoa" checked>
+                            <label for="pf">Pessoa Fisica</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="pj" name="pessoa">
+                            <label for="pj">Pessoa Juridica</label>
+                        </div>
+                    </div>
+
 
                     <div class="input-boxc">
                         <label for="nome">Nome / Nome social</label>
@@ -60,15 +72,15 @@
 
                         <div class="input-boxc">
                             <label for="senha">Senha</label>
-                            <input required type="password" id="senha" name="senha">
+                            <input required type="password" id="password" name="senha">
                         </div>
 
                         <div class="input-boxc">
                             <label for="cpf">CPF/CNPJ</label>
-                            <input required type="tel" id="cpf" name="cpf">
+                            <input required type="text" id="cpf" name="cpf" autocomplete="off" onkeyup="mascara_cpf(event)">
                         </div>
                     </div>
-                    <p>Gênero</p>
+                    <p class="paragrafo_cadastro">Gênero</p>
 
                     <div class="containerc">
                         <div class="input-radioc">
@@ -118,7 +130,7 @@
                         </div>
                     </div>
 
-                    <p>Adicionar Fotos</p>
+                    <p  class="paragrafo_cadastro">Adicionar Fotos</p>
                     <div class="containerc1">
                         <div id="ftoc">
 

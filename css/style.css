@@ -25,13 +25,17 @@ h1{
     unicode-bidi: isolate;
 }
 
-label{
+input:focus{
+    outline: none;
+}
+
+label, .paragrafo_cadastro{
     display: block;
     font-weight: 800;
     padding-bottom: 2px;
 }
 input{
-    margin: 2% 0;
+    /* margin: 2% 0; */
     font-size: 1.1em;
     border-radius: 10px;
     border: solid 2px;
@@ -738,12 +742,14 @@ nav {
 }
 
 .input-boxc input {
-    background-color: #0CA4F2;
+    background-color: #00000010;
     border: none;
-    color: white;
-    height: 40px;
+    color: black;
+    height: 35px;
     border-radius: 20px;
     text-indent: 10px;
+    border-radius: 10px;
+    border-bottom: #0CA4F2 2px solid;
 }
 
 .continue-buttonc {
@@ -1070,13 +1076,17 @@ nav {
 /* ---------------------------------------cadastro contratante------------------------------ */
     #nome,
     #rua {
-        width: 96vw;
+        width: 94vw;
     }
 
     .input-boxc input {
-        width: 46vw;
+        width: 45vw;
         /* margin-right: 40px; */
     }
+
+    /* .input-boxc input:focus{
+        outline: none;
+    } */
 
     .input-checkc{
         gap: 8vw;
