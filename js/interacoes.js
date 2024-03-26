@@ -2,7 +2,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
@@ -18,7 +18,7 @@ for (i = 0; i < acc.length; i++) {
 let meuMenu = document.getElementById("menu-hamburguer")
 var menuLat = document.getElementById("menuLateral")
 
-function abrirNav(){
+function abrirNav() {
 
   meuMenu.classList.toggle("change");
   menuLat.classList.toggle("abrir");
@@ -26,11 +26,11 @@ function abrirNav(){
 }
 
 // acordeon sobre nos
-var aco= document.getElementsByClassName("vejaMais");
+var aco = document.getElementsByClassName("vejaMais");
 var o;
-for (o = 0; o < aco.length; o++){
- 
-  aco[0].addEventListener("click", function() {
+for (o = 0; o < aco.length; o++) {
+
+  aco[0].addEventListener("click", function () {
     this.classList.toggle("active");
     var descer = this.nextElementSibling;
     if (descer.style.display === "block") {
@@ -45,9 +45,9 @@ var acc = document.getElementsByClassName("accordionDuvidas");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-   this.classList.toggle("active");
-   
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -59,7 +59,7 @@ for (i = 0; i < acc.length; i++) {
 
 // Escolher Pedreiro ou Contratante
 
-function escolherPedreiro(){
+function escolherPedreiro() {
 
 
   document.getElementById("contratante").style.backgroundColor = "#3d3b3b"
@@ -75,10 +75,10 @@ function escolherPedreiro(){
   document.getElementById("cpf-login").style.borderColor = "#F29D30"
 
   document.getElementById("botao-entrar-login").style.backgroundColor = "#F29D30"
-  
+
 }
 
-function escolherContratante(){
+function escolherContratante() {
 
   let formContratante = ""
 
@@ -97,28 +97,55 @@ function escolherContratante(){
   document.getElementById("botao-entrar-login").style.backgroundColor = "#0CA4F2"
 
 
-formContratante += ''
+  formContratante += ''
 
 }
 
-function acessarConta(){
+function acessarConta() {
   document.getElementById("login-home").style.display = "block"
 }
 
 const cpfLogin = document.getElementById("cpf-login")
 
-cpfLogin.addEventListener("keypress", function(){
+cpfLogin.addEventListener("keypress", function () {
 
   let cpfFormatado = cpfLogin.value.length
 
-  if (cpfLogin === String){
+  if (cpfLogin === String) {
     cpfLogin = "";
   }
 
-  if (cpfFormatado === 3 || cpfFormatado === 7){
+  if (cpfFormatado === 3 || cpfFormatado === 7) {
     cpfLogin.value += ".";
-  } else if (cpfFormatado === 11){
+  } else if (cpfFormatado === 11) {
     cpfLogin.value += "-";
   }
 
 })
+
+//-------------cadastro contratante-------------------------
+function mascara_cpf(event) {
+  var cpf = document.getElementById('cpf');
+  var pessoaFisica = document.getElementById('pf')
+  var pessoaJuridica = document.getElementById('pj')
+
+  if (pessoaFisica.checked) {
+    cpf.setAttribute("maxlength", "14")
+    if (cpf.value.length == 3 || cpf.value.length == 7) {
+      cpf.value += ".";
+    } else if (cpf.value.length == 11) {
+      cpf.value += "-";
+      
+    }
+  } else if (pessoaJuridica.checked) {
+    cpf.setAttribute("maxlength", "18")
+    if (cpf.value.length == 2 || cpf.value.length == 6) {
+      cpf.value += ".";
+    } else if (cpf.value.length == 10) {
+      cpf.value += "/";
+    } else if (cpf.value.length == 15) {
+      cpf.value += "-";
+    }
+  }
+
+}
