@@ -25,13 +25,17 @@ h1{
     unicode-bidi: isolate;
 }
 
-label{
+input:focus{
+    outline: none;
+}
+
+label, .paragrafo_cadastro{
     display: block;
     font-weight: 800;
     padding-bottom: 2px;
 }
 input{
-    margin: 2% 0;
+    /* margin: 2% 0; */
     font-size: 1.1em;
     border-radius: 10px;
     border: solid 2px;
@@ -608,13 +612,15 @@ nav {
 }
 
 .input-boxpe input {
-
-    background-color: #f47907;
-    color: white;
+    
+    background-color: #00000010;
     border: none;
+    color: black;
+    height: 35px;
     border-radius: 20px;
     text-indent: 10px;
-    height: 40px;
+    border-radius: 10px;
+    border-bottom:#f47907 2px solid;
 }
 
 .input-boxpe {
@@ -669,17 +675,18 @@ nav {
     margin: 5px;
 }
 
-.input-checkpe {
+.input-checkpe1 {
     padding: 10px 0;
+    
 }
-
+/* 
 .input-checkpe input {
     display: none;
-}
+} */
 
 .input-checkpe input+label:before {
-    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
-    content: "";
+    /* background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    content: ""; */
     width: 25px;
     height: 25px;
     border-radius: 4px;
@@ -689,6 +696,7 @@ nav {
     vertical-align: middle;
     margin-right: 8px;
     margin-bottom: 5px;
+    
 
 }
 
@@ -703,8 +711,8 @@ nav {
 }
 
 .input-radiope1 input+label::before,
-.input-radiope input+label::before {
-    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+.input-radiope input+label::before, .input-checkpe+label::before {
+    /* background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E"); */
     content: "";
     width: 25px;
     height: 25px;
@@ -720,7 +728,7 @@ nav {
 }
 
 .input-radiope1 input:checked+label::before,
-.input-radiope input:checked+label::before {
+.input-radiope input:checked+label::before{
     background-color: #f47907;
 }
 
@@ -765,12 +773,14 @@ nav {
 }
 
 .input-boxc input {
-    background-color: #0CA4F2;
+    background-color: #00000010;
     border: none;
-    color: white;
-    height: 40px;
+    color: black;
+    height: 35px;
     border-radius: 20px;
     text-indent: 10px;
+    border-radius: 10px;
+    border-bottom: #0CA4F2 2px solid;
 }
 
 .continue-buttonc {
@@ -1078,12 +1088,17 @@ nav {
     /* -------------------------------------CADASTRO PEDREIRO----------------------------------------------------------------------------------- */
     #nome,
     #rua {
-        width: 96vw;
+        width: 50vw;
     }
 
     .input-boxpe input {
         width: 46vw;
         /* margin-right: 40px; */
+    }
+
+    .input-checkpe{
+        gap: 8vw;
+        margin-left: 2%;
     }
 
     .input-grouppe {
@@ -1093,17 +1108,24 @@ nav {
         /* justify-content: space-between; */
 
     }
+    .container-pe{
+        display: flex;
+    }
 
 /* ---------------------------------------cadastro contratante------------------------------ */
     #nome,
     #rua {
-        width: 96vw;
+        width: 94vw;
     }
 
     .input-boxc input {
-        width: 46vw;
+        width: 45vw;
         /* margin-right: 40px; */
     }
+
+    /* .input-boxc input:focus{
+        outline: none;
+    } */
 
     .input-checkc{
         gap: 8vw;

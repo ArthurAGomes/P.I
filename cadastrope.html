@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedreiro</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -17,18 +16,19 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-           
+
             <a href="sobre.html" class="menu-itens">Sobre Nós</a>
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
-            
+
             <div id="meu-logo">
                 <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
-                <div id="nome-logo">Portal Pedreiro</div></a>
+                    <div id="nome-logo">Portal Pedreiro</div>
+                </a>
             </div>
-            
+
             <a href="contato.html" class="menu-itens">Contato</a>
             <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
-            
+
             <div id="avatar-minha-conta" onclick="acessarConta()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
@@ -43,180 +43,179 @@
 
     <main>
         <h1>Pedreiro</h1>
+        <hr class="barras">
         <div class="container-pe">
-            <form action="#" method="post">
 
-                <div class="input-grouppe">
-
-                    <div class="input-boxpe">
-                        <label for="Nome/Nome social">Nome/Nome social</label>
-                        <input required type="text" id="name" name="Nome/Nome social">
-                    </div>
+            <div class="fotope">
+                <form action="#" method="post">
 
                     <div class="input-boxpe">
-                        <label for="senha:">Senha</label>
-                        <input required type="password" id="senha" name="senha">
+                        <label for="nome">Nome/Nome social</label>
+                        <input required type="text" id="nome" name="nome">
                     </div>
 
-                    <div class="input-boxpe">
-                        <label for="CPF:">CPF/CNPJ</label>
-                        <input required type="tel" id="CPF" name="cpf">
-                    </div>
+                    <div class="input-grouppe">
 
-                    <div class="input-boxpe">
-                        <label for="Celular">Celular</label>
-                        <input required type="text" id="Celular" name="Celular">
-                    </div>
+                        <div class="input-boxpe">
+                            <label for="senha:">Senha</label>
+                            <input required type="password" id="senha" name="senha">
+                        </div>
 
-                    <div class="input-boxpe">
-                        <label for="Telefône:">Telefône</label>
-                        <input required type="tel" id="CPF" name="Telefône">
-                    </div>
-                </div>
+                        <div class="input-boxpe">
+                            <label for="CPF:">CPF/CNPJ</label>
+                            <input required type="tel" id="CPF" name="cpf">
+                        </div>
 
+                        <div class="input-boxpe">
+                            <label for="Celular">Celular</label>
+                            <input required type="text" id="Celular" name="Celular">
+                        </div>
 
-                <p>Gênero</p>
-
-
-
-                <div class="input-radiope1">
-
-                    <div>
-                        <input type="radio" id="homem" name="Genero">
-                        <label for="homem">Homem</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="mulher" name="Genero">
-                        <label for="mulher">Mulher</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="outro" name="Genero">
-                        <label for="outro">Outro</label>
-                    </div>
-                </div>
-
-
-
-                <div class="input-checkpe">
-                    <input type="checkbox" id="Você é MEI?" name="Interesse">
-                    <label for="Você é MEI?">Você é MEI?</label>
-                </div>
-
-                <p><a href="mei.html">Saiba o que é e as vantagens de ser MEI</a></p>
-
-                <div class="input-checkpe">
-                    <input type="checkbox" id="Possuo experiência" name="Interesse">
-                    <label for="Possuo experiência">Possuo experiência?</label>
-                </div>
-
-                <p>Dias Disponiveis</p>
-
-                <div class="input-radiope">
-                    <div>
-                        <input type="radio" id="todos" name="DIAS DISPONÍVEIS">
-                        <label for="todos">Todos</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="segunda" name="DIAS DISPONÍVEIS">
-                        <label for="segunda">Segunda á Sexta</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="sabado" name="DIAS DISPONÍVEIS">
-                        <label for="sabado">Sábado e/ou Domingo</label>
-                    </div>
-
-                </div>
-
-                <div class="input-grouppe">
-
-
-
-                    <div class="input-boxpe">
-                        <label for="CEP:">CEP</label>
-                        <input required type="tel" id="CEP" name="CEP">
-                    </div>
-
-                    <div class="input-boxpe">
-                        <label for="Cidade">Cidade</label>
-                        <input required type="text" id="Cidade" name="Cidade">
-                    </div>
-
-                    <div class="input-boxpe">
-                        <label for="Estado">Estado</label>
-                        <input required type="text" id="estado" name="Estado">
+                        <div class="input-boxpe">
+                            <label for="Telefône:">Telefône</label>
+                            <input required type="tel" id="CPF" name="Telefône">
+                        </div>
                     </div>
 
 
+                    <p class="paragrafo_cadastroc">Gênero</p>
 
-                    <div class="input-boxpe">
-                        <label for="Bairro">Bairro</label>
-                        <input required type="text" id="Bairro" name="Bairro">
+                    <div class="input-radiope1">
+                        <div>
+                            <input type="radio" id="homem" name="Genero">
+                            <label for="homem">Homem</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="mulher" name="Genero">
+                            <label for="mulher">Mulher</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="outro" name="Genero">
+                            <label for="outro">Outro</label>
+                        </div>
                     </div>
 
-                    <!-- <div class="input-boxpe"> 
-                        <label for="trabalho">Tipos de Trabalho</label>
-                        <input type="text" id="trabalhos" name="trabalhos">
-                    </div> -->
-
-                    <div class="input-boxpe">
-                        <label for="Rua:">Rua</label>
-                        <input required type="text" id="rua" name="Rua">
+                    <div class="input-checkpe">
+                        <input type="checkbox" id="Você é MEI?" name="Interesse">
+                        <label for="Você é MEI?">Você é MEI?</label>
                     </div>
+
+                    <p><a href="mei.html">Saiba o que é e as vantagens de ser MEI</a></p>
+
+                    <div class="input-checkpe">
+                        <div>
+                            <input type="checkbox" id="Possuo experiência" name="Interesse">
+                            <label for="Possuo experiência">Possuo experiência?</label>
+                        </div>
+                    </div>
+
+                    <p class="paragrafo_cadastroc">Dias Disponiveis</p>
+
                     <div class="input-radiope">
-                        <p>Tipos de Trabalho</p>
+                        <div>
+                            <input type="radio" id="todos" name="DIAS DISPONÍVEIS">
+                            <label for="todos">Todos</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="segunda" name="DIAS DISPONÍVEIS">
+                            <label for="segunda">Segunda á Sexta</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="sabado" name="DIAS DISPONÍVEIS">
+                            <label for="sabado">Sábado e/ou Domingo</label>
+                        </div>
+                    </div>
+
+                    <div class="input-grouppe">
+                        <div class="input-boxpe">
+                            <label for="CEP:">CEP</label>
+                            <input required type="tel" id="CEP" name="CEP">
+                        </div>
+
+                        <div class="input-boxpe">
+                            <label for="Cidade">Cidade</label>
+                            <input required type="text" id="Cidade" name="Cidade">
+                        </div>
+
+                        <div class="input-boxpe">
+                            <label for="Estado">Estado</label>
+                            <input required type="text" id="estado" name="Estado">
+                        </div>
+
+                        <div class="input-boxpe">
+                            <label for="Bairro">Bairro</label>
+                            <input required type="text" id="Bairro" name="Bairro">
+                        </div>
+
+                        <div class="input-boxpe">
+                            <label for="Rua:">Rua</label>
+                            <input required type="text" id="rua" name="Rua">
+                        </div>
+                    </div>
+
+
+                    <div class="input-radiope">
+                        <p class="paragrafo_cadastro">Tipos de Trabalho</p>
                         <div>
                             <input type="radio" id="obras-gerais" name="obras-gerais">
-                            <label for="todos">Obras Gerais</label>
+                            <label for="obras-gerais">Obras Gerais</label>
                         </div>
 
                         <div>
                             <input type="radio" id="pequenas-reformas" name="pequenas-reformas">
                             <label for="pequenas-reformas">Pequenas Reformas</label>
                         </div>
+                    </div>
+                    <p class="paragrafo_cadastroc">Adicionar Fotos</p>
+                    <div id="ftope">
+                        <div>
+                            <label for="arquivope1" class="aqvpe">+</label>
+                            <input type="file" id="arquivope1" name="arquivope1">
+                        </div>
 
+                        <div>
+                            <label for="arquivope2" class="aqvpe">+</label>
+                            <input type="file" id="arquivope2" name="arquivope2">
+                        </div>
+
+                        <div>
+                            <label for="arquivope3" class="aqvpe">+</label>
+                            <input type="file" id="arquivope3" name="arquivope3">
+                        </div>
                     </div>
 
-                </div>
+                    <div class="input-checkpe">
+                        <div>
+                            <input type="checkbox" id="Aceitar" name="Interesse">
+                            <label for="Aceitar">Aceitar</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="Declaro" name="Interesse">
+                            <label for="Declaro">Declaro</label>
+                        </div>
+
+                        <div class="continue-buttonpe">
+                            <button id="botao" type="submit">CADASTRAR</button>
+                        </div>
+                </form>
 
 
-                <p>Adicionar Fotos</p>
-                <div id="ftope">
-
-
-                    <label for="arquivope1" class="aqvpe">+</label>
-                    <input type="file" id="arquivope1" name="arquivope1">
-
-                    <label for="arquivope2" class="aqvpe">+</label>
-                    <input type="file" id="arquivope2" name="arquivope2">
-
-                    <label for="arquivope3" class="aqvpe">+</label>
-                    <input type="file" id="arquivope3" name="arquivope3">
-
-
-                </div>
-
-                <div class="input-checkpe">
-                    <div>
-                        <input type="checkbox" id="Aceitar" name="Interesse">
-                        <label for="Aceitar">Aceitar</label>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="Declaro" name="Interesse">
-                        <label for="Declaro">Declaro</label>
-                    </div>
-
-                    <div class="continue-buttonpe">
-                        <button id="botao" type="submit">CADASTRAR</a></button>
-                    </div>
-
-
-            </form>
+            </div>
         </div>
+
+
+
+
+        </div>
+
+
+
+
     </main>
     <footer class="rodape">
         <div class="conteudo-geral-footer">
@@ -250,7 +249,7 @@
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
                             <li><a href="sobre.html"">Sobre nós</a></li>
-                            <li><a href="duvidas.html">Informações</a></li>
+                            <li><a href=" duvidas.html">Informações</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
                             <li><a href="contratos.html">Contrato</a></li>
                         </div>
