@@ -194,6 +194,33 @@ nav {
 
 }
 
+/*---------------- Minha conta--------- */
+#myForm{
+    margin-top: 70px;
+    display: none;
+   
+}
+#minhaConta{
+        border-radius: 10px;
+        background-color: #3d3b3b;
+        max-width: 400px;
+        text-align: center;
+        margin: 10px auto;
+        overflow: hidden;  
+}
+
+/* #img-close{
+   
+} */
+#img-close img{
+    width: 20px;
+   position: relative;
+   top: 5px;
+   left: -163px;
+ }
+ #btn-loginMenu{
+    margin: 10px;
+ }
 /* Home ---------------------------------------------------- */
 
 #home-main {
@@ -1125,7 +1152,7 @@ nav {
     }
 
     .menu-rodape li a:hover {
-        color: #F47907;
+        color: #f1f0f0;
     }
 
     .panel {
@@ -1153,7 +1180,7 @@ nav {
     }
 
     .redes-icones a:hover {
-        color: #F47907;
+        color: #f1f0f0;
         transition: background-color 5s
     }
 
@@ -1318,7 +1345,7 @@ nav {
     }
 
     .menu-rodape li a:hover {
-        color: #F47907;
+        color: #f1f0f0;
     }
 
     .menu-rodape {

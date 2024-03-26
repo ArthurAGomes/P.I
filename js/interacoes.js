@@ -100,11 +100,17 @@ function escolherContratante(){
 formContratante += ''
 
 }
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    document.querySelector("main").style.marginTop="0";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    document.querySelector("main").style.marginTop="60px"
+  }
 
-function acessarConta(){
-  document.getElementById("login-home").style.display = "block"
-}
-
+  // --------------------------validar
 const cpfLogin = document.getElementById("cpf-login")
 
 cpfLogin.addEventListener("keypress", function(){

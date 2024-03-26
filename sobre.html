@@ -22,19 +22,20 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-           
+
             <a href="sobre.html" class="menu-itens">Sobre Nós</a>
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
-            
+
             <div id="meu-logo">
                 <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
-                <div id="nome-logo">Portal Pedreiro</div></a>
+                    <div id="nome-logo">Portal Pedreiro</div>
+                </a>
             </div>
-            
+
             <a href="contato.html" class="menu-itens">Contato</a>
-            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
-            
-            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
+            <a href="#" class="menu-itens" onclick="openForm()">Minha Conta</a>
+
+            <div id="avatar-minha-conta" onclick="openForm()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
@@ -45,6 +46,34 @@
             <a href="#">Minha Conta</a>
         </div>
     </header>
+    <div class="form-popup" id="myForm">    
+        <article id="minhaConta">
+            <div id="conteudo-login">
+                
+                <div class="conteudo-login-campos" id="conteudo-cpf">
+                    <div id="close-minhaConta" onclick="closeForm()">
+                        <div id="img-close" onclick="closeForm()"><img src="img/close.png" alt="close"></div> 
+                     </div>
+                    <h2>Acessar sua conta</h2>
+                    <input type="text" required placeholder="Digite seu CPF" id="cpf-login" maxlength="14"
+                        autocomplete="off" minlength="14">
+
+                </div>
+
+                <div class="conteudo-login-campos" id="senha">
+
+                    <input type="password" required placeholder="Digite sua senha" id="senha-login" autocomplete="off"
+                        maxlength="15" minlength="8">
+
+                    <div id="conteudo-login-extra">
+                        <a href="#" class="login-extra">Esqueci minha senha!</a>
+                        <a href="#" class="login-extra">Cadastre-se!</a>
+                    </div>
+                </div>
+                <button type="submit" id="btn-loginMenu">Login</button>
+            </div>
+        </article>
+    </div>
 
 
     <main class="sobreNos">
@@ -128,7 +157,7 @@
                     em
                     constante evolução da indústria da construção.</p>
             </div>
-            <aside class="img-lado"><img src="img/imagem5.png" alt="img-valores-sobrenos" id="valores-img"></aside>
+            <!-- <aside class="img-lado"><img src="img/imagem5.png" alt="img-valores-sobrenos" id="valores-img"></aside> -->
         </div>
         </div>
 
