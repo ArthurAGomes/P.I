@@ -47,7 +47,18 @@
         <div class="container-pe">
 
             <div class="fotope">
-                <form action="#" method="post">
+                <form action="#" method="post" id="formpe">
+                    <div class="input-radiope">
+
+                        <div>
+                            <input type="radio" id="pf" name="pessoa" checked>
+                            <label for="pf">Pessoa Fisica</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="pj" name="pessoa">
+                            <label for="pj">Pessoa Juridica</label>
+                        </div>
+                    </div>
 
                     <div class="input-boxpe">
                         <label for="nome">Nome/Nome social</label>
@@ -80,20 +91,23 @@
 
                     <p class="paragrafo_cadastroc">Gênero</p>
 
-                    <div class="input-radiope1">
-                        <div>
-                            <input type="radio" id="homem" name="Genero">
-                            <label for="homem">Homem</label>
-                        </div>
+                    <div class="container-pe1">
 
-                        <div>
-                            <input type="radio" id="mulher" name="Genero">
-                            <label for="mulher">Mulher</label>
-                        </div>
+                        <div class="input-radiope1">
+                            <div>
+                                <input type="radio" id="homem" name="Genero">
+                                <label for="homem">Homem</label>
+                            </div>
 
-                        <div>
-                            <input type="radio" id="outro" name="Genero">
-                            <label for="outro">Outro</label>
+                            <div>
+                                <input type="radio" id="mulher" name="Genero">
+                                <label for="mulher">Mulher</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" id="outro" name="Genero">
+                                <label for="outro">Outro</label>
+                            </div>
                         </div>
                     </div>
 
@@ -157,9 +171,9 @@
                         </div>
                     </div>
 
-
+                    <p class="paragrafo_cadastro">Tipos de Trabalho</p>
                     <div class="input-radiope">
-                        <p class="paragrafo_cadastro">Tipos de Trabalho</p>
+
                         <div>
                             <input type="radio" id="obras-gerais" name="obras-gerais">
                             <label for="obras-gerais">Obras Gerais</label>
@@ -169,9 +183,17 @@
                             <input type="radio" id="pequenas-reformas" name="pequenas-reformas">
                             <label for="pequenas-reformas">Pequenas Reformas</label>
                         </div>
+
+
+
                     </div>
+
+
+
+
                     <p class="paragrafo_cadastroc">Adicionar Fotos</p>
                     <div id="ftope">
+
                         <div>
                             <label for="arquivope1" class="aqvpe">+</label>
                             <input type="file" id="arquivope1" name="arquivope1">
@@ -188,6 +210,9 @@
                         </div>
                     </div>
 
+
+
+
                     <div class="input-checkpe">
                         <div>
                             <input type="checkbox" id="Aceitar" name="Interesse">
@@ -198,25 +223,24 @@
                             <input type="checkbox" id="Declaro" name="Interesse">
                             <label for="Declaro">Declaro</label>
                         </div>
+                    </div>
 
-                        <div class="continue-buttonpe">
-                            <button id="botao" type="submit">CADASTRAR</button>
-                        </div>
+
+
+                    <div class="continue-buttonpe">
+                        <button id="botao" type="submit">CADASTRAR</button>
+                    </div>
+
                 </form>
 
 
+                <div id="fotcope">
+                    <img src="img/cadastro01.webp" alt="Mexendo no computador" id="imgtpe">
+                </div>
             </div>
         </div>
-
-
-
-
-        </div>
-
-
-
-
     </main>
+
     <footer class="rodape">
         <div class="conteudo-geral-footer">
             <div class="rodape-conteudo">
