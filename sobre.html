@@ -46,37 +46,33 @@
             <a href="#">Minha Conta</a>
         </div>
     </header>
-    <div class="form-popup" id="myForm">    
-        <article id="minhaConta">
-            <div id="conteudo-login">
-                
-                <div class="conteudo-login-campos" id="conteudo-cpf">
-                    <div id="close-minhaConta" onclick="closeForm()">
-                        <div id="img-close" onclick="closeForm()"><img src="img/close.png" alt="close"></div> 
-                     </div>
-                    <h2>Acessar sua conta</h2>
-                    <input type="text" required placeholder="Digite seu CPF" id="cpf-login" maxlength="14"
-                        autocomplete="off" minlength="14">
-
+    <div class="login-popUp">
+        <div class="form-box loginMinhaconta">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="text" required>
+                    <label>Email</label>
                 </div>
-
-                <div class="conteudo-login-campos" id="senha">
-
-                    <input type="password" required placeholder="Digite sua senha" id="senha-login" autocomplete="off"
-                        maxlength="15" minlength="8">
-
-                    <div id="conteudo-login-extra">
-                        <a href="#" class="login-extra">Esqueci minha senha!</a>
-                        <a href="#" class="login-extra">Cadastre-se!</a>
-                    </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="text" required>
+                    <label>Senha</label>
                 </div>
-                <button type="submit" id="btn-loginMenu">Login</button>
-            </div>
-        </article>
+                <div class="lembrar-senha">
+                    <label> <input type="checkbox">Remember me</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn-popUp"></button>
+                <div class="login-registrar">
+                    <p>Fazer cadastro como <strong>Pedreiro</strong><a href="cadastrope.html" class="register-link"></a></p>
+                    <p>Fazer cadastro como <strong>Contratente</strong><a href="cadastroco.html" class="register-link"></a></p>
+                </div>
+            </form>
+        </div>
     </div>
-
-
-    <main class="sobreNos">
+     <main class="sobreNos">
         <h1>Saiba mais sobre o Portal Pedreiro </h1>
         <hr class="barras">
         <div class="sobreNos-conteudo">

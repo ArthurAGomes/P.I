@@ -200,32 +200,7 @@ nav {
 }
 
 /*---------------- Minha conta--------- */
-#myForm{
-    margin-top: 70px;
-    display: none;
-   
-}
-#minhaConta{
-        border-radius: 10px;
-        background-color: #3d3b3b;
-        max-width: 400px;
-        text-align: center;
-        margin: 10px auto;
-        overflow: hidden;  
-}
 
-/* #img-close{
-   
-} */
-#img-close img{
-    width: 20px;
-   position: relative;
-   top: 5px;
-   left: -163px;
- }
- #btn-loginMenu{
-    margin: 10px;
- }
 /* Home ---------------------------------------------------- */
 
 #home-main {
@@ -607,6 +582,11 @@ nav {
     max-width: 100%;
   
 }
+
+
+.fotope{
+    display: flex;
+}
 .input-radiope1 {
     display: flex;
     gap: 25px;
@@ -660,6 +640,9 @@ nav {
 #ftope {
     display: flex;
     padding-bottom: 20px;
+}
+#imgtpe{
+   display: none; 
 }
 
 .aqvpe {
@@ -1697,4 +1680,12 @@ nav {
     .containerc1{
         display: block;
     }
+}
+/* -----------------------cadastro pedreiro-------------------------------- */
+#imgtpe{
+    display: flex;
+    margin-top: 1px;
+    border-radius: 20px;
+    width: 100%;
+    height: 540px;
 }
