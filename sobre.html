@@ -46,33 +46,20 @@
             <a href="#">Minha Conta</a>
         </div>
     </header>
-    <div class="form-popup" id="myForm">    
-        <article id="minhaConta">
-            <div id="conteudo-login">
-                
-                <div class="conteudo-login-campos" id="conteudo-cpf">
-                    <div id="close-minhaConta" onclick="closeForm()">
-                        <div id="img-close" onclick="closeForm()"><img src="img/close.png" alt="close"></div> 
-                     </div>
-                    <h2>Acessar sua conta</h2>
-                    <input type="text" required placeholder="Digite seu CPF" id="cpf-login" maxlength="14"
-                        autocomplete="off" minlength="14">
-
+    <div class="form-popup" id="myForm">
+        <div id="minhaConta">
+            <div class="geralMinhaconta">
+                <div id="close-minhaConta" onclick="closeForm()">
+                    <div id="img-close" onclick="closeForm()"><img src="img/close.png" alt="close"></div>
                 </div>
-
-                <div class="conteudo-login-campos" id="senha">
-
-                    <input type="password" required placeholder="Digite sua senha" id="senha-login" autocomplete="off"
-                        maxlength="15" minlength="8">
-
-                    <div id="conteudo-login-extra">
-                        <a href="#" class="login-extra">Esqueci minha senha!</a>
-                        <a href="#" class="login-extra">Cadastre-se!</a>
-                    </div>
-                </div>
-                <button type="submit" id="btn-loginMenu">Login</button>
+                <h1>Login</h1>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit" id="botao-minhaConta">Login</button>
             </div>
-        </article>
+         </div>
     </div>
 
 

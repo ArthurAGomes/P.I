@@ -200,31 +200,29 @@ nav {
 
 /*---------------- Minha conta--------- */
 #myForm{
-    margin-top: 70px;
+    margin-top: 60px;
     display: none;
-   
-}
-#minhaConta{
-        border-radius: 10px;
-        background-color: #3d3b3b;
-        max-width: 400px;
-        text-align: center;
-        margin: 10px auto;
-        overflow: hidden;  
+    width: 100%;
 }
 
-/* #img-close{
-   
-} */
-#img-close img{
-    width: 20px;
-   position: relative;
-   top: 5px;
-   left: -163px;
- }
- #btn-loginMenu{
-    margin: 10px;
- }
+#minhaConta{
+    background-color: #2cb317;
+    /* width: 90%; */
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botao-minhaConta{
+    display: block;
+}
+
+.geralMinhaconta{
+    width: fit-content;
+    /* width: 90%; */
+    ;
+    
+}
 /* Home ---------------------------------------------------- */
 
 #home-main {
@@ -1261,7 +1259,14 @@ nav {
         font-weight: bold;
         padding: 1px 0;
     }
-
+    /* POP UP(minha conta)------- */
+    #minhaConta{
+        
+    }
+    #conteudo-login{
+        display: flex;
+    
+    }
     /* ----------Home-Seja Parceiro */
     #seja-parceiro-home figure{
         position: relative;
