@@ -32,14 +32,16 @@ input:focus{
 
 label, .paragrafo_cadastro{
     display: block;
-    font-weight: 800;
+    font-weight: 600;
     padding-bottom: 2px;
 }
 input{
     /* margin: 2% 0; */
     font-size: 1.1em;
     border-radius: 10px;
-    border: solid 2px;
+    border: none;
+    border-bottom: solid 2px;
+    height: 35px;
 }
 
 button {
@@ -974,19 +976,67 @@ nav {
 /* --------------- Area-contratante */
 #conteudo-principal-contratante{
     width: 100%;
-
+    height: 100%;
+    
 }
 
+#area-avatar-contratante{
+    display: flex;
+    align-items: center;
+    gap: 0 5%;
+    margin-bottom: 2%;
+}
 
+#avatar-contratante, #avatar-pedreiro{
+    margin: 10px 0;
+    width: 100px;
+    height: 100px;
+    background-color: #3d3b3b;
+    border-radius: 50%;
+}
+
+#info-perfil-contratante{
+    background-color: #3d3b3b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#form-area-contratante{
+    /*  */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* margin: 10px; */
+    
+}
+
+#form-area-contratante input{
+    border-bottom-color: #0CA4F2;
+    background-color: rgba(255, 255, 255, 0.894);
+    margin-bottom: 20px;
+    color: #3d3b3b;
+    text-indent: 10px;
+}
+
+#form-area-contratante label{
+    color: white;
+}
 
 #conteudo-mapa{
     width: 100%;
-    height: 300px;
-    margin: 0;
+    height: 500px;
+    margin: 20px 0;
 }
 
 #map{
     height: 100%;
+    border-radius: 10px;
+    border: 2px solid #3d3b3b;
+}
+
+.info-contratante-perfil{
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
