@@ -51,12 +51,12 @@
             <h2>Login</h2>
             <form action="#">
                 <div class="input-box">
-                    <span class="icon"></span>
-                    <input type="text" required>
-                    <label>Email</label>
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Email</label>
                 </div>
                 <div class="input-box">
-                    <span class="icon"></span>
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                     <input type="text" required>
                     <label>Senha</label>
                 </div>
@@ -64,15 +64,18 @@
                     <label> <input type="checkbox">Remember me</label>
                     <a href="#">Esqueceu a senha?</a>
                 </div>
-                <button type="submit" class="btn-popUp"></button>
+                <button type="submit" class="btn-popUp">Entrar</button>
                 <div class="login-registrar">
-                    <p>Fazer cadastro como <strong>Pedreiro</strong><a href="cadastrope.html" class="register-link"></a></p>
-                    <p>Fazer cadastro como <strong>Contratente</strong><a href="cadastroco.html" class="register-link"></a></p>
+                    <p>Fazer cadastro como <a href="cadastrope.html" class="register-link"><strong>Pedreiro</strong></a>
+                    </p>
+                    <p>Fazer cadastro como <a href="cadastroco.html"
+                        class="register-link"><strong>Contratante</strong></a></p>
                 </div>
             </form>
         </div>
     </div>
-     <main class="sobreNos">
+    
+    <main class="sobreNos">
         <h1>Saiba mais sobre o Portal Pedreiro </h1>
         <hr class="barras">
         <div class="sobreNos-conteudo">
@@ -166,10 +169,9 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Para você</h3>
                         <div class="panel">
-                            <li><a href="login.html">Entrar</a></li>
-                            <li><a href="cadastrope.html">Cadastro P</a></li>
+                            <li><a href="#">Entrar</a></li>
                             <li><a href="cadastroco.html">Cadastro C</a></li>
-                            <li><a href="seja-parceiro.html">Parceiros</a></li>
+                            <li><a href="cadastrope.html">Cadastro P</a></li>
                         </div>
                     </ul>
                     <hr>
@@ -180,8 +182,8 @@
                         <div class="panel">
                             <li><a href="contato.html">Contato</a></li>
                             <li><a href="#">Baixe o App</a></li>
-                            <li><a href="informacao.html">Dúvidas</a></li>
-                            <li><a href="Ajuda.html">Ajuda</a></li>
+                            <li><a href="duvidas.html">Dúvidas</a></li>
+
                         </div>
                     </ul>
                     <hr>
@@ -190,10 +192,9 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
-                            <li><a href="sobre.html"">Sobre nós</a></li>
-                            <li><a href=" informacao.html">Informações</a></li>
+                            <li><a href="#">Sobre nós</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
-                            <li><a href="contratos.html">Contrato</a></li>
+                            <li><a href="contratos.html">Contratos</a></li>
                         </div>
                     </ul>
                     <hr>
@@ -228,6 +229,8 @@
         </div>
     </footer>
     <script src="js/interacoes.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
