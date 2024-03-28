@@ -100,34 +100,34 @@ function escolherContratante() {
   formContratante += ''
 
 }
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-    document.querySelector("main").style.marginTop="0";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-    document.querySelector("main").style.marginTop="60px"
-  }
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  document.querySelector("main").style.marginTop = "0";
+}
 
-  // --------------------------validar
-const cpfLogin = document.getElementById("cpf-login")
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+  document.querySelector("main").style.marginTop = "60px"
+}
 
-cpfLogin.addEventListener("keypress", function () {
+// --------------------------validar
+// const cpfLogin = document.getElementById("cpf-login")
 
-  let cpfFormatado = cpfLogin.value.length
+// cpfLogin.addEventListener("keypress", function (){
 
-  if (cpfLogin === String) {
-    cpfLogin = "";
-  }
+//   let cpfFormatado = cpfLogin.value.length
 
-  if (cpfFormatado === 3 || cpfFormatado === 7) {
-    cpfLogin.value += ".";
-  } else if (cpfFormatado === 11) {
-    cpfLogin.value += "-";
-  }
+//   if (cpfLogin === String) {
+//     cpfLogin = "";
+//   }
 
-})
+//   if (cpfFormatado === 3 || cpfFormatado === 7) {
+//     cpfLogin.value += ".";
+//   } else if (cpfFormatado === 11) {
+//     cpfLogin.value += "-";
+//   }
+
+// })
 
 //-------------cadastro contratante-------------------------
 function mascara_cpf(event) {
@@ -141,7 +141,7 @@ function mascara_cpf(event) {
       cpf.value += ".";
     } else if (cpf.value.length == 11) {
       cpf.value += "-";
-      
+
     }
   } else if (pessoaJuridica.checked) {
     cpf.setAttribute("maxlength", "18")
@@ -152,6 +152,27 @@ function mascara_cpf(event) {
     } else if (cpf.value.length == 15) {
       cpf.value += "-";
     }
+
   }
 
 }
+
+function mascara_cep(event) {
+  var cep = document.getElementById('cep');
+
+  if (cep.value.length == 5) {
+    cep.value += "-";
+  }
+}
+
+
+
+$('#cep').blur(function () {
+  var lc = $(this).val();
+  $.get('https://viacep.com.br/ws/' + lc + '/json/', function (regiao) {
+    $('#cidade').val(regiao.localidade);
+    $('#rua').val(regiao.logradouro);
+    $('#bairro').val(regiao.bairro);
+    $('#estado').val(regiao.uf);
+  });
+});

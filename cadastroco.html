@@ -106,7 +106,7 @@
 
                         <div class="input-boxc">
                             <label for="cep">CEP</label>
-                            <input required type="tel" id="cep" name="cep">
+                            <input required type="tel" id="cep" name="cep" onkeyup="mascara_cep(event)">
                         </div>
 
                         <div class="input-boxc">
@@ -244,6 +244,7 @@
             <p id="credito">Desenvolvido pelo time de TI SCCP - Senac / 2024</p>
         </div>
     </footer>
+    <script src="js/jquery.3.6.0.js"></script>
     <script src="js/interacoes.js"></script>
 
 </body>
