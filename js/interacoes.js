@@ -100,14 +100,17 @@ function escolherContratante() {
   formContratante += ''
 
 }
+//POPUP--Minha conta---
 function openForm() {
-  document.getElementById("myForm").style.display = "flex";
+  const popUpLogin = document.getElementById("popUpLogin");
+  popUpLogin.classList.add("open");
 }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-
+function closePopup() {
+  const popUpLogin = document.getElementById("popUpLogin");
+  popUpLogin.classList.remove("open");
 }
+
 
 // --------------------------validar
 // const cpfLogin = document.getElementById("cpf-login")

@@ -13,7 +13,8 @@ body {
     font-weight: 300;
     background-image: url(../img/brick-wall2.png);
 }
-h1{
+
+h1 {
     display: block;
     font-size: 2em;
     text-transform: uppercase;
@@ -26,16 +27,18 @@ h1{
     unicode-bidi: isolate;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-label, .paragrafo_cadastro{
+label,
+.paragrafo_cadastro {
     display: block;
     font-weight: 600;
     padding-bottom: 2px;
 }
-input{
+
+input {
     /* margin: 2% 0; */
     font-size: 1.1em;
     border-radius: 10px;
@@ -45,7 +48,7 @@ input{
 }
 
 button {
-     background-color: #F29D30;
+    background-color: #F29D30;
     color: white;
     border: 0;
     border-radius: 10px;
@@ -202,36 +205,57 @@ nav {
 }
 
 /*---------------- Minha conta(popUp)--------- */
-#popUpLogin{
-display: flex;
-justify-content: center;
-
+#popUpLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+    pointer-events: none; 
+    backdrop-filter: blur(10px);
 }
-.login-popUp{
+
+.login-popUp {
     position: absolute;
     width: 400px;
     height: 440px;
     background: transparent;
     border: 2px solid rgba(128, 128, 128, 0.41);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
+
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-top: 90px;
-   
+    transition: opacity 0.5s; 
 }
-.login-popUp .form-box{
+
+#popUpLogin.open {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.login-popUp.open {
+    opacity: 1;
+}
+
+
+.login-popUp .form-box {
     width: 100%;
     padding: 40px;
     transition: .5s;
 }
 
-.login-popUp .icon-close{
+.login-popUp .icon-close {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     width: 45px;
     height: 45px;
@@ -244,38 +268,43 @@ justify-content: center;
     border-bottom-left-radius: 20px;
     cursor: pointer;
 }
-.form-box h2{
+
+.form-box h2 {
     font-size: 2em;
-    color: black;
+    color: white;
+    font-weight: 600;
+    font-family: "Noto Sans";
     text-align: center;
-}   
-.input-box{
+}
+
+.input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid black;
-    margin: 30px 0; 
+    border-bottom: 2px solid #3d3b3b;
+    margin: 30px 0;
     border-radius: 10px;
 }
 
-.input-box label{
-    position:absolute;
+.input-box label {
+    position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: black;
+    color: white;
     font-weight: 500;
     pointer-events: none;
-    transition:.5s;
-    height:10px;
+    transition: .5s;
+    height: 10px;
 }
+
 .input-box input:focus~label,
-.input-box input:valid~label{
+.input-box input:valid~label {
     top: -5px;
 }
 
-.input-box input{
+.input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -287,34 +316,41 @@ justify-content: center;
     padding: 0 35px 0 5px;
 }
 
-.input-box .icon{
+.input-box .icon {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: black;
+    color: white;
     line-height: 57px;
 }
 
-.lembrar-senha{
+.lembrar-senha {
     font-size: .9em;
-    color: #3d3b3b;
+    color: white;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
     justify-content: space-between;
 }
-.lembrar-senha label input{
+
+.lembrar-senha label input {
     accent-color:#3d3b3b;
     margin: 3px;
+    padding: 4px;
 }
-.lembrar-senha a{
-    color: #3d3b3b;
+.lembrar-senha input{
+    width: 25px;
+}
+.lembrar-senha a {
+    color: white;
     text-decoration: none;
 }
-.lembrar-senha a:hover{
+
+.lembrar-senha a:hover {
     text-decoration: underline;
 }
-.btn-popUp{
+
+.btn-popUp {
     width: 100%;
     height: 45px;
     background-color: #3d3b3b;
@@ -324,21 +360,25 @@ justify-content: center;
     color: white;
     font-weight: 500;
 }
-.login-registrar{
+
+.login-registrar {
     font-size: .9em;
-    color: #3d3b3b;
+    color: white;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
-.login-registrar p a{
-    color: #3d3b3b;
+
+.login-registrar p a {
+    color: white;
     text-decoration: none;
     font-weight: 600px;
 }
-.login-registrar p a:hover{
+
+.login-registrar p a:hover {
     text-decoration: underline;
 }
+
 /* Home ---------------------------------------------------- */
 
 #home-main {
@@ -360,7 +400,7 @@ justify-content: center;
     border-radius: 10px;
 }
 
-#fundo-main div{
+#fundo-main div {
     width: 100%;
 }
 
@@ -420,10 +460,10 @@ justify-content: center;
 #baixe-app button {
     display: none;
     background: #F1282B;
-    box-shadow:  1px 1px 12px 0px rgba(0, 0, 0, 0.617);
+    box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.617);
 }
 
-#baixe-app h1{
+#baixe-app h1 {
     margin: 0;
 }
 
@@ -468,7 +508,7 @@ justify-content: center;
     font-size: .8em;
     font-weight: 700;
     margin: 0;
-    
+
 }
 
 /* .conteudo-login-campos input:{
@@ -478,7 +518,7 @@ justify-content: center;
     
 } */
 
-.conteudo-login-campos input::placeholder{
+.conteudo-login-campos input::placeholder {
     color: #3d3b3b5c;
 }
 
@@ -533,15 +573,15 @@ justify-content: center;
     padding: 30px 0;
     border-radius: 10px 10px 0 0;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.819);
-    
+
 }
 
 #parceiro-pp-home h2 {
-    width: 100%; 
+    width: 100%;
     padding: 0 2%;
     text-align: center;
     color: white;
-    
+
 }
 
 .cartao-parceiros {
@@ -554,7 +594,7 @@ justify-content: center;
     background-color: #3d3b3b;
     box-shadow: 0 4px 8px 0;
     border-radius: 15px;
-    
+
 
 }
 
@@ -606,12 +646,12 @@ justify-content: center;
 }
 
 #parceiros-banner-conteudo {
-    width:90%;
+    width: 90%;
     margin: 0 auto;
     padding: 0;
 }
 
-#parceiros-banner-conteudo figcaption p{
+#parceiros-banner-conteudo figcaption p {
     font-weight: 600;
 }
 
@@ -653,31 +693,33 @@ justify-content: center;
 /* -----------------------CONTRATO------------------------------------------------------ */
 
 /* -------------------------Contato------------------------------ */
-.contato-main{
-  margin: 40px 10px;  
+.contato-main {
+    margin: 40px 10px;
 }
 
-.asside-contato img{
+.asside-contato img {
     width: 100%;
     border-radius: 10px;
 
 }
-.contato ion-icon{
+
+.contato ion-icon {
     color: #f47907;
     font-size: 30px;
 }
+
 .contato {
     display: flex;
     align-items: center;
     gap: 10px;
-    
+
 }
 
 #textareaContato {
     border-radius: 10px;
     width: 100%;
     border: none;
-    border-bottom:2px solid #3d3b3b;
+    border-bottom: 2px solid #3d3b3b;
 }
 
 .contato-input {
@@ -688,7 +730,7 @@ justify-content: center;
     padding-block: 0px;
     padding-inline: 0px;
     margin-bottom: 5px;
-    border-bottom:solid 2px #3d3b3b ;
+    border-bottom: solid 2px #3d3b3b;
 
 }
 
@@ -710,28 +752,30 @@ justify-content: center;
     text-align: center;
 } */
 
-.container-pe{
+.container-pe {
     font-size: 20px;
     max-width: 100%;
-    
-  
+
+
 }
+
 #nome,
-#rua{
+#rua {
     width: 95vw;
 }
 
 
-.fotope{
+.fotope {
     display: flex;
 }
+
 .input-radiope1 {
     display: flex;
     gap: 25px;
 }
 
 .input-boxpe input {
-    
+
     background-color: #00000010;
     border: none;
     color: black;
@@ -739,7 +783,7 @@ justify-content: center;
     border-radius: 20px;
     text-indent: 10px;
     border-radius: 10px;
-    border-bottom:#f47907 2px solid;
+    border-bottom: #f47907 2px solid;
 }
 
 .input-boxpe {
@@ -779,9 +823,10 @@ justify-content: center;
     display: flex;
     padding-bottom: 20px;
 }
-#imgtpe{
-   display: none;
-   
+
+#imgtpe {
+    display: none;
+
 }
 
 .aqvpe {
@@ -800,8 +845,9 @@ justify-content: center;
 
 .input-checkpe1 {
     padding: 10px 0;
-    
+
 }
+
 /* 
 .input-checkpe input {
     display: none;
@@ -810,7 +856,7 @@ justify-content: center;
 .input-checkpe input+label:before {
     /* background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
     */
-    content: ""; 
+    content: "";
     width: 25px;
     height: 25px;
     border-radius: 4px;
@@ -820,7 +866,7 @@ justify-content: center;
     vertical-align: middle;
     margin-right: 8px;
     margin-bottom: 5px;
-    
+
 
 }
 
@@ -835,7 +881,8 @@ justify-content: center;
 }
 
 .input-radiope1 input+label::before,
-.input-radiope input+label::before, .input-checkpe+label::before {
+.input-radiope input+label::before,
+.input-checkpe+label::before {
     /* background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E"); */
     content: "";
     width: 25px;
@@ -852,7 +899,7 @@ justify-content: center;
 }
 
 .input-radiope1 input:checked+label::before,
-.input-radiope input:checked+label::before{
+.input-radiope input:checked+label::before {
     content: "✓";
     background-color: #f47907;
     font-size: 18px;
@@ -892,7 +939,8 @@ justify-content: center;
     border-radius: 5px;
 }
 
-.input-boxc, .cadastroc p {
+.input-boxc,
+.cadastroc p {
     /* font-weight: bold; */
     display: flex;
     flex-direction: column;
@@ -1116,20 +1164,21 @@ justify-content: center;
 }
 
 /* --------------- Area-contratante */
-#conteudo-principal-contratante{
+#conteudo-principal-contratante {
     width: 100%;
     height: 100%;
-    
+
 }
 
-#area-avatar-contratante{
+#area-avatar-contratante {
     display: flex;
     align-items: center;
     gap: 0 5%;
     margin-bottom: 2%;
 }
 
-#avatar-contratante, #avatar-pedreiro{
+#avatar-contratante,
+#avatar-pedreiro {
     margin: 10px 0;
     width: 100px;
     height: 100px;
@@ -1137,22 +1186,22 @@ justify-content: center;
     border-radius: 50%;
 }
 
-#info-perfil-contratante{
+#info-perfil-contratante {
     background-color: #3d3b3b;
     border-radius: 10px;
     padding: 10px;
 }
 
-#form-area-contratante{
+#form-area-contratante {
     /*  */
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
     /* margin: 10px; */
-    
+
 }
 
-#form-area-contratante input{
+#form-area-contratante input {
     border-bottom-color: #0CA4F2;
     background-color: rgba(255, 255, 255, 0.894);
     margin-bottom: 20px;
@@ -1160,23 +1209,23 @@ justify-content: center;
     text-indent: 10px;
 }
 
-#form-area-contratante label{
+#form-area-contratante label {
     color: white;
 }
 
-#conteudo-mapa{
+#conteudo-mapa {
     width: 100%;
     height: 500px;
     margin: 20px 0;
 }
 
-#map{
+#map {
     height: 100%;
     border-radius: 10px;
     border: 2px solid #3d3b3b;
 }
 
-.info-contratante-perfil{
+.info-contratante-perfil {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1291,7 +1340,7 @@ justify-content: center;
         /* margin-right: 40px; */
     }
 
-    .input-checkpe{
+    .input-checkpe {
         gap: 8vw;
         margin-left: 2%;
     }
@@ -1303,11 +1352,12 @@ justify-content: center;
         /* justify-content: space-between; */
 
     }
-    .container-pe{
+
+    .container-pe {
         display: flex;
     }
 
-/* ---------------------------------------cadastro contratante------------------------------ */
+    /* ---------------------------------------cadastro contratante------------------------------ */
     #nome,
     #rua {
         width: 94vw;
@@ -1322,7 +1372,7 @@ justify-content: center;
         outline: none;
     } */
 
-    .input-checkc{
+    .input-checkc {
         gap: 8vw;
         margin-left: 2%;
     }
@@ -1335,7 +1385,7 @@ justify-content: center;
 
     }
 
-    .containerc1{
+    .containerc1 {
         display: flex;
         /* justify-content: space-around; */
         /* gap: 20vw; */
@@ -1458,23 +1508,24 @@ justify-content: center;
     }
 
     /* ----------Home-Seja Parceiro */
-    #seja-parceiro-home figure{
+    #seja-parceiro-home figure {
         position: relative;
         overflow: hidden;
-        
+
     }
-    
-    #seja-parceiro-home figcaption{
+
+    #seja-parceiro-home figcaption {
         position: absolute;
         left: 0;
         bottom: 60px;
         background-color: #3d3b3b7b;
-        padding:  10px 8%;
+        padding: 10px 8%;
         color: white;
         width: 100%;
     }
 
-    #seja-parceiro-home figcaption p, #seja-parceiro-home figcaption h2{
+    #seja-parceiro-home figcaption p,
+    #seja-parceiro-home figcaption h2 {
         margin: 0;
     }
 
@@ -1514,26 +1565,27 @@ justify-content: center;
 
 @media screen and (min-width:900px) {
 
-/* ------------------Header/Home----------- */
+    /* ------------------Header/Home----------- */
 
-#fundo-main{
-    justify-content: right;
-    /* transform: scaleX(-1); */
-}
+    #fundo-main {
+        justify-content: right;
+        /* transform: scaleX(-1); */
+    }
 
-#fundo-main div{
-    width: auto;
-    min-width: 300px;
-}
+    #fundo-main div {
+        width: auto;
+        min-width: 300px;
+    }
 
-#pedreiro, #contratante{
-    font-size: .6em;
-    font-weight: 700;
-}
+    #pedreiro,
+    #contratante {
+        font-size: .6em;
+        font-weight: 700;
+    }
 
-.conteudo-login-campos h2{
-    font-size: .8em;
-}
+    .conteudo-login-campos h2 {
+        font-size: .8em;
+    }
 
 
 
@@ -1742,12 +1794,12 @@ justify-content: center;
     } */
 
     /* --------------Contato------------- */
-    .geral-contato{
+    .geral-contato {
         display: flex;
-        
+
     }
-    
-    .contato-main{
+
+    .contato-main {
         margin: 30px 10px;
     }
 
@@ -1756,23 +1808,24 @@ justify-content: center;
         flex-direction: row-reverse;
         align-items: center;
         width: 100%;
-        }
+    }
 
-        #textareaContato{
-            padding-block: 0px;
-            padding-inline: 0px;
-        }
-   
-    
-    .contato p{
+    #textareaContato {
+        padding-block: 0px;
+        padding-inline: 0px;
+    }
+
+
+    .contato p {
         font-size: 1.1em;
     }
-    
-    .asside-contato{
-       width: 90%; 
-       margin: 0px;
+
+    .asside-contato {
+        width: 90%;
+        margin: 0px;
     }
-    .form-contato{
+
+    .form-contato {
         width: 100%;
     }
 
@@ -1794,7 +1847,7 @@ justify-content: center;
         text-align: end;
     }
 
-    #button-contato{
+    #button-contato {
         text-align: center;
     }
 
@@ -1865,46 +1918,55 @@ justify-content: center;
         cursor: pointer;
     }
 
-    .containerc1{
+    .containerc1 {
         display: block;
     }
 }
+
 /* -----------------------cadastro pedreiro-------------------------------- */
-.container-pe{
+.container-pe {
     font-size: 20px;
-   
-  
+
+
 }
-#imgtpe{
+
+#imgtpe {
     display: flex;
     margin-top: 1px;
     border-radius: 20px;
     width: 100%;
     height: 540px;
- 
+
 }
-#formco{
+
+#formco {
     width: 1000px;
 }
+
 #nome,
-#rua{
+#rua {
     width: 47vw;
 }
-.input-boxpe input{
+
+.input-boxpe input {
     width: 22vw;
 }
-.continue-buttonpe button{
+
+.continue-buttonpe button {
     background-color: #f47907;
 }
+
 .input-radiope1 input+label::before,
-.input-radiope input+label::before, .input-checkpe+label::before {
+.input-radiope input+label::before,
+.input-checkpe+label::before {
     cursor: pointer;
 }
+
 .aqvpe {
     cursor: pointer;
 }
-.arqv:hover{
-  background-color: rgba(22, 22, 22, 0.363);
-  cursor: pointer;  
-}
 
+.arqv:hover {
+    background-color: rgba(22, 22, 22, 0.363);
+    cursor: pointer;
+}
