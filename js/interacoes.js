@@ -101,13 +101,12 @@ function escolherContratante() {
 
 }
 function openForm() {
-  document.getElementById("myForm").style.display = "block";
-  document.querySelector("main").style.marginTop = "0";
+  document.getElementById("myForm").style.display = "flex";
 }
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
-  document.querySelector("main").style.marginTop = "60px"
+
 }
 
 // --------------------------validar
