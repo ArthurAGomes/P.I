@@ -579,7 +579,12 @@ nav {
 .container-pe{
     font-size: 20px;
     max-width: 100%;
+    
   
+}
+#nome,
+#rua{
+    width: 95vw;
 }
 
 
@@ -608,7 +613,7 @@ nav {
     flex-direction: column;
     margin-bottom: 1.1rem;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-indent: 10px;
 
 }
@@ -641,7 +646,8 @@ nav {
     padding-bottom: 20px;
 }
 #imgtpe{
-   display: none; 
+   display: none;
+   
 }
 
 .aqvpe {
@@ -669,7 +675,8 @@ nav {
 
 .input-checkpe input+label:before {
     /* background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
-    content: ""; */
+    */
+    content: ""; 
     width: 25px;
     height: 25px;
     border-radius: 4px;
@@ -712,7 +719,11 @@ nav {
 
 .input-radiope1 input:checked+label::before,
 .input-radiope input:checked+label::before{
+    content: "✓";
     background-color: #f47907;
+    font-size: 18px;
+    text-align: center;
+    color: white;
 }
 
 /* ---------------------Cadastro Contratante-------------------------------- */
@@ -1071,11 +1082,11 @@ nav {
     /* -------------------------------------CADASTRO PEDREIRO----------------------------------------------------------------------------------- */
     #nome,
     #rua {
-        width: 50vw;
+        width: 94vw;
     }
 
     .input-boxpe input {
-        width: 46vw;
+        width: 45vw;
         /* margin-right: 40px; */
     }
 
@@ -1662,10 +1673,41 @@ nav {
     }
 }
 /* -----------------------cadastro pedreiro-------------------------------- */
+.container-pe{
+    font-size: 20px;
+   
+  
+}
 #imgtpe{
     display: flex;
     margin-top: 1px;
     border-radius: 20px;
     width: 100%;
     height: 540px;
+ 
 }
+#formco{
+    width: 1000px;
+}
+#nome,
+#rua{
+    width: 47vw;
+}
+.input-boxpe input{
+    width: 22vw;
+}
+.continue-buttonpe button{
+    background-color: #f47907;
+}
+.input-radiope1 input+label::before,
+.input-radiope input+label::before, .input-checkpe+label::before {
+    cursor: pointer;
+}
+.aqvpe {
+    cursor: pointer;
+}
+.arqv:hover{
+  background-color: rgba(22, 22, 22, 0.363);
+  cursor: pointer;  
+}
+
