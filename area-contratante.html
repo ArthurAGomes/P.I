@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area do Pedreiro</title>
+    <title>Area do Contratante</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="js/info-pedreiros-contratantes.js"></script>
 </head>
 
 <body>
 
-    <header>
+     <header>
         <nav id="menu-principal">
             <div class="menu-icon" id="menu-hamburguer" onclick="abrirNav()">
                 <div class="bar1"></div>
@@ -42,7 +46,40 @@
     </header>
 
     <main>
-        <h1>    </h1>
+        <div id="conteudo-principal-contratante">
+            <div id="area-perfil-contratante">
+                <h1>Meu Perfil</h1>
+                <hr class="barras">
+                <div id="area-avatar-contratante">
+                    <p id="nome-avatar-contratante"></p>
+                    <div id="avatar-contratante"></div>
+                    <div id="reputacao-contratante"></div>
+                </div>
+                <div class="icones-area-contratante" id="chat-contratante"></div>
+                <div class="icones-area-contratante" id="suas-obras-contratante"></div>
+                <div class="icones-area-contratante" id="btn-fotos-contratante"></div>
+                <div id="info-perfil-contratante">
+                    <div>
+                        <label for="">Nome/Nome Social</label><input type="text" disabled>
+                        <label for="">CPF</label><input type="text" id="cpf-contratante" disabled>
+                        <label for="">Celular</label><input type="text" disabled>
+                        <label for="">CEP</label><input type="text" disabled>
+                        <label for="">Cidade</label><input type="text" disabled>
+                        <label for="">Estado</label><input type="text" disabled>
+                        <label for="">Bairro</label><input type="text" disabled>
+            
+                        <label for="">Rua</label><input type="text" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div id="conteudo-mapa">
+                <div id="map"></div>
+            </div>
+
+        </div>
+
+        
     </main>
 
     <footer class="rodape">
@@ -76,7 +113,7 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
-                            <li><a href="sobre.html"">Sobre nós</a></li>
+                            <li><a href="sobre.html">Sobre nós</a></li>
                             <li><a href="informacao.html">Informações</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
                             <li><a href="contratos.html">Contrato</a></li>
@@ -113,7 +150,10 @@
             <p id="credito">Desenvolvido pelo time de TI SCCP - Senac / 2024</p>
         </div>
     </footer>
+
     <script src="js/interacoes.js"></script>
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+    ({key: "AIzaSyAGGSfJVZ53PXHe4x8RfVrond5IdhLg7W8", v: "beta"});</script>
 
 
 </body>
