@@ -20,19 +20,20 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-           
+
             <a href="sobre.html" class="menu-itens">Sobre Nós</a>
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
-            
+
             <div id="meu-logo">
                 <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
-                <div id="nome-logo">Portal Pedreiro</div></a>
+                    <div id="nome-logo">Portal Pedreiro</div>
+                </a>
             </div>
-            
+
             <a href="contato.html" class="menu-itens">Contato</a>
-            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
-            
-            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
+            <a href="#" class="menu-itens" onclick="openForm()">Minha Conta</a>
+
+            <div id="avatar-minha-conta" onclick="openForm()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
@@ -43,6 +44,45 @@
             <a href="#">Minha Conta</a>
         </div>
     </header>
+    <div id="popUpLogin">
+        <div class="login-popUp" id="myForm">
+            <span class="icon-close" onclick="closePopup()"><ion-icon name="close-outline"></ion-icon>
+            </span>
+            <div class="form-box loginMinhaconta">
+                <h2>Login</h2>
+                <section id="categorias-home">
+                    <!-- <div class="categorias-home-escolha"></div> -->
+                    <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
+                    <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha"
+                        disable>Contratante</button>
+                    <!-- <div class="categorias-home-escolha"></div> -->
+                </section>
+                <form action="#">
+                    <div class="input-box" id="cpf-login">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required maxlength="14">
+                        <label>CPF</label>
+                    </div>
+                    <div class="input-box" id="senha-login">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required id="senha-login">
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-senha">
+                        <label><input type="checkbox">Lembrar senha</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="btn-popUp" id="botao-entrar-login">Entrar</button>
+                    <div class="login-registrar">
+                        <p> <a id="link-cadastro" href="cadastrope.html"
+                                class="register-link"><strong>Cadastre-se</strong></a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 
     <main id="main-seja-parceiro">
         <h1>Seja Parceiro</h1>
@@ -78,10 +118,9 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Para você</h3>
                         <div class="panel">
-                            <li><a href="#" style="color: red;">Entrar</a></li>
-                            <li><a href="cadastrope.html">Cadastro P</a></li>
+                            <li><a href="#">Entrar</a></li>
                             <li><a href="cadastroco.html">Cadastro C</a></li>
-                            <li><a href="seja-parceiro.html">Parceiros</a></li>
+                            <li><a href="cadastrope.html">Cadastro P</a></li>
                         </div>
                     </ul>
                     <hr>
@@ -91,9 +130,9 @@
                         <h3 class="titulos-rodape accordion">Empresa</h3>
                         <div class="panel">
                             <li><a href="contato.html">Contato</a></li>
-                            <li><a href="#" style="color: red;">Baixe o App</a></li>
-                            <li><a href="duvidas.html" style="color: orange;">Dúvidas</a></li>
-                            <li><a href="Ajuda.html" style="color: orange;">Ajuda</a></li>
+                            <li><a href="#">Baixe o App</a></li>
+                            <li><a href="duvidas.html">Dúvidas</a></li>
+
                         </div>
                     </ul>
                     <hr>
@@ -103,9 +142,8 @@
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
                             <li><a href="#">Sobre nós</a></li>
-                            <li><a href="duvidas.html"  style="color: orange;">Informações</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
-                            <li><a href="contratos.html">Contrato</a></li>
+                            <li><a href="contratos.html">Contratos</a></li>
                         </div>
                     </ul>
                     <hr>
@@ -113,19 +151,19 @@
                 <div id="redes-posicao" class="menu-rodape">
                     <ul class="redes">
                         <h3 class="titulos-rodape" id="redes-sociais">Redes sociais</h3>
-                        <li class="redes-icones">
-                            <a href="#"><img src="img/tiktok.png" alt="">
-                            <div>@PortalPedreiro</div>
+                        <li class="redes-icones" id="rede">
+                            <a href="#"><ion-icon name="logo-tiktok"></ion-icon></ion-icon>
+                                <div>@PortalPedreiro</div>
                             </a>
-                        
+
                         </li>
-                        <li class="redes-icones">
-                            <a href="#"><img src="img/instagram-icon.png" alt="">
-                            <div>@PortalPedreiro</div>
+                        <li class="redes-icones" id="rede">
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon>
+                                <div>@PortalPedreiro</div>
                             </a>
                         </li>
-                        <li class="redes-icones">
-                            <a href="#"><img src="img/youtube-icon.png" alt="">
+                        <li class="redes-icones" id="rede">
+                            <a href="#"><ion-icon name="logo-youtube"></ion-icon>
                                 <div>@PortalPedreiro</div>
                             </a>
                         </li>
@@ -139,6 +177,9 @@
             <p id="credito">Desenvolvido pelo time de TI SCCP - Senac / 2024</p>
         </div>
     </footer>
+    <script src="js/jquery.3.6.0.js"></script>
     <script src="js/interacoes.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

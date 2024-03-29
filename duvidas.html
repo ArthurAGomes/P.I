@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Informação</title>
+    <title>Dúvidas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,9 +28,9 @@
             </div>
 
             <a href="contato.html" class="menu-itens">Contato</a>
-            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
+            <a href="#" class="menu-itens" onclick="openForm()">Minha Conta</a>
 
-            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
+            <div id="avatar-minha-conta" onclick="openForm()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
@@ -41,7 +41,44 @@
             <a href="#">Minha Conta</a>
         </div>
     </header>
-
+    <div id="popUpLogin">
+        <div class="login-popUp" id="myForm">
+            <span class="icon-close" onclick="closePopup()"><ion-icon name="close-outline"></ion-icon>
+            </span>
+            <div class="form-box loginMinhaconta">
+                <h2>Login</h2>
+                <section id="categorias-home">
+                    <!-- <div class="categorias-home-escolha"></div> -->
+                    <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
+                    <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha"
+                        disable>Contratante</button>
+                    <!-- <div class="categorias-home-escolha"></div> -->
+                </section>
+                <form action="#">
+                    <div class="input-box" id="cpf-login">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required maxlength="14">
+                        <label>CPF</label>
+                    </div>
+                    <div class="input-box" id="senha-login">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required id="senha-login">
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-senha">
+                        <label><input type="checkbox">Lembrar senha</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <button type="submit" class="btn-popUp" id="botao-entrar-login">Entrar</button>
+                    <div class="login-registrar">
+                        <p> <a id="link-cadastro" href="cadastrope.html"
+                                class="register-link"><strong>Cadastre-se</strong></a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <main>
         <h1>Dúvidas</h1>
                 <hr class="barras">
@@ -176,19 +213,19 @@
                 <div id="redes-posicao" class="menu-rodape">
                     <ul class="redes">
                         <h3 class="titulos-rodape" id="redes-sociais">Redes sociais</h3>
-                        <li class="redes-icones">
-                            <a href="#"><img src="img/tiktok.png" alt="">
+                        <li class="redes-icones" id="rede">
+                            <a href="#"><ion-icon name="logo-tiktok"></ion-icon></ion-icon>
                                 <div>@PortalPedreiro</div>
                             </a>
 
                         </li>
-                        <li class="redes-icones">
-                            <a href="#"><img src="img/instagram-icon.png" alt="">
+                        <li class="redes-icones" id="rede">
+                            <a href="#"><ion-icon name="logo-instagram"></ion-icon>
                                 <div>@PortalPedreiro</div>
                             </a>
                         </li>
-                        <li class="redes-icones">
-                            <a href="#"><img src="img/youtube-icon.png" alt="">
+                        <li class="redes-icones" id="rede">
+                            <a href="#"><ion-icon name="logo-youtube"></ion-icon>
                                 <div>@PortalPedreiro</div>
                             </a>
                         </li>

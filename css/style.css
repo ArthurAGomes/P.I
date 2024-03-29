@@ -220,6 +220,7 @@ nav {
     pointer-events: none;
     backdrop-filter: blur(10px);
     margin-top: 10px;
+    z-index: 9999;
 }
 
 .login-popUp {
@@ -1057,28 +1058,13 @@ nav {
     padding-bottom: 20px;
 }
 
-
-/* Página duvidas ------------------------------------------*/
-#main-ajuda {
-    padding: 0 5%;
-}
-
-#tutorial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#tutorial>div {
+/* --------------------DUVIDAS------------------------------ */
+.info h1{
     text-align: center;
 }
-
-#lista-beneficios>li {
-    line-height: 25px;
+.info li {
+    margin: 10px 0;
 }
-
-/* --------------------DUVIDAS------------------------------ */
-
 .painelDuvidas {
     display: none;
     cursor: pointer;
@@ -1090,7 +1076,7 @@ nav {
 
 .painelDuvidas p {
     margin: 0;
-    font-size: 14px;
+    font-size: 1em;
     /* color: white; */
 }
 
@@ -1125,7 +1111,9 @@ nav {
 .menos-acc {
     display: none;
 }
-
+.informacao-conteudo{
+    margin: 0 10px;
+}
 /* ------ Seja Parceiro -------------------------------------- */
 
 #main-seja-parceiro {
@@ -1299,10 +1287,13 @@ nav {
     color: gray;
 }
 
-.redes img {
-    width: 45px;
+.redes ion-icon {
+    font-size: 30px;
+    margin-right: 5px;
 }
-
+#rede{
+    margin-top:5px;
+}
 .titulos-rodape {
     display: block;
     justify-content: center;
@@ -1829,10 +1820,6 @@ nav {
 .titulos-sobreNos:hover {
     /* background-color: #000000; */
     box-shadow: #4d4b4b 1px 1px 1px 1px;
-}
-/* -----Duvidas---- */
-.informacao-conteudo{
-    display: flex;
 }
 
 /* --------------Contato------------- */
