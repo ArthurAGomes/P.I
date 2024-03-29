@@ -219,22 +219,25 @@ nav {
     transition: opacity 0.5s ease; 
     pointer-events: none; 
     backdrop-filter: blur(10px);
+    margin-top: 10px;
 }
 
 .login-popUp {
     position: absolute;
-    width: 400px;
-    height: 440px;
+    width: 100%;
+    max-width: 400px;
+    height: 480px;
     background: transparent;
     border: 2px solid rgba(128, 128, 128, 0.41);
     border-radius: 20px;
-
+    background-color: #3d3b3bb2;
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     transition: opacity 0.5s; 
+    margin-top: 40px;
 }
 
 #popUpLogin.open {
@@ -272,7 +275,7 @@ nav {
 .form-box h2 {
     font-size: 2em;
     color: white;
-    font-weight: 600;
+    font-weight: 800;
     font-family: "Noto Sans";
     text-align: center;
 }
@@ -281,7 +284,7 @@ nav {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #3d3b3b;
+    border-bottom: 2px solid #F29D30;
     margin: 30px 0;
     border-radius: 10px;
 }
@@ -309,7 +312,7 @@ nav {
     height: 100%;
     background: transparent;
     border: none;
-    outline: none;
+    /* outline: none; */
     font-size: 1em;
     color: #3d3b3b;
     font-weight: 600;
@@ -353,7 +356,7 @@ nav {
 .btn-popUp {
     width: 100%;
     height: 45px;
-    background-color: #3d3b3b;
+    background-color: #F29D30;
     outline: none;
     cursor: pointer;
     font-size: 1em;
@@ -378,7 +381,9 @@ nav {
 .login-registrar p a:hover {
     text-decoration: underline;
 }
-
+.login-registrar p{
+    margin: 10px 0;
+}
 /* Home ---------------------------------------------------- */
 
 #home-main {
@@ -408,7 +413,7 @@ nav {
 #categorias-home {
 
     display: flex;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -546,7 +551,7 @@ nav {
     font-size: .8em;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 
@@ -1068,21 +1073,45 @@ nav {
     line-height: 25px;
 }
 
-/* --------------------------------------------------------------------Informação------------------------------------- */
+/* --------------------DUVIDAS------------------------------ */
 
 .painelDuvidas {
     display: none;
     cursor: pointer;
-    margin: auto 10px;
+    margin: 0 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    background-color: #3d3b3b33;
 }
-
+.painelDuvidas p{
+    margin: 0;
+    font-size: 14px;
+    /* color: white; */
+}
 .accordionDuvidas {
     cursor: pointer;
     font-weight: 600;
     font-size: 3vmax;
-    margin: 10px 10px;
+    /* margin: 10px 10px; */
 }
-
+.spanDuvidas div{
+    width: 80%;
+    color: white;
+}
+.spanDuvidas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d3b3be8;
+    padding: 1% 10px;
+    height: 85px;
+    margin-top: 10px ;
+    border-radius: 10px;
+}
+.spanDuvidas ion-icon{
+    font-size: 20px;
+    color: white;
+}
 /* ------ Seja Parceiro -------------------------------------- */
 
 #main-seja-parceiro {

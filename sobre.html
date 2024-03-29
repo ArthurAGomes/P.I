@@ -48,36 +48,43 @@
     </header>
     <div id="popUpLogin">
         <div class="login-popUp" id="myForm">
-            <span class="icon-close" onclick="closePopup()"><ion-icon name="close-outline"></ion-icon></span>
+            <span class="icon-close" onclick="closePopup()"><ion-icon name="close-outline"></ion-icon>
+            </span>
             <div class="form-box loginMinhaconta">
                 <h2>Login</h2>
+                <section id="categorias-home">
+                    <!-- <div class="categorias-home-escolha"></div> -->
+                    <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
+                    <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha"
+                        disable>Contratante</button>
+                    <!-- <div class="categorias-home-escolha"></div> -->
+                </section>
                 <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                            <input type="text" required>
-                            <label>Email</label>
+                    <div class="input-box" id="cpf-login">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required maxlength="14">
+                        <label>CPF</label>
                     </div>
-                    <div class="input-box">
+                    <div class="input-box" id="senha-login">
                         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="text" required>
+                        <input type="password" required id="senha-login">
                         <label>Senha</label>
                     </div>
                     <div class="lembrar-senha">
                         <label><input type="checkbox">Lembrar senha</label>
                         <a href="#">Esqueceu a senha?</a>
                     </div>
-                    <button type="submit" class="btn-popUp">Entrar</button>
+                    <button type="submit" class="btn-popUp" id="botao-entrar-login">Entrar</button>
                     <div class="login-registrar">
-                        <p>Fazer cadastro como <a href="cadastrope.html" class="register-link"><strong>Pedreiro</strong></a>
+                        <p> <a id="link-cadastro" href="cadastrope.html"
+                                class="register-link"><strong>Cadastre-se</strong></a>
                         </p>
-                        <p>Fazer cadastro como <a href="cadastroco.html"
-                            class="register-link"><strong>Contratante</strong></a></p>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    
+
     <main class="sobreNos">
         <h1>Saiba mais sobre o Portal Pedreiro </h1>
         <hr class="barras">
@@ -186,7 +193,7 @@
                             <li><a href="contato.html">Contato</a></li>
                             <li><a href="#">Baixe o App</a></li>
                             <li><a href="duvidas.html">Dúvidas</a></li>
-                            
+
                         </div>
                     </ul>
                     <hr>
@@ -207,13 +214,13 @@
                         <h3 class="titulos-rodape" id="redes-sociais">Redes sociais</h3>
                         <li class="redes-icones">
                             <a href="#"><img src="img/tiktok.png" alt="">
-                            <div>@PortalPedreiro</div>
+                                <div>@PortalPedreiro</div>
                             </a>
-                        
+
                         </li>
                         <li class="redes-icones">
                             <a href="#"><img src="img/instagram-icon.png" alt="">
-                            <div>@PortalPedreiro</div>
+                                <div>@PortalPedreiro</div>
                             </a>
                         </li>
                         <li class="redes-icones">
@@ -231,6 +238,7 @@
             <p id="credito">Desenvolvido pelo time de TI SCCP - Senac / 2024</p>
         </div>
     </footer>
+    <script src="js/jquery.3.6.0.js"></script>
     <script src="js/interacoes.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
