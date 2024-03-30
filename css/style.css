@@ -1058,6 +1058,11 @@ nav {
     padding-bottom: 20px;
 }
 
+.span-required {
+    font-size: 15px;
+  display: none;
+}
+
 /* --------------------DUVIDAS------------------------------ */
 .info h1{
     text-align: center;
