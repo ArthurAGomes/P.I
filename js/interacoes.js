@@ -22,7 +22,7 @@ function abrirNav() {
 
   meuMenu.classList.toggle("change");
   menuLat.classList.toggle("abrir");
-  // .toggle.style.width="250px";
+  
 }
 
 // acordeon sobre nos
@@ -88,7 +88,7 @@ function escolherPedreiro() {
 
 function escolherContratante() {
 
-  let formContratante = ""
+  // let formContratante = ""
 
   document.getElementById("pedreiro").style.backgroundColor = "#3d3b3b"
 

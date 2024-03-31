@@ -276,7 +276,7 @@ nav {
 .form-box h2 {
     font-size: 2em;
     color: white;
-    font-weight: 800;
+    font-weight: 600;
     font-family: "Noto Sans";
     text-align: center;
 }
@@ -315,7 +315,7 @@ nav {
     border: none;
     /* outline: none; */
     font-size: 1em;
-    color: #3d3b3b;
+    color: white;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -400,7 +400,7 @@ nav {
 
 #fundo-main {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-image: url(../img/home-pedreiro3.jfif);
     background-repeat: no-repeat;
     background-position: center;
@@ -410,9 +410,9 @@ nav {
     border-radius: 10px;
 }
 
-#fundo-main div {
+/* #fundo-main {
     width: 100%;
-}
+} */
 
 
 #categorias-home {
@@ -488,17 +488,63 @@ nav {
     text-transform: none;
 }
 
-#login-home {
-    /* display: none; */
-    border-radius: 10px;
-    background-color: #3d3b3b;
-    /* width: 100%; */
-    max-width: 500px;
-    text-align: center;
-    margin: 10px auto;
-    overflow: hidden;
-    border: 2px solid #F29D30;
+#popUpLogin-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* opacity: 0; */
+    /* transition: opacity 0.5s ease; */
+    /* pointer-events: none; */
+    /* backdrop-filter: blur(10px); */
+    /* margin-top: 10px; */
+    /* z-index: 9999; */
 }
+
+.login-popUp-home{
+    /* position: absolute; */
+    width: 100%;
+    max-width: 360px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.889);
+    border-radius: 20px;
+    background-color: #3d3b3bc2;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* transition: opacity 0.5s; */
+    /* margin-top: 40px; */
+}
+
+.login-popUp-home .form-box {
+    width: 100%;
+    padding: 20px;
+    transition: .5s;
+}
+
+.login-popUp-home h2{
+    margin: 10px 0;
+}
+
+
+
+/* #login-home {
+
+    background: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.41);
+    border-radius: 20px;
+    background-color: #3d3b3bb2;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+} */
 
 .conteudo-login-campos {
     margin: 30px 0;

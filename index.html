@@ -56,39 +56,41 @@
         </section>
 
         <div id="fundo-main">
-    
-            <div>
-                <section id="categorias-home">
-                    <!-- <div class="categorias-home-escolha"></div> -->
-                    <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
-                    <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha" disable>Contratante</button>
-                    <!-- <div class="categorias-home-escolha"></div> -->
-                </section>
-                <!-- <article id="login-home">
-                    <div id="conteudo-login">
-
-                        <div  class="conteudo-login-campos" id="conteudo-cpf">
-
-                            <h2>Acessar sua conta</h2>
-                            <input type="text" required placeholder="Digite seu CPF" id="cpf-login" maxlength="14" autocomplete="off" minlength="14">
-
-                        </div>
-
-                        <div  class="conteudo-login-campos" id="senha">
-
-                            <input type="password" required placeholder="Digite sua senha" id="senha-login" autocomplete="off" maxlength="15" minlength="8">
-                           
-                            <div id="conteudo-login-extra" >
-                                <a href="#" class="login-extra">Esqueci minha senha!</a>
-                                <a href="#" class="login-extra">Cadastre-se!</a>
+            <div id="popUpLogin-home">
+                <div class="login-popUp-home" id="myForm">
+                    
+                    <div class="form-box loginMinhaconta">
+                        <h2>Acessar Conta</h2>
+                        <section id="categorias-home">
+                            <button id="pedreiro" onclick="escolherPedreiro(), mudarTema()" class="categorias-home-escolha">Pedreiro</button>
+                            <button id="contratante" onclick="escolherContratante(), mudarTema()" class="categorias-home-escolha"
+                                disable>Contratante</button>
+                        </section>
+                        <form action="#">
+                            <div class="input-box" id="cpf-login">
+                                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                                <input type="text" required maxlength="14">
+                                <label>CPF</label>
                             </div>
-
-                        </div>
-                        <button id="botao-entrar-login">Entrar</button>
+                            <div class="input-box" id="senha-login">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" required id="senha-login">
+                                <label>Senha</label>
+                            </div>
+                            <div class="lembrar-senha">
+                                <label><input type="checkbox">Lembrar senha</label>
+                                <a href="#">Esqueceu a senha?</a>
+                            </div>
+                            <button type="submit" class="btn-popUp" id="botao-entrar-login">Entrar</button>
+                            <div class="login-registrar">
+                                <p> <a id="link-cadastro" href="cadastrope.html"
+                                        class="register-link"><strong>Cadastre-se</strong></a>
+                                </p>
+                            </div>
+                        </form>
                     </div>
-                </article> -->
+                </div>
             </div>
-            <!--  -->
         </div>
 
         <article id="seja-parceiro-home">
