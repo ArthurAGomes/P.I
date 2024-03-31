@@ -755,12 +755,15 @@ nav {
 
 .asside-contato img {
     width: 100%;
+    max-width: 800px;
     border-radius: 10px;
+
 
 }
 
 .contato ion-icon {
-    color: #f47907;
+    /* color: #f47907; */
+    color: #3d3b3b;
     font-size: 30px;
 }
 
@@ -770,30 +773,44 @@ nav {
     gap: 10px;
 
 }
-
-#textareaContato {
-    border-radius: 10px;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #3d3b3b;
+#h3-contato {
+    font-weight: 900;
+    font-size: 1.3em;
+    color: #3d3b3b;
+    text-align: center;
+    
 }
-
-.contato-input {
+.form-contato{
+    padding: 2%;
+    flex-wrap: wrap;
+    border: solid 2px #3d3b3b;
     border-radius: 10px;
-    height: 30px;
+}
+.form-contato label{
+    font-size: 1.1em;
+    font-weight: 900;
+}
+.contato-input {
     width: 100%;
+    padding: 0;
     border: none;
-    padding-block: 0px;
-    padding-inline: 0px;
-    margin-bottom: 5px;
-    border-bottom: solid 2px #3d3b3b;
+    line-height: 40px;
+    text-indent: 10px;
+    font-size: 1em;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    border-bottom: #3d3b3b 2px solid;
+    background-color: #3d3b3b0a;
+    margin-bottom: 15px;
 
 }
 
 #button-contato {
     text-align: end;
 }
-
+#btn-contato{
+    background-color: #3d3b3b;
+}
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
 /* #titulo-cadastro-pedreiro {
@@ -1104,6 +1121,11 @@ nav {
     padding-bottom: 20px;
 }
 
+.span-required {
+    font-size: 15px;
+  display: none;
+}
+
 /* --------------------DUVIDAS------------------------------ */
 .info h1{
     text-align: center;
@@ -1217,7 +1239,7 @@ nav {
 
 #conteudo-form-parceiros label {
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 #conteudo-form-parceiros div {
@@ -1885,12 +1907,6 @@ nav {
     width: 100%;
 }
 
-#textareaContato {
-    padding-block: 0px;
-    padding-inline: 0px;
-}
-
-
 .contato p {
     font-size: 1.1em;
 }
@@ -1901,35 +1917,9 @@ nav {
 }
 
 .form-contato {
-    width: 100%;
+    width: 100%; 
 }
-
-#h3-contato {
-    font-weight: 600;
-    font-size: 1.3em;
-    background-color: #3d3b3b;
-    padding: 10px;
-    color: white;
-    border-radius: 10px;
-    /* width: 100%; */
 }
-
-#btn-contato {
-    margin: 10px 10px;
-}
-
-#button-contato {
-    text-align: end;
-}
-
-#button-contato {
-    text-align: center;
-}
-
-
-
-}
-
 @media screen and (min-width:1000px) {
 
     /* -------------------------cadastro contratante--------------------------------- */
