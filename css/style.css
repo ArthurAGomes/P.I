@@ -1189,13 +1189,14 @@ nav {
 .painelDuvidas p {
     margin: 0;
     font-size: 1em;
+    font-weight: 600;
     /* color: white; */
 }
 
 .accordionDuvidas {
     cursor: pointer;
     font-weight: 600;
-    font-size: 3vmax;
+    /* font-size: 3vmax; */
     /* margin: 10px 10px; */
 }
 
@@ -1307,17 +1308,39 @@ nav {
 }
 
 /* --------------- Area-contratante */
-#conteudo-principal-contratante {
+#conteudo-geral-area-contratante{
     width: 100%;
     height: 100%;
+    margin: auto;
+    padding: 1% 0;
+    background-color: #3d3b3b;
+    border-radius: 10px;
+}
 
+#conteudo-principal-contratante {
+    margin: 2%;
+    /* max-width: 450px; */
+    /* border-radius: 10px; */
+    /* display: flex; */
+
+}
+
+#area-perfil-contratante{
+    background-color: #3d3b3b;
+    /* max-width: 300px; */
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
 }
 
 #area-avatar-contratante {
     display: flex;
-    align-items: center;
     gap: 0 5%;
-    margin-bottom: 2%;
+    justify-content: space-evenly;
+    /* margin: 2%; */
+    padding:10px;
+    background-color: #0ca5f2;
+    border-radius: 10px;
 }
 
 #avatar-contratante,
@@ -1325,12 +1348,39 @@ nav {
     margin: 10px 0;
     width: 100px;
     height: 100px;
-    background-color: #3d3b3b;
+    background-color: white;
     border-radius: 50%;
 }
 
+#reputacao-contratante, #nome-avatar-contratante{
+    color: white;
+    margin-left: 10px;
+    
+}
+#reputacao-contratante ion-icon{
+    font-size: 20px;
+}
+
+.icones-area-contratante a, .icones-area-contratante a:visited{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#conteudo-icones-contratante{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.icones-area-contratante{
+    color: #3d3b3b;
+    font-size: 35px;
+}
+
 #info-perfil-contratante {
-    background-color: #3d3b3b;
+    
     border-radius: 10px;
     padding: 10px;
 }
@@ -1346,7 +1396,7 @@ nav {
 
 #form-area-contratante input {
     border-bottom-color: #0CA4F2;
-    background-color: rgba(255, 255, 255, 0.894);
+    background-color: rgba(255, 255, 255, 0.549);
     margin-bottom: 20px;
     color: #3d3b3b;
     text-indent: 10px;
@@ -1356,9 +1406,125 @@ nav {
     color: white;
 }
 
-#conteudo-mapa {
+.info-cpf-celular, .info-complemento{
     width: 100%;
-    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.info-cpf-celular div, .info-complemento div{
+    width: 45%;
+}
+
+.info-endereco{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-endereco div{
+    width: 30%;
+}
+
+#chat-contratante h2, #mais-info-contratante, #mais-info-contratante h4 a{
+    color: white;
+}
+
+
+/* Chat containers */
+
+.painelContratante {
+    display: none;
+    cursor: pointer;
+    margin: 0 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    background-color: #e2e2e294;
+}
+
+.painelContratante p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+    /* color: white; */
+}
+
+.spanContratante div {
+    width: 80%;
+    color: #3d3b3b;
+}
+
+.spanContratante {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 1% 10px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.spanContratante ion-icon {
+    font-size: 1.5em;
+    color: #3d3b3b;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #0CA4F2;
+    background-color: #67c4f3d4;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+
+/* Mapa */
+#conteudo-mapa{
+    width: 100%;
+    height: 550px;
     margin: 20px 0;
 }
 
@@ -1372,6 +1538,11 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+#mais-info-contratante a{
+    text-decoration: none;
+    color: #3d3b3b;
 }
 
 /* ------------------------------------------------------------------------Footer --------------------------------------------------*/
@@ -1754,11 +1925,11 @@ nav {
     }
 }
 
+
+
 @media screen and (min-width:900px) {
 
     /* ------------------Header/Home----------- */
-
-    
 
     #pedreiro,
     #contratante {
@@ -1769,9 +1940,6 @@ nav {
     .conteudo-login-campos h2 {
         font-size: .8em;
     }
-
-
-
 
     /* -------------------------Footer------------------------------------------------------- */
     .rodape {
@@ -1865,11 +2033,35 @@ nav {
 
     #credito {
         margin: 0;
-    }
-
-   
+    } 
 }
 
+/* ----Area Contratante --- */
+
+
+#conteudo-geral-area-contratante{
+    max-width: 350px;
+    /* margin: -10px 0; */
+    max-height: 600px;
+    overflow: scroll;
+    
+}
+
+#conteudo-geral-area-contratante::-webkit-scrollbar{
+    display: none;
+}
+#area-contratante-container{
+    display: flex;
+    gap: 0 1%;
+}
+
+#conteudo-mapa{
+    height: 600px;
+}
+
+#btn-mapa-contratante{
+    display: none;
+}
 @media screen and (min-width:960px) {
 
     /* ----------------cadastro contratante----------------------
