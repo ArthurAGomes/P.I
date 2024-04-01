@@ -1352,6 +1352,11 @@ nav {
     border-radius: 50%;
 }
 
+#avatar-contratante{
+    background-image: url(https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg);
+    background-size: cover;
+}
+
 #reputacao-contratante, #nome-avatar-contratante{
     color: white;
     margin-left: 10px;
@@ -1399,7 +1404,10 @@ nav {
     background-color: rgba(255, 255, 255, 0.549);
     margin-bottom: 20px;
     color: #3d3b3b;
-    text-indent: 10px;
+    text-indent: 5px;
+    font-size: .9em;
+    line-height: 30px;
+    padding: 0;
 }
 
 #form-area-contratante label {
@@ -2037,7 +2045,6 @@ nav {
 }
 
 /* ----Area Contratante --- */
-
 
 #conteudo-geral-area-contratante{
     max-width: 350px;
