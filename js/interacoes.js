@@ -101,8 +101,9 @@ function escolherContratante() {
   document.getElementById("cpf-login").style.borderColor = "#0CA4F2"
 
   document.getElementById("botao-entrar-login").style.backgroundColor = "#0CA4F2"
-
+ 
   linkCad.setAttribute("href", "cadastroco.html");
+  document.getElementById("botao-entrar-login").linkCad.setAttribute("href", "area-contratante.html")
   
 }
 

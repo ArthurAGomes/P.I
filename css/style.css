@@ -791,6 +791,52 @@ nav {
 }
 
 /* -----------------------CONTRATO------------------------------------------------------ */
+.botao-contrato {
+    position: relative;
+}
+ 
+.botao-pf{
+    background-color: #3d3b3b;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.containers-contratos {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.containers-iframe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+ 
+.iframe-contrato,
+.iframe-contrato2 {
+    border: 1px solid black;
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+}
+ 
+.iframe-contrato iframe,
+.iframe-contrato2 iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+ 
+.botao-contrato {
+    margin-top: 20px;
+    text-align: center;
+}
 
 /* -------------------------Contato------------------------------ */
 .contato-main {
@@ -1742,7 +1788,29 @@ nav {
         /* justify-content: space-around; */
         /* gap: 20vw; */
     }
-
+/* ----------Contrato------------------ */
+.tipoc{
+    display: flex;
+    gap: 20px;
+}
+ 
+.containers-contratos {
+    flex-direction: row;
+}
+ 
+.containers-iframe,
+.botao-contrato {
+    flex: 1;
+}
+ 
+.botao-contrato {
+    margin-left: 20px;
+}
+ 
+.iframe-contrato,
+.iframe-contrato2 {
+    padding-bottom: 100%; 
+}
 
 }
 
@@ -2272,7 +2340,7 @@ nav {
     .containerc1 {
         display: block;
     }
-}
+
 
 /* -----------------------cadastro pedreiro-------------------------------- */
 .container-pe {
@@ -2320,4 +2388,21 @@ nav {
 .arqv:hover {
     background-color: rgba(22, 22, 22, 0.363);
     cursor: pointer;
+}
+/* -------------------Contrato ------------------*/
+.botao-pf{
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.botao-pf:hover{
+    background-color:#f47a07cc ;
+}
+ 
+.container-botao-contrato{
+    justify-content: space-between;
+}
+
 }
