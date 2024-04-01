@@ -401,6 +401,7 @@ nav {
 #fundo-main {
     display: flex;
     /* flex-wrap: wrap; */
+    flex-direction: column;
     background-image: url(../img/home-pedreiro3.jfif);
     background-repeat: no-repeat;
     background-position: center;
@@ -410,9 +411,53 @@ nav {
     border-radius: 10px;
 }
 
-/* #fundo-main {
+#buscar-pedreiro{
     width: 100%;
-} */
+    /* max-width: 400px; */
+    margin-top: 20px;
+}
+
+#buscar-pedreiro div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+}
+
+#buscar-pedreiro div form{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 10px 0;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+#buscar-pedreiro div form button{
+    background-color: #0CA4F2;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 200px; */
+}
+
+#buscar-pedreiro div form input{
+    line-height: 30px;
+    border-color: #0CA4F2;
+    text-align: center;
+    color: white;
+}
+
+#buscar-pedreiro input{
+    background-color: #3d3b3bc2;
+}
+
+ #buscar-pedreiro input::placeholder{
+    color: rgba(252, 252, 252, 0.67);
+}
+
+
 
 
 #categorias-home {
@@ -492,18 +537,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
-    /* top: 0; */
-    /* left: 0; */
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* opacity: 0; */
-    /* transition: opacity 0.5s ease; */
-    /* pointer-events: none; */
-    /* backdrop-filter: blur(10px); */
-    /* margin-top: 10px; */
-    /* z-index: 9999; */
+    
 }
 
 .login-popUp-home{
@@ -618,17 +654,13 @@ nav {
 
 #parceiro-pp-home {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     background-image: url(../img/imagem9.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px 0;
     border-radius: 10px 10px 0 0;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.819);
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.568); */
 
 }
 
@@ -640,53 +672,66 @@ nav {
 
 }
 
-.cartao-parceiros {
-    display: block;
-    max-width: 300px;
+#container-cartao-parceiro{
+    margin: auto;
     width: 100%;
-    height: 380px;
-    text-align: center;
-    margin: 10px;
-    background-color: #3d3b3b;
-    box-shadow: 0 4px 8px 0;
-    border-radius: 15px;
-
-
-}
-
-.cartao-parceiros h4 {
-    color: white;
-    text-transform: uppercase;
-    margin: 0;
-    padding-top: 10px;
-}
-
-.cartao-parceiros img {
-    width: 100%;
-    height: 200px;
-    border-radius: 15px 15px 0 0;
-}
-
-.info-parceiros {
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: gray;
+}
+
+.cartao-parceiros {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    /* height: 380px; */
+    text-align: center;
+    margin: 10px;
+    background-color: #3d3b3bda;
+    box-shadow: 0 4px 8px 0;
+    border-radius: 15px;
+    /* border: 2px solid #ffffff5d; */
+    box-shadow: 0 0 5px #d4d4d4d0;
+}
+
+.cartao-parceiros h4 {
+    color: white;
+    font-size: 1.5em;
+    /* text-transform: uppercase; */
+    margin: 10px 0;
+    /* padding: 10px 0; */
+}
+
+.cartao-parceiros img {
+    width: 90%;
+    height: 320px;
+    border-radius: 15px ;
+}
+
+
+.info-parceiros {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
     font-size: 1em;
     height: 100px;
     padding: 0 15px;
+    margin: 10px 0;
 }
 
 .cartao-parceiros button {
     border: none;
-    padding: 10px 0;
+    padding:    5px 0;
+    margin: 10px 0;
     width: 100%;
-    background-color: #3DF267;
+    background-color: #3df267d0;
     font-size: 1.2em;
-    border-radius: 0 0 15px 15px;
-    /* bottom: 0; */
-    /* left: 0; */
+    border-radius:  10px;
 }
 
 #seja-parceiro-home {
@@ -713,7 +758,6 @@ nav {
 
 #parceiros-banner-conteudo button {
     margin: 10px 0;
-    /* display: block; */
     background-color: #3df267;
 
 }
@@ -1314,7 +1358,7 @@ nav {
 
 #conteudo-mapa {
     width: 100%;
-    height: 500px;
+    height: 350px;
     margin: 20px 0;
 }
 
@@ -1430,6 +1474,33 @@ nav {
 
 
 @media screen and (min-width:550px) {
+
+    /* Home- */
+
+    #conteudo-buscar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #buscar-pedreiro{
+        width: 100%;
+    }
+
+    #buscar-pedreiro div form{
+        flex-direction: row;
+        gap: 10px;
+        max-width: none;
+        
+    }
+
+    #buscar-pedreiro div{
+        margin: -5px;
+    }
+
+    #buscar-pedreiro div form input{
+        width: 40%;
+    }
 
     /* -------------------------------------CADASTRO PEDREIRO----------------------------------------------------------------------------------- */
     #nome,
@@ -1610,6 +1681,24 @@ nav {
     }
 
     /* ----------Home-Seja Parceiro */
+
+    #fundo-main {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        /* transform: scaleX(-1); */
+    }
+
+    #fundo-main #popUpLogin-home {
+        
+        max-width: 45%;
+    }
+
+    #fundo-main #buscar-pedreiro #conteudo-buscar{
+        width:55%;
+    }
+
     #seja-parceiro-home figure {
         position: relative;
         overflow: hidden;
@@ -1619,7 +1708,7 @@ nav {
     #seja-parceiro-home figcaption {
         position: absolute;
         left: 0;
-        bottom: 60px;
+        bottom: 90px;
         background-color: #3d3b3b7b;
         padding: 10px 8%;
         color: white;
@@ -1669,15 +1758,7 @@ nav {
 
     /* ------------------Header/Home----------- */
 
-    #fundo-main {
-        justify-content: right;
-        /* transform: scaleX(-1); */
-    }
-
-    #fundo-main div {
-        width: auto;
-        min-width: 300px;
-    }
+    
 
     #pedreiro,
     #contratante {
@@ -1828,7 +1909,7 @@ nav {
 
 
 
-/* -----------Main/Home */
+
 
 /* -----------Main/Home */
 /* .cartao-parceiros {
@@ -1849,28 +1930,7 @@ nav {
         padding: 0 6%;
     } */
 
-.cartao-parceiros {
-    max-width: 250px;
-    height: 330px;
-}
 
-#baixe-app {
-    margin: 10px;
-    padding: 1%;
-    border-radius: 10px;
-}
-
-#baixe-app h2 {
-    margin: 0;
-}
-
-.info-parceiros {
-    font-size: 1em;
-}
-
-.cartao-parceiros h4 {
-    font-size: 1em;
-}
 
 /*----------- Sobre Nos---------------*/
 .sobreNos-conteudo {
@@ -1921,6 +1981,31 @@ nav {
 }
 }
 @media screen and (min-width:1000px) {
+
+    /* -----------Main/Home */
+
+/* .cartao-parceiros {
+    max-width: 270px;
+    height: 380px;
+} */
+
+#baixe-app {
+    margin: 10px;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+#baixe-app h2 {
+    margin: 0;
+}
+
+.info-parceiros {
+    font-size: 1em;
+}
+
+/* .cartao-parceiros h4 {
+    font-size: 1em;
+} */
 
     /* -------------------------cadastro contratante--------------------------------- */
 

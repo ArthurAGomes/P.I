@@ -74,7 +74,6 @@ function escolherPedreiro() {
 
   // document.getElementById("fundo-main").style.backgroundImage = "url(img/home-pedreiro3.jfif)"
 
-  // document.getElementById("login-home").style.borderColor = "#F29D30"
 
   document.getElementById("senha-login").style.borderColor = "#F29D30"
 
@@ -96,7 +95,6 @@ function escolherContratante() {
 
   // document.getElementById("fundo-main").style.backgroundImage = "url(img/home-contratante-1.png)"
 
-  // document.getElementById("login-home").style.borderColor = "#0CA4F2"
 
   document.getElementById("senha-login").style.borderColor = "#0CA4F2"
 
@@ -106,11 +104,41 @@ function escolherContratante() {
 
   linkCad.setAttribute("href", "cadastroco.html");
   
+}
 
+// Mudar tema Home
 
-  // formContratante += ''
+function mudarTemaP(){
+  document.getElementById("fundo-main").style.backgroundImage = "url(img/home-pedreiro3.jfif)"
+  document.getElementById("fundo-main").style.justifyContent = "right"
+  document.getElementById("buscar-pedreiro").style.display = "none"
+
+  document.getElementById("conteudo-mapa").style.display = "none"
 
 }
+
+function mudarTemaC(){
+  document.getElementById("fundo-main").style.backgroundImage = "url(img/home-contratante-1.png)"
+
+  document.getElementById("conteudo-mapa").style.display = "block"
+  
+  let campoCep = document.getElementById("buscar-pedreiro")
+  
+  let aux = ""
+
+  aux += `<div>
+            <form action="#">
+              <input placeholder="Informe seu CEP" type="text" maxlength="14">
+              <button>Buscar Pedreiro</button>
+            </form>
+          </div>`;
+  campoCep.style.display = "block"
+  campoCep.innerHTML = aux;
+
+}
+
+
+
 //POPUP--Minha conta---
 function openForm() {
   const popUpLogin = document.getElementById("popUpLogin");
@@ -142,6 +170,8 @@ function closePopup() {
 //   }
 
 // })
+
+
 
 //-------------cadastro contratante-------------------------
 function mascara_cpf(event) {
