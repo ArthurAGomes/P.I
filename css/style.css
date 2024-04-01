@@ -215,31 +215,35 @@ nav {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0; 
-    transition: opacity 0.5s ease; 
-    pointer-events: none; 
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
     backdrop-filter: blur(10px);
+    margin-top: 10px;
+    z-index: 9999;
 }
 
 .login-popUp {
     position: absolute;
-    width: 400px;
-    height: 440px;
+    width: 100%;
+    max-width: 400px;
+    height: 480px;
     background: transparent;
     border: 2px solid rgba(128, 128, 128, 0.41);
     border-radius: 20px;
-
+    background-color: #3d3b3bb2;
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transition: opacity 0.5s; 
+    transition: opacity 0.5s;
+    margin-top: 40px;
 }
 
 #popUpLogin.open {
     opacity: 1;
-    pointer-events: auto; 
+    pointer-events: auto;
 }
 
 .login-popUp.open {
@@ -281,7 +285,7 @@ nav {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #3d3b3b;
+    border-bottom: 2px solid #F29D30;
     margin: 30px 0;
     border-radius: 10px;
 }
@@ -309,9 +313,9 @@ nav {
     height: 100%;
     background: transparent;
     border: none;
-    outline: none;
+    /* outline: none; */
     font-size: 1em;
-    color: #3d3b3b;
+    color: white;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -334,13 +338,15 @@ nav {
 }
 
 .lembrar-senha label input {
-    accent-color:#3d3b3b;
+    accent-color: #3d3b3b;
     margin: 3px;
     padding: 4px;
 }
-.lembrar-senha input{
+
+.lembrar-senha input {
     width: 25px;
 }
+
 .lembrar-senha a {
     color: white;
     text-decoration: none;
@@ -353,7 +359,7 @@ nav {
 .btn-popUp {
     width: 100%;
     height: 45px;
-    background-color: #3d3b3b;
+    background-color: #F29D30;
     outline: none;
     cursor: pointer;
     font-size: 1em;
@@ -379,6 +385,10 @@ nav {
     text-decoration: underline;
 }
 
+.login-registrar p {
+    margin: 10px 0;
+}
+
 /* Home ---------------------------------------------------- */
 
 #home-main {
@@ -390,7 +400,8 @@ nav {
 
 #fundo-main {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     background-image: url(../img/home-pedreiro3.jfif);
     background-repeat: no-repeat;
     background-position: center;
@@ -400,15 +411,59 @@ nav {
     border-radius: 10px;
 }
 
-#fundo-main div {
+#buscar-pedreiro{
     width: 100%;
+    /* max-width: 400px; */
+    margin-top: 20px;
 }
+
+#buscar-pedreiro div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+}
+
+#buscar-pedreiro div form{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 10px 0;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+#buscar-pedreiro div form button{
+    background-color: #0CA4F2;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 200px; */
+}
+
+#buscar-pedreiro div form input{
+    line-height: 30px;
+    border-color: #0CA4F2;
+    text-align: center;
+    color: white;
+}
+
+#buscar-pedreiro input{
+    background-color: #3d3b3bc2;
+}
+
+ #buscar-pedreiro input::placeholder{
+    color: rgba(252, 252, 252, 0.67);
+}
+
+
 
 
 #categorias-home {
 
     display: flex;
-    margin: 10px 0;
+    /* margin: 10px 0; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -478,17 +533,54 @@ nav {
     text-transform: none;
 }
 
-#login-home {
-    /* display: none; */
-    border-radius: 10px;
-    background-color: #3d3b3b;
-    /* width: 100%; */
-    max-width: 500px;
-    text-align: center;
-    margin: 10px auto;
-    overflow: hidden;
-    border: 2px solid #F29D30;
+#popUpLogin-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
 }
+
+.login-popUp-home{
+    /* position: absolute; */
+    width: 100%;
+    max-width: 360px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.889);
+    border-radius: 20px;
+    background-color: #3d3b3bc2;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* transition: opacity 0.5s; */
+    /* margin-top: 40px; */
+}
+
+.login-popUp-home .form-box {
+    width: 100%;
+    padding: 20px;
+    transition: .5s;
+}
+
+.login-popUp-home h2{
+    margin: 10px 0;
+}
+
+
+
+/* #login-home {
+
+    background: transparent;
+    border: 2px solid rgba(128, 128, 128, 0.41);
+    border-radius: 20px;
+    background-color: #3d3b3bb2;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+} */
 
 .conteudo-login-campos {
     margin: 30px 0;
@@ -546,7 +638,7 @@ nav {
     font-size: .8em;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 
@@ -562,17 +654,13 @@ nav {
 
 #parceiro-pp-home {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     background-image: url(../img/imagem9.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px 0;
     border-radius: 10px 10px 0 0;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.819);
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.568); */
 
 }
 
@@ -584,53 +672,66 @@ nav {
 
 }
 
-.cartao-parceiros {
-    display: block;
-    max-width: 300px;
+#container-cartao-parceiro{
+    margin: auto;
     width: 100%;
-    height: 380px;
-    text-align: center;
-    margin: 10px;
-    background-color: #3d3b3b;
-    box-shadow: 0 4px 8px 0;
-    border-radius: 15px;
-
-
-}
-
-.cartao-parceiros h4 {
-    color: white;
-    text-transform: uppercase;
-    margin: 0;
-    padding-top: 10px;
-}
-
-.cartao-parceiros img {
-    width: 100%;
-    height: 200px;
-    border-radius: 15px 15px 0 0;
-}
-
-.info-parceiros {
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    color: gray;
+}
+
+.cartao-parceiros {
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    /* height: 380px; */
+    text-align: center;
+    margin: 10px;
+    background-color: #3d3b3bda;
+    box-shadow: 0 4px 8px 0;
+    border-radius: 15px;
+    /* border: 2px solid #ffffff5d; */
+    box-shadow: 0 0 5px #d4d4d4d0;
+}
+
+.cartao-parceiros h4 {
+    color: white;
+    font-size: 1.5em;
+    /* text-transform: uppercase; */
+    margin: 10px 0;
+    /* padding: 10px 0; */
+}
+
+.cartao-parceiros img {
+    width: 90%;
+    height: 320px;
+    border-radius: 15px ;
+}
+
+
+.info-parceiros {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
     font-size: 1em;
     height: 100px;
     padding: 0 15px;
+    margin: 10px 0;
 }
 
 .cartao-parceiros button {
     border: none;
-    padding: 10px 0;
+    padding:    5px 0;
+    margin: 10px 0;
     width: 100%;
-    background-color: #3DF267;
+    background-color: #3df267d0;
     font-size: 1.2em;
-    border-radius: 0 0 15px 15px;
-    /* bottom: 0; */
-    /* left: 0; */
+    border-radius:  10px;
 }
 
 #seja-parceiro-home {
@@ -657,7 +758,6 @@ nav {
 
 #parceiros-banner-conteudo button {
     margin: 10px 0;
-    /* display: block; */
     background-color: #3df267;
 
 }
@@ -691,6 +791,52 @@ nav {
 }
 
 /* -----------------------CONTRATO------------------------------------------------------ */
+.botao-contrato {
+    position: relative;
+}
+ 
+.botao-pf{
+    background-color: #3d3b3b;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.containers-contratos {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.containers-iframe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+ 
+.iframe-contrato,
+.iframe-contrato2 {
+    border: 1px solid black;
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+}
+ 
+.iframe-contrato iframe,
+.iframe-contrato2 iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+ 
+.botao-contrato {
+    margin-top: 20px;
+    text-align: center;
+}
 
 /* -------------------------Contato------------------------------ */
 .contato-main {
@@ -699,12 +845,15 @@ nav {
 
 .asside-contato img {
     width: 100%;
+    max-width: 800px;
     border-radius: 10px;
+
 
 }
 
 .contato ion-icon {
-    color: #f47907;
+    /* color: #f47907; */
+    color: #3d3b3b;
     font-size: 30px;
 }
 
@@ -714,30 +863,44 @@ nav {
     gap: 10px;
 
 }
-
-#textareaContato {
-    border-radius: 10px;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #3d3b3b;
+#h3-contato {
+    font-weight: 900;
+    font-size: 1.3em;
+    color: #3d3b3b;
+    text-align: center;
+    
 }
-
-.contato-input {
+.form-contato{
+    padding: 2%;
+    flex-wrap: wrap;
+    border: solid 2px #3d3b3b;
     border-radius: 10px;
-    height: 30px;
+}
+.form-contato label{
+    font-size: 1.1em;
+    font-weight: 900;
+}
+.contato-input {
     width: 100%;
+    padding: 0;
     border: none;
-    padding-block: 0px;
-    padding-inline: 0px;
-    margin-bottom: 5px;
-    border-bottom: solid 2px #3d3b3b;
+    line-height: 40px;
+    text-indent: 10px;
+    font-size: 1em;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    border-bottom: #3d3b3b 2px solid;
+    background-color: #3d3b3b0a;
+    margin-bottom: 15px;
 
 }
 
 #button-contato {
     text-align: end;
 }
-
+#btn-contato{
+    background-color: #3d3b3b;
+}
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
 /* #titulo-cadastro-pedreiro {
@@ -1049,41 +1212,68 @@ nav {
     padding-bottom: 20px;
 }
 
-
-/* Página duvidas ------------------------------------------*/
-#main-ajuda {
-    padding: 0 5%;
+.span-required {
+    font-size: 15px;
+  display: none;
 }
 
-#tutorial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#tutorial>div {
+/* --------------------DUVIDAS------------------------------ */
+.info h1{
     text-align: center;
 }
-
-#lista-beneficios>li {
-    line-height: 25px;
+.info li {
+    margin: 10px 0;
 }
-
-/* --------------------------------------------------------------------Informação------------------------------------- */
-
 .painelDuvidas {
     display: none;
     cursor: pointer;
-    margin: auto 10px;
+    margin: 0 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    background-color: #3d3b3b33;
+}
+
+.painelDuvidas p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+    /* color: white; */
 }
 
 .accordionDuvidas {
     cursor: pointer;
     font-weight: 600;
-    font-size: 3vmax;
-    margin: 10px 10px;
+    /* font-size: 3vmax; */
+    /* margin: 10px 10px; */
 }
 
+.spanDuvidas div {
+    width: 80%;
+    color: white;
+}
+
+.spanDuvidas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d3b3be8;
+    padding: 1% 10px;
+    height: 85px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.spanDuvidas ion-icon {
+    font-size: 1.5em;
+    color: white;
+}
+
+.menos-acc {
+    display: none;
+}
+.informacao-conteudo{
+    margin: 0 10px;
+}
 /* ------ Seja Parceiro -------------------------------------- */
 
 #main-seja-parceiro {
@@ -1141,7 +1331,7 @@ nav {
 
 #conteudo-form-parceiros label {
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 #conteudo-form-parceiros div {
@@ -1165,17 +1355,39 @@ nav {
 }
 
 /* --------------- Area-contratante */
-#conteudo-principal-contratante {
+#conteudo-geral-area-contratante{
     width: 100%;
     height: 100%;
+    margin: auto;
+    padding: 1% 0;
+    background-color: #3d3b3b;
+    border-radius: 10px;
+}
 
+#conteudo-principal-contratante {
+    margin: 2%;
+    /* max-width: 450px; */
+    /* border-radius: 10px; */
+    /* display: flex; */
+
+}
+
+#area-perfil-contratante{
+    background-color: #3d3b3b;
+    /* max-width: 300px; */
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
 }
 
 #area-avatar-contratante {
     display: flex;
-    align-items: center;
     gap: 0 5%;
-    margin-bottom: 2%;
+    justify-content: space-evenly;
+    /* margin: 2%; */
+    padding:10px;
+    background-color: #0ca5f2;
+    border-radius: 10px;
 }
 
 #avatar-contratante,
@@ -1183,12 +1395,44 @@ nav {
     margin: 10px 0;
     width: 100px;
     height: 100px;
-    background-color: #3d3b3b;
+    background-color: white;
     border-radius: 50%;
 }
 
+#avatar-contratante{
+    background-image: url(https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg);
+    background-size: cover;
+}
+
+#reputacao-contratante, #nome-avatar-contratante{
+    color: white;
+    margin-left: 10px;
+    
+}
+#reputacao-contratante ion-icon{
+    font-size: 20px;
+}
+
+.icones-area-contratante a, .icones-area-contratante a:visited{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#conteudo-icones-contratante{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.icones-area-contratante{
+    color: #3d3b3b;
+    font-size: 35px;
+}
+
 #info-perfil-contratante {
-    background-color: #3d3b3b;
+    
     border-radius: 10px;
     padding: 10px;
 }
@@ -1204,19 +1448,138 @@ nav {
 
 #form-area-contratante input {
     border-bottom-color: #0CA4F2;
-    background-color: rgba(255, 255, 255, 0.894);
+    background-color: rgba(255, 255, 255, 0.549);
     margin-bottom: 20px;
     color: #3d3b3b;
-    text-indent: 10px;
+    text-indent: 5px;
+    font-size: .9em;
+    line-height: 30px;
+    padding: 0;
 }
 
 #form-area-contratante label {
     color: white;
 }
 
-#conteudo-mapa {
+.info-cpf-celular, .info-complemento{
     width: 100%;
-    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.info-cpf-celular div, .info-complemento div{
+    width: 45%;
+}
+
+.info-endereco{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-endereco div{
+    width: 30%;
+}
+
+#chat-contratante h2, #mais-info-contratante, #mais-info-contratante h4 a{
+    color: white;
+}
+
+
+/* Chat containers */
+
+.painelContratante {
+    display: none;
+    cursor: pointer;
+    margin: 0 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    background-color: #e2e2e294;
+}
+
+.painelContratante p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+    /* color: white; */
+}
+
+.spanContratante div {
+    width: 80%;
+    color: #3d3b3b;
+}
+
+.spanContratante {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 1% 10px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.spanContratante ion-icon {
+    font-size: 1.5em;
+    color: #3d3b3b;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #0CA4F2;
+    background-color: #67c4f3d4;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+
+/* Mapa */
+#conteudo-mapa{
+    width: 100%;
+    height: 550px;
     margin: 20px 0;
 }
 
@@ -1230,6 +1593,11 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+#mais-info-contratante a{
+    text-decoration: none;
+    color: #3d3b3b;
 }
 
 /* ------------------------------------------------------------------------Footer --------------------------------------------------*/
@@ -1257,10 +1625,13 @@ nav {
     color: gray;
 }
 
-.redes img {
-    width: 45px;
+.redes ion-icon {
+    font-size: 30px;
+    margin-right: 5px;
 }
-
+#rede{
+    margin-top:5px;
+}
 .titulos-rodape {
     display: block;
     justify-content: center;
@@ -1330,6 +1701,33 @@ nav {
 
 @media screen and (min-width:550px) {
 
+    /* Home- */
+
+    #conteudo-buscar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #buscar-pedreiro{
+        width: 100%;
+    }
+
+    #buscar-pedreiro div form{
+        flex-direction: row;
+        gap: 10px;
+        max-width: none;
+        
+    }
+
+    #buscar-pedreiro div{
+        margin: -5px;
+    }
+
+    #buscar-pedreiro div form input{
+        width: 40%;
+    }
+
     /* -------------------------------------CADASTRO PEDREIRO----------------------------------------------------------------------------------- */
     #nome,
     #rua {
@@ -1391,7 +1789,29 @@ nav {
         /* justify-content: space-around; */
         /* gap: 20vw; */
     }
-
+/* ----------Contrato------------------ */
+.tipoc{
+    display: flex;
+    gap: 20px;
+}
+ 
+.containers-contratos {
+    flex-direction: row;
+}
+ 
+.containers-iframe,
+.botao-contrato {
+    flex: 1;
+}
+ 
+.botao-contrato {
+    margin-left: 20px;
+}
+ 
+.iframe-contrato,
+.iframe-contrato2 {
+    padding-bottom: 100%; 
+}
 
 }
 
@@ -1509,6 +1929,24 @@ nav {
     }
 
     /* ----------Home-Seja Parceiro */
+
+    #fundo-main {
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 10px;
+        /* transform: scaleX(-1); */
+    }
+
+    #fundo-main #popUpLogin-home {
+        
+        max-width: 45%;
+    }
+
+    #fundo-main #buscar-pedreiro #conteudo-buscar{
+        width:55%;
+    }
+
     #seja-parceiro-home figure {
         position: relative;
         overflow: hidden;
@@ -1518,7 +1956,7 @@ nav {
     #seja-parceiro-home figcaption {
         position: absolute;
         left: 0;
-        bottom: 60px;
+        bottom: 90px;
         background-color: #3d3b3b7b;
         padding: 10px 8%;
         color: white;
@@ -1564,19 +2002,11 @@ nav {
     }
 }
 
+
+
 @media screen and (min-width:900px) {
 
     /* ------------------Header/Home----------- */
-
-    #fundo-main {
-        justify-content: right;
-        /* transform: scaleX(-1); */
-    }
-
-    #fundo-main div {
-        width: auto;
-        min-width: 300px;
-    }
 
     #pedreiro,
     #contratante {
@@ -1587,9 +2017,6 @@ nav {
     .conteudo-login-campos h2 {
         font-size: .8em;
     }
-
-
-
 
     /* -------------------------Footer------------------------------------------------------- */
     .rodape {
@@ -1683,11 +2110,37 @@ nav {
 
     #credito {
         margin: 0;
-    }
+    } 
+}
 
-    @media screen and (min-width:960px) {
+/* ----Area Contratante --- */
 
-        /* ----------------cadastro contratante----------------------
+#conteudo-geral-area-contratante{
+    max-width: 350px;
+    /* margin: -10px 0; */
+    max-height: 600px;
+    overflow: scroll;
+    
+}
+
+#conteudo-geral-area-contratante::-webkit-scrollbar{
+    display: none;
+}
+#area-contratante-container{
+    display: flex;
+    gap: 0 1%;
+}
+
+#conteudo-mapa{
+    height: 600px;
+}
+
+#btn-mapa-contratante{
+    display: none;
+}
+@media screen and (min-width:960px) {
+
+    /* ----------------cadastro contratante----------------------
 
 
         .containerc {
@@ -1722,12 +2175,12 @@ nav {
         } */
 
 
-    }
 
-    /* -----------Main/Home */
 
-    /* -----------Main/Home */
-    /* .cartao-parceiros {
+
+
+/* -----------Main/Home */
+/* .cartao-parceiros {
         max-width: 350px;
         height: 325px;
     }
@@ -1745,116 +2198,82 @@ nav {
         padding: 0 6%;
     } */
 
-    .cartao-parceiros {
-        max-width: 250px;
-        height: 330px;
-    }
-
-    #baixe-app {
-        margin: 10px;
-        padding: 1%;
-        border-radius: 10px;
-    }
-
-    #baixe-app h2 {
-        margin: 0;
-    }
-
-    .info-parceiros {
-        font-size: 1em;
-    }
-
-    .cartao-parceiros h4 {
-        font-size: 1em;
-    }
-
-    /*----------- Sobre Nos---------------*/
-    .sobreNos-conteudo {
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    .sobre-conteudo {
-        width: 40%;
-        max-width: 500px;
-    }
-
-    .titulos-sobreNos:hover {
-        /* background-color: #000000; */
-        box-shadow: #4d4b4b 1px 1px 1px 1px;
-    }
-
-    /* .img-lado {
-        max-width: 300px;
-    } */
-
-    /* #valores-img {
-        margin: 65% 0;
-    } */
-
-    /* --------------Contato------------- */
-    .geral-contato {
-        display: flex;
-
-    }
-
-    .contato-main {
-        margin: 30px 10px;
-    }
-
-    .conteudo-contato {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        width: 100%;
-    }
-
-    #textareaContato {
-        padding-block: 0px;
-        padding-inline: 0px;
-    }
 
 
-    .contato p {
-        font-size: 1.1em;
-    }
+/*----------- Sobre Nos---------------*/
+.sobreNos-conteudo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
-    .asside-contato {
-        width: 90%;
-        margin: 0px;
-    }
+.sobre-conteudo {
+    width: 40%;
+    max-width: 500px;
+}
 
-    .form-contato {
-        width: 100%;
-    }
+.titulos-sobreNos:hover {
+    /* background-color: #000000; */
+    box-shadow: #4d4b4b 1px 1px 1px 1px;
+}
 
-    #h3-contato {
-        font-weight: 600;
-        font-size: 1.3em;
-        background-color: #3d3b3b;
-        padding: 10px;
-        color: white;
-        border-radius: 10px;
-        /* width: 100%; */
-    }
-
-    #btn-contato {
-        margin: 10px 10px;
-    }
-
-    #button-contato {
-        text-align: end;
-    }
-
-    #button-contato {
-        text-align: center;
-    }
+/* --------------Contato------------- */
+.geral-contato {
+    display: flex;
 
 }
 
+.contato-main {
+    margin: 30px 10px;
+}
+
+.conteudo-contato {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+
+.contato p {
+    font-size: 1.1em;
+}
+
+.asside-contato {
+    width: 90%;
+    margin: 0px;
+}
+
+.form-contato {
+    width: 100%; 
+}
+}
 @media screen and (min-width:1000px) {
+
+    /* -----------Main/Home */
+
+/* .cartao-parceiros {
+    max-width: 270px;
+    height: 380px;
+} */
+
+#baixe-app {
+    margin: 10px;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+#baixe-app h2 {
+    margin: 0;
+}
+
+.info-parceiros {
+    font-size: 1em;
+}
+
+/* .cartao-parceiros h4 {
+    font-size: 1em;
+} */
 
     /* -------------------------cadastro contratante--------------------------------- */
 
@@ -1922,7 +2341,7 @@ nav {
     .containerc1 {
         display: block;
     }
-}
+
 
 /* -----------------------cadastro pedreiro-------------------------------- */
 .container-pe {
@@ -1972,4 +2391,21 @@ nav {
 .arqv:hover {
     background-color: rgba(22, 22, 22, 0.363);
     cursor: pointer;
+}
+/* -------------------Contrato ------------------*/
+.botao-pf{
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+ 
+.botao-pf:hover{
+    background-color:#f47a07cc ;
+}
+ 
+.container-botao-contrato{
+    justify-content: space-between;
+}
+
 }
