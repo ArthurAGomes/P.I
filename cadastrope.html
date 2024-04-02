@@ -42,7 +42,7 @@
     </header>
  
     <main>
-        <h1>Pedreiro</h1>
+        <h1>pedreiro</h1>
         <hr class="barras">
         <div class="container-pe">
             <div class="fotope">
@@ -60,17 +60,29 @@
 
                     <div class="input-boxpe">
                         <label for="nome">Nome/Nome social</label>
-                        <input required type="text" id="nome" name="nome">
+                        <input required type="text" id="nome" name="nome"class="inputs required" oninput="validarNome()">
+                        
+                        <span class="span-required">Digite um nome com no mínimo 3 caracteres</span>
                     </div>
 
                     <div class="input-grouppe">
                         <div class="input-boxpe">
                             <label for="senha">Senha</label>
-                            <input required type="password" id="senha" name="senha">
+                            <input required type="password" id="senha" name="senha"class="inputs required"oninput=" validarSenha()">
                         </div>
+                            
                         <div class="input-boxpe">
-                            <label for="CPF">CPF/CNPJ</label>
-                            <input required type="tel" id="CPF" name="cpf">
+                            <label for="senha1">Confirme a Senha</label>
+                            <input type="password" id="password1" name="senha1" class="inputs required"
+                                oninput=" compareSenha()">
+                            <span class="span-required">As senhas devem ser compativeis</span>   
+                        </div>    
+                        
+                        <div class="input-boxpe">
+                            <label for="cpf">CPF/CNPJ</label>
+                            <input required type="tel" id="cpf" name="cpf"autocomplete="off" onkeyup="mascara_cpf(event)"
+                            class="inputs required" oninput="validarcpf()">
+                            <span class="span-required">Digite um CPF/CNPJ válido</span>
                         </div>
                         <div class="input-boxpe">
                             <label for="Celular">Celular</label>
@@ -100,13 +112,13 @@
                         </div>
                     </div>
 
-                    <div class="input-checkpe">
+                    <div class="input-radiope1">
                         <input type="checkbox" id="mei" name="Interesse">
                         <label for="mei">Você é MEI?</label>
                     </div>
                     <p><a href="mei.html">Saiba o que é e as vantagens de ser MEI</a></p>
 
-                    <div class="input-checkpe">
+                    <div class="input-radiope1">
                         <div>
                             <input type="checkbox" id="experiencia" name="Interesse">
                             <label for="experiencia">Possuo experiência?</label>
@@ -132,24 +144,25 @@
 
                     <div class="input-grouppe">
                         <div class="input-boxpe">
-                            <label for="CEP">CEP</label>
-                            <input required type="tel" id="CEP" name="CEP">
+                            <label for="cep">CEP</label>
+                            <input  type="tel" id="cep" name="cep" onkeyup="mascara_cep()">
+                           
                         </div>
                         <div class="input-boxpe">
-                            <label for="Cidade">Cidade</label>
-                            <input required type="text" id="Cidade" name="Cidade">
+                            <label for="cidade">Cidade</label>
+                            <input required type="text" id="cidade" name="cidade">
                         </div>
                         <div class="input-boxpe">
-                            <label for="Estado">Estado</label>
-                            <input required type="text" id="Estado" name="Estado">
+                            <label for="estado">Estado</label>
+                            <input required type="text" id="estado" name="estado">
                         </div>
                         <div class="input-boxpe">
-                            <label for="Bairro">Bairro</label>
-                            <input required type="text" id="Bairro" name="Bairro">
+                            <label for="bairro">Bairro</label>
+                            <input required type="text" id="bairro" name="bairro">
                         </div>
                         <div class="input-boxpe">
-                            <label for="Rua">Rua</label>
-                            <input required type="text" id="Rua" name="Rua">
+                            <label for="rua">Rua</label>
+                            <input required type="text" id="rua" name="rua">
                         </div>
                     </div>
 
@@ -193,7 +206,7 @@
                     </div>
 
                     <div class="continue-buttonpe">
-                        <button id="botao" type="submit">CADASTRAR</button>
+                        <button id="botao" onclick="window.location.href='area-contratante.html';">CADASTRAR</button>
                     </div>
                 </form>
 
@@ -271,6 +284,7 @@
         </div>
     </footer>
     <script src="js/jquery.3.6.0.js"></script>
+    <script src="js/interacoes2.js"></script>
     <script src="js/interacoes.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
