@@ -309,7 +309,7 @@ nav {
 }
 
 .input-box input {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     background: transparent;
     border: none;
@@ -365,6 +365,13 @@ nav {
     font-size: 1em;
     color: white;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#trocalink{
+    text-decoration: none;
 }
 
 .login-registrar {
