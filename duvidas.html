@@ -22,7 +22,7 @@
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
 
             <div id="meu-logo">
-                <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
+                <a href="index.html"><img id="logo" src="img/brick4.png" alt="logo">
                     <div id="nome-logo">Portal Pedreiro</div>
                 </a>
             </div>
@@ -37,8 +37,7 @@
             <a href="sobre.html">Sobre Nós</a>
             <a href="seja-parceiro.html">Parceiros</a>
             <a href="contato.html">Contato</a>
-            <a href="#">Dúvidas</a>
-            <a href="#">Minha Conta</a>
+            <a href="duvidas.html">Dúvidas</a>
         </div>
     </header>
     <div id="popUpLogin">
@@ -48,11 +47,9 @@
             <div class="form-box loginMinhaconta">
                 <h2>Login</h2>
                 <section id="categorias-home">
-                    <!-- <div class="categorias-home-escolha"></div> -->
                     <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
                     <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha"
                         disable>Contratante</button>
-                    <!-- <div class="categorias-home-escolha"></div> -->
                 </section>
                 <form action="#">
                     <div class="input-box" id="cpf-login">
@@ -69,7 +66,7 @@
                         <label><input type="checkbox">Lembrar senha</label>
                         <a href="#">Esqueceu a senha?</a>
                     </div>
-                    <button type="submit" class="btn-popUp" id="botao-entrar-login">Entrar</button>
+                    <a href="area-pedreiro.html" id="trocalink"><div class="btn-popUp" id="botao-entrar-login">Entrar</div></a>
                     <div class="login-registrar">
                         <p> <a id="link-cadastro" href="cadastrope.html"
                                 class="register-link"><strong>Cadastre-se</strong></a>
@@ -79,16 +76,18 @@
             </div>
         </div>
     </div>
+
     <main>
         <h1>Dúvidas</h1>
-                <hr class="barras">
+        <hr class="barras">
         <div class="informacao-conteudo">
             <div class="duvidas">
                 <div class="accordions">
                     <div class="accordionDuvidas">
                         <span class="spanDuvidas">
-                            <div>O Portal Pedreiro realiza reformas em casa?</div><ion-icon name="add" class="mais-acc"></ion-icon><ion-icon class="menos-acc"
-                            name="remove-outline"></ion-icon>
+                            <div>O Portal Pedreiro realiza reformas em casa?</div><ion-icon name="add"
+                                class="mais-acc"></ion-icon><ion-icon class="menos-acc"
+                                name="remove-outline"></ion-icon>
                         </span>
                     </div>
                     <div class="painelDuvidas">
@@ -99,7 +98,8 @@
                     <div class="accordionDuvidas">
                         <span class="spanDuvidas">
                             <div>Quais as formas de pagamentos oferecidas?</div><ion-icon name="add"
-                                class="mais-acc"></ion-icon><ion-icon class="menos-acc" name="remove-outline"></ion-icon>
+                                class="mais-acc"></ion-icon><ion-icon class="menos-acc"
+                                name="remove-outline"></ion-icon>
                         </span>
                     </div>
                     <div class="painelDuvidas">
@@ -122,7 +122,8 @@
                     <div class="accordionDuvidas">
                         <span class="spanDuvidas">
                             <div>Qual o prazo para o término da obra?</div><ion-icon name="add"
-                                class="mais-acc"></ion-icon><ion-icon class="menos-acc" name="remove-outline"></ion-icon>
+                                class="mais-acc"></ion-icon><ion-icon class="menos-acc"
+                                name="remove-outline"></ion-icon>
                         </span>
                     </div>
                     <div class="painelDuvidas">
@@ -132,7 +133,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="info">
                 <h1>Informações</h1>
                 <h2>Benefícios para você:</h2>
@@ -180,7 +181,7 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Para você</h3>
                         <div class="panel">
-                            <li><a href="#">Entrar</a></li>
+                            <li><a href="index.html">Entrar</a></li>
                             <li><a href="cadastroco.html">Cadastro C</a></li>
                             <li><a href="cadastrope.html">Cadastro P</a></li>
                         </div>
@@ -203,7 +204,7 @@
                     <ul>
                         <h3 class="titulos-rodape accordion">Veja mais</h3>
                         <div class="panel">
-                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="sobre.html">Sobre nós</a></li>
                             <li><a href="seja-parceiro.html">Seja Parceiro</a></li>
                             <li><a href="contratos.html">Contratos</a></li>
                         </div>
