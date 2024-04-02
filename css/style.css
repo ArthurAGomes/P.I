@@ -1346,12 +1346,145 @@ nav {
 
 /* ----------------- Area-pedreiro */
 
-#info-perfil-pedreiro {
+#conteudo-geral-area-pedreiro{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 1% 0;
+    background-color: #3d3b3b;
+    border-radius: 10px;
+}
+
+#conteudo-principal-pedreiro{
+    margin: 2%;
+}
+
+#area-perfil-pedreiro{
+    background-color: #3d3b3b;
+    /* max-width: 300px; */
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+#area-avatar-pedreiro{
+    display: flex;
+    gap: 0 5%;
+    justify-content: space-evenly;
+    /* margin: 2%; */
+    padding:10px;
+    background-color: #f47907;
+    border-radius: 10px;
+}
+
+#avatar-pedreiro{
+    background-image: url(https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg);
+    background-size: cover;
+}
+
+#reputacao-pedreiro, #nome-avatar-pedreiro{
+    color: white;
+    margin-left: 10px;
+}
+
+.icones-area-pedreiro a, .icones-area-pedreiro a:visited{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#reputacao-pedreiro ion-icon{
+    font-size: 20px;
+}
+
+#conteudo-icones-pedreiro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.icones-area-pedreiro{
+    color: #3d3b3b;
+    font-size: 35px;
+}
+
+#info-perfil-pedreiro{
+    
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#form-area-pedreiro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form-area-pedreiro input {
+    border-bottom-color: #f47907;
+    background-color: rgba(255, 255, 255, 0.549);
+    margin-bottom: 20px;
+    color: #3d3b3b;
+    text-indent: 5px;
+    font-size: .9em;
+    line-height: 30px;
+    padding: 0;
+}
+
+#form-area-pedreiro label {
+    color: white;
+}
+
+#chat-pedreiro h2, #mais-info-pedreiro, #mais-info-pedreiro h4 a{
+    color: white;
+}
+
+.info-pedreiro-perfil {
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
-#info-perfil-pedreiro input {
-    width: 100%;
+#mais-info-pedreiro a{
+    text-decoration: none;
+    color: #3d3b3b;
+}
+
+.spanpedreiro div {
+    width: 80%;
+    color: #3d3b3b;
+}
+
+.spanpedreiro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1% 10px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.spanpedreiro ion-icon {
+    font-size: 1.5em;
+    color: #3d3b3b;
+}
+
+.painelPedreiro {
+    display: none;
+    cursor: pointer;
+    margin: 0 10px 10px 10px;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    background-color: #e2e2e294;
+}
+
+.painelPedreiro p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 600;
+    /* color: white; */
 }
 
 /* --------------- Area-contratante */
@@ -1443,7 +1576,6 @@ nav {
     flex-wrap: wrap;
     /* flex-direction: column; */
     /* margin: 10px; */
-
 }
 
 #form-area-contratante input {
@@ -1587,6 +1719,37 @@ nav {
     height: 100%;
     border-radius: 10px;
     border: 2px solid #3d3b3b;
+}
+
+#card-mapa-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    /* height: 100%; */
+}
+
+#card-mapa-perfil img{
+    width: 100%;
+}
+
+#card-mapa-perfil h3{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#card-mapa-perfil div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+#card-mapa-perfil div p{
+    margin: 5px 0;
+
 }
 
 .info-contratante-perfil {
@@ -2111,7 +2274,7 @@ nav {
     #credito {
         margin: 0;
     } 
-}
+
 
 /* ----Area Contratante --- */
 
@@ -2137,6 +2300,8 @@ nav {
 
 #btn-mapa-contratante{
     display: none;
+}
+
 }
 @media screen and (min-width:960px) {
 
