@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <script type="module" src="js/info-pedreiros-contratantes.js"></script>
-        <title>Home - PP</title>
+        <title>Home - Portal Pedreiro</title>
     
     </head>
 <body>
@@ -25,27 +25,28 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-           
+
             <a href="sobre.html" class="menu-itens">Sobre Nós</a>
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
-            
+
             <div id="meu-logo">
                 <a href="index.html"><img id="logo" src="img/brick4.png" alt="logo">
-                <div id="nome-logo">Portal Pedreiro</div></a>
+                    <div id="nome-logo">Portal Pedreiro</div>
+                </a>
             </div>
-            
+
             <a href="contato.html" class="menu-itens">Contato</a>
-            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
-            
-            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
+            <a href="#" class="menu-itens" onclick="openForm()">Minha Conta</a>
+
+            <div id="avatar-minha-conta" onclick="openForm()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
             <a href="sobre.html">Sobre Nós</a>
             <a href="seja-parceiro.html">Parceiros</a>
             <a href="contato.html">Contato</a>
-            <a href="#">Dúvidas</a>
-            <a href="#">Minha Conta</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="contratos.html">Contratos</a>
         </div>
     </header>
 
@@ -54,7 +55,6 @@
     <main id="home-main">
         <section id="baixe-app">
             <div>
-                <!-- <h1>Portal Pedreiro</h1><hr class="barras"> -->
                 <h2 class="subtitulos-sombra">Aqui você constrói oportunidades com apenas um clique!</h2>
                 <button>Baixe o Portal Pedreiro</button>
             </div>
@@ -94,7 +94,7 @@
                                 <label><input type="checkbox">Lembrar senha</label>
                                 <a href="#">Esqueceu a senha?</a>
                             </div>
-                            <button type="submit" class="btn-popUp" id="botao-entrar-login">Entrar</button>
+                           <a href="area-pedreiro.html" id="trocalink"><div class="btn-popUp" id="botao-entrar-login">Entrar</div></a>
                             <div class="login-registrar">
                                 <p> <a id="link-cadastro" href="cadastrope.html"
                                         class="register-link"><strong>Cadastre-se</strong></a>
@@ -114,7 +114,7 @@
                     <h2>Seja Parceiro</h2>
                     <p>Faça parte do PP como um dos nosso parceiros!</p> 
                     <p>A nossa equipe está pronta para encarar novos desafios e alçar novos voos com parceiros confiáveis</p>
-                    <button>Seja um Parceiro Portal Pedreiro</button>
+                    <a href="seja-parceiro.html"><button>Seja um Parceiro Portal Pedreiro</button></a>
                 </figcaption>
             </figure>
         </article>
@@ -129,7 +129,7 @@
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
-                        <button>Veja Mais</button>
+                        <a href="https://www.instagram.com/goianaoconstrucao/"><button>Veja Mais</button></a>
                     </div>
                 </div>
                 <div class="cartao-parceiros">
@@ -139,7 +139,7 @@
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
-                        <button>Veja Mais</button>
+                        <a href="https://www.instagram.com/goianaoconstrucao/"><button>Veja Mais</button></a>
                     </div>
                 </div>
                 <div class="cartao-parceiros">
@@ -149,7 +149,7 @@
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
-                        <button>Veja Mais</button>
+                        <a href="https://www.instagram.com/goianaoconstrucao/"><button>Veja Mais</button></a>
                     </div>
                 </div>
                 <div class="cartao-parceiros">
@@ -159,7 +159,7 @@
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
-                        <button>Veja Mais</button>
+                        <a href="https://www.instagram.com/goianaoconstrucao/"><button>Veja Mais</button></a>
                     </div>
                 </div>
                 <div class="cartao-parceiros">
@@ -169,7 +169,7 @@
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
-                        <button>Veja Mais</button>
+                        <a href="https://www.instagram.com/goianaoconstrucao/"><button>Veja Mais</button></a>
                     </div>
                 </div>
                 <div class="cartao-parceiros">
@@ -179,7 +179,7 @@
                     <div class="info-parceiros">
                         <span>Av. R. Pereira de Magalhães, 11980</span>
                         <span>3271-0322</span>
-                        <button>Veja Mais</button>
+                        <a href="https://www.instagram.com/goianaoconstrucao/"><button>Veja Mais</button></a>
                     </div>
                 </div>
             </div>
@@ -258,7 +258,7 @@
     <script src="js/interacoes.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="js/info-pedreiros-contratantes.js"></script>
+    <!--<script src="js/info-pedreiros-contratantes.js"></script>-->
     <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
     ({key: "AIzaSyAGGSfJVZ53PXHe4x8RfVrond5IdhLg7W8", v: "beta"});</script>
 
