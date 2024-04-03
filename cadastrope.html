@@ -16,31 +16,66 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
- 
+
             <a href="sobre.html" class="menu-itens">Sobre Nós</a>
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
- 
+
             <div id="meu-logo">
-                <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
+                <a href="index.html"><img id="logo" src="img/brick4.png" alt="logo">
                     <div id="nome-logo">Portal Pedreiro</div>
                 </a>
             </div>
- 
+
             <a href="contato.html" class="menu-itens">Contato</a>
-            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
- 
-            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
+            <a href="#" class="menu-itens" onclick="openForm()">Minha Conta</a>
+
+            <div id="avatar-minha-conta" onclick="openForm()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
             <a href="sobre.html">Sobre Nós</a>
             <a href="seja-parceiro.html">Parceiros</a>
             <a href="contato.html">Contato</a>
-            <a href="#">Dúvidas</a>
-            <a href="#">Minha Conta</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="contratos.html">Contratos</a>
         </div>
     </header>
- 
+ <div id="popUpLogin">
+        <div class="login-popUp" id="myForm">
+            <span class="icon-close" onclick="closePopup()"><ion-icon name="close-outline"></ion-icon>
+            </span>
+            <div class="form-box loginMinhaconta">
+                <h2>Login</h2>
+                <section id="categorias-home">
+                    <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
+                    <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha"
+                        disable>Contratante</button>
+                </section>
+                <form action="#">
+                    <div class="input-box" id="cpf-login">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required maxlength="14">
+                        <label>CPF</label>
+                    </div>
+                    <div class="input-box" id="senha-login">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required id="senha-login">
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-senha">
+                        <label><input type="checkbox">Lembrar senha</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <a href="area-pedreiro.html" id="trocalink"><div class="btn-popUp" id="botao-entrar-login">Entrar</div></a>
+                    <div class="login-registrar">
+                        <p> <a id="link-cadastro" href="cadastrope.html"
+                                class="register-link"><strong>Cadastre-se</strong></a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <main>
         <h1>pedreiro</h1>
         <hr class="barras">
@@ -116,7 +151,7 @@
                         <input type="checkbox" id="mei" name="Interesse">
                         <label for="mei">Você é MEI?</label>
                     </div>
-                    <p><a href="mei.html">Saiba o que é e as vantagens de ser MEI</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=Zk9J1Jppfxk" target="_blank">Saiba o que é e as vantagens de ser MEI</a></p>
 
                     <div class="input-radiope1">
                         <div>
@@ -206,7 +241,7 @@
                     </div>
 
                     <div class="continue-buttonpe">
-                        <button id="botao" onclick="window.location.href='area-contratante.html';">CADASTRAR</button>
+                        <button id="botao" onclick="window.location.href='area-pedreiro.html';">CADASTRAR</button>
                     </div>
                 </form>
 
@@ -284,8 +319,8 @@
         </div>
     </footer>
     <script src="js/jquery.3.6.0.js"></script>
-    <script src="js/interacoes2.js"></script>
     <script src="js/interacoes.js"></script>
+    <script src="js/interacoes2.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
