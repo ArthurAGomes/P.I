@@ -101,9 +101,10 @@ function escolherContratante() {
   document.getElementById("cpf-login").style.borderColor = "#0CA4F2"
 
   document.getElementById("botao-entrar-login").style.backgroundColor = "#0CA4F2"
-  document.getElementById("trocalink").setAttribute("href", "area-contratante.html");
-  
+ document.getElementById("trocalink").setAttribute("href", "area-contratante.html");
+
   linkCad.setAttribute("href", "cadastroco.html");
+  
 }
 
 // Mudar tema Home
@@ -174,134 +175,170 @@ function closePopup() {
 
 
 //-------------cadastro contratante-------------------------
-// function mascara_cpf(event) {
-//   var cpf = document.getElementById('cpf');
-//   var pessoaFisica = document.getElementById('pf')
-//   var pessoaJuridica = document.getElementById('pj')
-//   var checkbox = document.getElementById('pf');
+function mascara_cpf(event) {
+  var cpf = document.getElementById('cpf');
+  var pessoaFisica = document.getElementById('pf')
+  var pessoaJuridica = document.getElementById('pj')
+  var checkbox = document.getElementById('pf');
 
-//   if (pessoaFisica.checked) {
-//       cpf.setAttribute("maxlength", "14")
-//       if (cpf.value.length == 3 || cpf.value.length == 7) {
-//           cpf.value += ".";
-//       } else if (cpf.value.length == 11) {
-//           cpf.value += "-";
+  if (pessoaFisica.checked) {
+      cpf.setAttribute("maxlength", "14")
+      if (cpf.value.length == 3 || cpf.value.length == 7) {
+          cpf.value += ".";
+      } else if (cpf.value.length == 11) {
+          cpf.value += "-";
 
-//       }
-//   } else if (pessoaJuridica.checked) {
-//       cpf.setAttribute("maxlength", "18")
-//       if (cpf.value.length == 2 || cpf.value.length == 6) {
-//           cpf.value += ".";
-//       } else if (cpf.value.length == 10) {
-//           cpf.value += "/";
-//       } else if (cpf.value.length == 15) {
-//           cpf.value += "-";
-//       }
+      }
+  } else if (pessoaJuridica.checked) {
+      cpf.setAttribute("maxlength", "18")
+      if (cpf.value.length == 2 || cpf.value.length == 6) {
+          cpf.value += ".";
+      } else if (cpf.value.length == 10) {
+          cpf.value += "/";
+      } else if (cpf.value.length == 15) {
+          cpf.value += "-";
+      }
 
-//   }
+  }
 
-//   cpf.value = cpf.value.replace(/[a-zA-Z]/g, '');
-// }
+  cpf.value = cpf.value.replace(/[a-zA-Z]/g, '');
+}
 
-// document.getElementById('pf').addEventListener('change', limparCampoCPF);
-// document.getElementById('pj').addEventListener('change', limparCampoCPF);
+document.getElementById('pf').addEventListener('change', limparCampoCPF);
+document.getElementById('pj').addEventListener('change', limparCampoCPF);
 
-// function limparCampoCPF() {
-//   document.getElementById('cpf').value = '';
-// }
-
-
-// function mascara_cep(event) {
-//   var cep = document.getElementById('cep');
-
-//   if (cep.value.length == 5) {
-//       cep.value += "-";
-//   }
-
-//   cep.value = cep.value.replace(/[a-zA-Z]/g, '');
-// }
-
-// const form = document.getElementById('formco');
-// const campos = document.querySelectorAll('.required');
-// const span = document.querySelectorAll('.span-required');
-
-// form.addEventListener('submit', (event) => {
-//   event.preventDefault();
-
-//   console.log('ffff');
-
-//   validarNome();
-//   validarSenha();
-//   compareSenha();
-//   validarcpf();
-// })
+function limparCampoCPF() {
+  document.getElementById('cpf').value = '';
+}
 
 
+function mascara_cep(event) {
+  var cep = document.getElementById('cep');
 
-// function setError(index) {
-//   campos[index].style.border = '1px solid #e63636';
-//   span[index].style.display = 'block';
-// }
+  if (cep.value.length == 5) {
+      cep.value += "-";
+  }
 
-// function removeError(index) {
-//   campos[index].style.border = '';
-//   span[index].style.display = 'none';
-// }
+  cep.value = cep.value.replace(/[a-zA-Z]/g, '');
+}
+
+const form = document.getElementById('formco');
+const campos = document.querySelectorAll('.required');
+const span = document.querySelectorAll('.span-required');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  // console.log('ffff');
+
+  validarNome();
+  validarSenha();
+  compareSenha();
+  validarcpf();
+})
 
 
 
-// function validarNome() {
-//   if (campos[0].value.length < 3) {
+function setError(index) {
+  campos[index].style.border = '1px solid #e63636';
+  span[index].style.display = 'block';
+}
 
-//       setError(0);
-
-//   } else {
-//       removeError(0)
-//   }
-// }
-
-// function validarSenha() {
-//   if (campos[1].value.length < 8) {
-
-//       setError(1);
-
-//   } else {
-//       removeError(1)
-//       compareSenha()
-//   }
-
-// }
-
-// function compareSenha() {
-//   if (campos[1].value == campos[2].value && campos[2].value.length >= 8) {
-
-//       removeError(2)
-
-//   } else {
-
-//       setError(2);
-//   }
-// }
-
-// function validarcpf() {
-//   if (campos[3].value.length < 14) {
-
-//       setError(3);
-
-//   } else {
-//       removeError(3)
-//   }
-// }
+function removeError(index) {
+  campos[index].style.border = '';
+  span[index].style.display = 'none';
+}
 
 
 
+function validarNome() {
+  if (campos[0].value.length < 3) {
 
-// $('#cep').blur(function () {
-//   var lc = $(this).val();
-//   $.get('https://viacep.com.br/ws/' + lc + '/json/', function (regiao) {
-//       $('#cidade').val(regiao.localidade);
-//       $('#rua').val(regiao.logradouro);
-//       $('#bairro').val(regiao.bairro);
-//       $('#estado').val(regiao.uf);
-//   });
-// });
+      setError(0);
+
+  } else {
+      removeError(0)
+  }
+}
+
+function validarSenha() {
+  if (campos[1].value.length < 8) {
+
+      setError(1);
+
+  } else {
+      removeError(1)
+      compareSenha()
+  }
+
+}
+
+function compareSenha() {
+  if (campos[1].value == campos[2].value && campos[2].value.length >= 8) {
+
+      removeError(2)
+
+  } else {
+
+      setError(2);
+  }
+}
+
+function validarcpf() {
+  if (campos[3].value.length < 14) {
+
+      setError(3);
+
+  } else {
+      removeError(3)
+  }
+}
+
+
+
+
+$('#cep').blur(function () {
+  var lc = $(this).val();
+  $.get('https://viacep.com.br/ws/' + lc + '/json/', function (regiao) {
+      $('#cidade').val(regiao.localidade);
+      $('#rua').val(regiao.logradouro);
+      $('#bairro').val(regiao.bairro);
+      $('#estado').val(regiao.uf);
+  });
+});
+
+
+
+// Area Pedreiro
+
+function aceitarJob(){
+  document.getElementById("aceitarTrab").style.display = "none";
+  document.getElementById("aaa").style.backgroundColor = "#0CA4F2"
+  document.getElementById("linkContato").setAttribute("href", "https://wa.me/11957069027");
+  document.getElementById("negarTrab").style.display = "none";
+
+  document.getElementById("aceitarTrabM").style.display = "none";
+  document.getElementById("aaaM").style.backgroundColor = "#0CA4F2";
+  document.getElementById("linkContatoM").setAttribute("href", "https://wa.me/11957069027");
+  document.getElementById("negarTrabM").style.display = "none";
+
+  document.getElementById("aceitou").style.display = "flex"
+  document.getElementById("aceitouM").style.display = "flex"
+}
+
+function negarJob(){
+  document.getElementById("aceitarTrab").style.display = "none";
+  document.getElementById("aceitarTrabM").style.display = "none";
+  document.getElementById("aaa").style.display = "none";
+  document.getElementById("aaaM").style.display = "none";
+
+  document.getElementById("negarTrab").style.backgroundColor = "grey"
+  document.getElementById("negarTrabM").style.backgroundColor = "grey"
+  
+  document.getElementById("rejeitou").style.display = "flex"
+  document.getElementById("rejeitouM").style.display = "flex"
+
+  document.getElementById("rejeitou").style.backgroundColor = "#F1282B"
+  document.getElementById("rejeitouM").style.backgroundColor = "#F1282B"
+
+}
