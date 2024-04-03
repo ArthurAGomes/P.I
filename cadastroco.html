@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contrato Contratante</title>
+    <title>Cadasto Contratante</title>
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -39,9 +39,46 @@
             <a href="seja-parceiro.html">Parceiros</a>
             <a href="contato.html">Contato</a>
             <a href="duvidas.html">Dúvidas</a>
+            <a href="contratos.html">Contratos</a>
         </div>
     </header>
-    <main>
+<div id="popUpLogin">
+        <div class="login-popUp" id="myForm">
+            <span class="icon-close" onclick="closePopup()"><ion-icon name="close-outline"></ion-icon>
+            </span>
+            <div class="form-box loginMinhaconta">
+                <h2>Login</h2>
+                <section id="categorias-home">
+                    <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
+                    <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha"
+                        disable>Contratante</button>
+                </section>
+                <form action="#">
+                    <div class="input-box" id="cpf-login">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required maxlength="14">
+                        <label>CPF</label>
+                    </div>
+                    <div class="input-box" id="senha-login">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required id="senha-login">
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-senha">
+                        <label><input type="checkbox">Lembrar senha</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <a href="area-pedreiro.html" id="trocalink"><div class="btn-popUp" id="botao-entrar-login">Entrar</div></a>
+                    <div class="login-registrar">
+                        <p> <a id="link-cadastro" href="cadastrope.html"
+                                class="register-link"><strong>Cadastre-se</strong></a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     <main>
         <h1>Contratante</h1>
         <hr class="barras">
         <div class="cadastroc">
@@ -177,7 +214,7 @@
                     </div>
  
                     <div class="continue-buttonc">
-                        <button id="botao" type="submit">CADASTRAR</button>
+                        <button id="botao" type="submit" onclick="window.location.href='area-contratante.html';">CADASTRAR</button>
                     </div>
  
                 </form>
@@ -189,8 +226,7 @@
  
         </div>
     </main>
-
-    <footer class="rodape">
+     <footer class="rodape">
         <div class="conteudo-geral-footer">
             <div class="rodape-conteudo">
                 <div class="menu-rodape">
@@ -258,6 +294,7 @@
     </footer>
     <script src="js/jquery.3.6.0.js"></script>
     <script src="js/interacoes.js"></script>
+    <script src="interacoescontratante.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
