@@ -98,7 +98,7 @@ header {
 }
 
 .change .bar1 {
-    /*Altera a forma do icone de menu-hamburgue para um X*/
+    /*Altera a forma do icone de menu-hamburguer para um X*/
     transform: translate(0, 11px) rotate(-45deg);
 }
 
@@ -161,7 +161,7 @@ nav {
 }
 
 .menu-lateral {
-
+    /*  Criando o menu lateral    */
     height: 0;
     width: 250px;
     position: fixed;
@@ -189,6 +189,7 @@ nav {
 }
 
 .abrir {
+    /*     abre o menu lateral */
     padding-top: 5%;
     height: 100%;
     width: 250px;
