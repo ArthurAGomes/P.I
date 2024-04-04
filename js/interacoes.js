@@ -101,9 +101,9 @@ function escolherContratante() {
   document.getElementById("cpf-login").style.borderColor = "#0CA4F2"
 
   document.getElementById("botao-entrar-login").style.backgroundColor = "#0CA4F2"
- 
+ document.getElementById("trocalink").setAttribute("href", "area-contratante.html");
+
   linkCad.setAttribute("href", "cadastroco.html");
-  document.getElementById("botao-entrar-login").linkCad.setAttribute("href", "area-contratante.html")
   
 }
 
@@ -306,3 +306,39 @@ $('#cep').blur(function () {
       $('#estado').val(regiao.uf);
   });
 });
+
+
+
+// Area Pedreiro
+
+function aceitarJob(){
+  document.getElementById("aceitarTrab").style.display = "none";
+  document.getElementById("aaa").style.backgroundColor = "#0CA4F2"
+  document.getElementById("linkContato").setAttribute("href", "https://wa.me/11957069027");
+  document.getElementById("negarTrab").style.display = "none";
+
+  document.getElementById("aceitarTrabM").style.display = "none";
+  document.getElementById("aaaM").style.backgroundColor = "#0CA4F2";
+  document.getElementById("linkContatoM").setAttribute("href", "https://wa.me/11957069027");
+  document.getElementById("negarTrabM").style.display = "none";
+
+  document.getElementById("aceitou").style.display = "flex"
+  document.getElementById("aceitouM").style.display = "flex"
+}
+
+function negarJob(){
+  document.getElementById("aceitarTrab").style.display = "none";
+  document.getElementById("aceitarTrabM").style.display = "none";
+  document.getElementById("aaa").style.display = "none";
+  document.getElementById("aaaM").style.display = "none";
+
+  document.getElementById("negarTrab").style.backgroundColor = "grey"
+  document.getElementById("negarTrabM").style.backgroundColor = "grey"
+  
+  document.getElementById("rejeitou").style.display = "flex"
+  document.getElementById("rejeitouM").style.display = "flex"
+
+  document.getElementById("rejeitou").style.backgroundColor = "#F1282B"
+  document.getElementById("rejeitouM").style.backgroundColor = "#F1282B"
+
+}

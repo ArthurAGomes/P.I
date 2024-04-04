@@ -20,190 +20,258 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-           
+
             <a href="sobre.html" class="menu-itens">Sobre Nós</a>
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
-            
+
             <div id="meu-logo">
-                <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
-                <div id="nome-logo">Portal Pedreiro</div></a>
+                <a href="index.html"><img id="logo" src="img/brick4.png" alt="logo">
+                    <div id="nome-logo">Portal Pedreiro</div>
+                </a>
             </div>
-            
+
             <a href="contato.html" class="menu-itens">Contato</a>
-            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
-            
-            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
+            <a href="#" class="menu-itens" onclick="openForm()">Minha Conta</a>
+
+            <div id="avatar-minha-conta" onclick="openForm()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
             <a href="sobre.html">Sobre Nós</a>
             <a href="seja-parceiro.html">Parceiros</a>
             <a href="contato.html">Contato</a>
-            <a href="#">Dúvidas</a>
-            <a href="#">Minha Conta</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="contratos.html">Contratos</a>
         </div>
     </header>
 
-    <main id="main-area-pedreiro">
-        <h1>Meu Perfil</h1>
-        <hr class="barras">
-        <article id="area-pedreiro-container">
-            <aside id="conteudo-geral-area-pedreiro">
-                <div id="conteudo-principal-pedreiro">
-                    <div id="area-avatar-pedreiro">
-                        <div id="avatar-pedreiro"></div>
-                        <div>
-                            <div id="nome-avatar-pedreiro"><h3>Yago Aparecido</h3></div>
-                            <div id="reputacao-pedreiro"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
-                        </div>
-                    </div>
-
-                    <div id="conteudo-icones-pedreiro">
-                        <div class="icones-area-pedreiro" id="btn-perfil-pedreiro">
-                            <a href="#area-perfil-pedreiro">
-                                <ion-icon name="person"></ion-icon>
-                            </a>
-                        </div>
-                        <!-- <div class="icones-area-pedreiro" id="suas-obras-pedreiro">
-                            <ion-icon name="construct"></ion-icon>
-                        </div> -->
-            
-                        <div class="icones-area-pedreiro" id="chat-pedreiro">
-                            <a href="#chat-pedreiro">
-                                <ion-icon name="chatbox-ellipses"></ion-icon>
-                            </a>
-                        </div>
-                        
-                        <div class="icones-area-pedreiro" id="btn-fotos-pedreiro">
-                            <a href="#mais-info-pedreiro">
-                                <ion-icon name="help-circle"></ion-icon>
-                            </a>
-                        </div>
-
-                        <div class="icones-area-pedreiro" id="btn-mapa-pedreiro">
-                            <a href="#conteudo-mapa">
-                                <ion-icon name="map"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div id="area-perfil-pedreiro">
-                        <div id="info-perfil-pedreiro">
-                            <form action="#" id="form-area-pedreiro" onload="perfilpedreiro()">
-            
-                                <div class="info-pedreiro-perfil">
-                                    <label for="">Nome/Nome Social</label>
-                                    <input type="text" id="nome-pedreiro" disabled>
-                                </div>
-                                <div class="info-cpf-celular">
-                                    <div class="info-pedreiro-perfil">
-                                        <label for="">CPF</label>
-                                        <input type="text" id="cpf-pedreiro" disabled>
-                                    </div>
-                                    <div class="info-pedreiro-perfil">
-                                        <label for="">Celular</label>
-                                        <input type="text" id="cel-pedreiro" disabled>
-                                    </div>
-                                </div>
-                                <div class="info-endereco">
-                                    <div class="info-pedreiro-perfil">
-                                        <label for="">CEP</label>
-                                        <input type="text" id="cep-pedreiro" disabled>
-                                    </div>
-                                    <div class="info-pedreiro-perfil">
-                                        <label for="">Cidade</label>
-                                        <input type="text" id="cidade-pedreiro" disabled>
-                                    </div>
-                                    <div class="info-pedreiro-perfil" style="width: 10%;">
-                                        <label for="">UF</label>
-                                        <input type="text" id="uf-pedreiro" disabled>
-                                    </div>
-                                </div>
-                                <div class="info-pedreiro-perfil">
-                                    <label for="">Rua</label>
-                                    <input type="text" id="rua-pedreiro" disabled>
-                                </div>
-                                <div class="info-complemento">
-                                    <div class="info-pedreiro-perfil">
-                                        <label for="">Bairro</label>
-                                        <input type="text" id="bairro-pedreiro" disabled>
-                                    </div>
-            
-                                    <div class="info-pedreiro-perfil">
-                                        <label for="">Complemento</label>
-                                        <input type="text" id="complemento-pedreiro" disabled>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                </div>
-            </aside>
-        </div>
-        <section id="meus-pedidos-pedreiro">
-            <h2>Meus Pedidos</h2><hr class="barras">
-        </section>
-       
-        <section id="chat-pedreiro">
-            <h2>Ultimas conversas</h2>
+    <main>
+            <h1>Meu Perfil</h1>
             <hr class="barras">
-            <div class="accordions">
-                <div class="accordionDuvidas">
-                    <span class="spanpedreiro">
-                        <div>Casimiro Miguel</div><ion-icon name="checkmark-done"></ion-icon>
-                    </span>
-                </div>
-                <div class="painelPedreiro" style="display: block;">
-                    <div class="container">
-                        <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/Casimiro-Twitch-Streamer-96x96.jpg" alt="Avatar">
-                        <p>Bom dia. Me chamo Casimiro Miguel e estou interessado em aceitar o seu pedido. Caso seja do seu interesse, entre em contato comigo para conversarmos pelo WhatsApp.Basta clicar no botão abaixo</p>
-                        <button>Entrar em Contato</button>
-                        <span class="time-right">11:00</span>
-                    </div>
+            <article id="area-pedreiro-container">
+                <aside id="conteudo-geral-area-pedreiro">
+                    <div id="conteudo-principal-pedreiro">
+                        <div id="area-avatar-pedreiro">
+                            <div id="avatar-pedreiro"></div>
+                            <div>
+                                <div id="nome-avatar-pedreiro">
+                                    <h3>Casimiro Miguel</h3>
+                                </div>
+                                <div id="reputacao-pedreiro">
+                                    <ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="conteudo-icones-pedreiro">
+                            <div class="icones-area-pedreiro" id="btn-perfil-pedreiro">
+                                <a href="#area-perfil-pedreiro">
+                                    <ion-icon name="person"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="icones-area-pedreiro" id="chat-pedreiro">
+                                <a href="#chat-pedreiro">
+                                    <ion-icon name="chatbox-ellipses"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="icones-area-pedreiro" id="btn-trabalhos-pedreiro">
+                                <a href="#meus-pedidos-pedreiro">
+                                    <ion-icon name="construct"></ion-icon>
+                                </a>
+                            </div>
+                            <div class="icones-area-pedreiro" id="btn-fotos-pedreiro">
+                                <a href="#mais-info-pedreiro">
+                                    <ion-icon name="help-circle"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="area-perfil-pedreiro">
+                            <div id="info-perfil-pedreiro">
+                                <form action="#" id="form-area-pedreiro" onload="perfilPedreiro()">
+                                    <div class="info-pedreiro-perfil">
+                                        <label for="nome-area-pedreiro">Nome/Nome Social</label>
+                                        <input type="text" name="nome-area-pedreiro" id="nome-pedreiro" disabled value="Casimiro Miguel">
+                                    </div>
+                                    <div class="info-cpf-celular">
+                                        <div class="info-pedreiro-perfil">
+                                            <label for="">CPF</label>
+                                            <input type="text" id="cpf-pedreiro" disabled value="444.444.444-44">
+                                        </div>
+                                        <div class="info-pedreiro-perfil">
+                                            <label for="">Celular</label>
+                                            <input type="text" id="cel-pedreiro" disabled value="11999999999">
+                                        </div>
+                                    </div>
+                                    <div class="info-endereco">
+                                        <div class="info-contratante-perfil">
+                                            <label for="">CEP</label>
+                                            <input type="text" id="cep-contratante" disabled value="000.00-000">
+                                        </div>
+                                        <div class="info-pedreiro-perfil">
+                                            <label for="">Cidade</label>
+                                            <input type="text" id="cidade-pedreiro" disabled value="São Paulo">
+                                        </div>
+                                        <div class="info-pedreiro-perfil" style="width: 10%;">
+                                            <label for="">UF</label>
+                                            <input type="text" id="uf-pedreiro" disabled value="SP">
+                                        </div>
+                                    </div>
+                                    <div class="info-pedreiro-perfil">
+                                        <label for="">Rua</label>
+                                        <input type="text" id="rua-pedreiro" disabled value="São Januário">
+                                    </div>
+                                    <div class="info-complemento">
+                                        <div class="info-pedreiro-perfil">
+                                            <label for="">Bairro</label>
+                                            <input type="text" id="bairro-pedreiro" disabled value="Alameda Vasco da Gama">
+                                        </div>
+    
+                                        <div class="info-pedreiro-perfil">
+                                            <label for="">Complemento</label>
+                                            <input type="text" id="complemento-pedreiro" disabled value="777">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <section id="meus-pedidos-pedreiro" class="area-pedreiro-sairM">
+                            <h2>Meus Pedidos</h2><hr class="barras">
+                            <div id="area-pedido-pedreiro">
+                                <div class="pedidos-aceitos pedidos-pedreiro" id="aceitouM">
+                                    <p>Yago Aparecido - Reformar Quintal</p><ion-icon name="checkmark-circle"></ion-icon>
+                                </div>
+                                <div class="pedidos-aceitos pedidos-pedreiro" id="rejeitouM">
+                                    <p>Yago Aparecido - Reformar Quintal</p><ion-icon name="close-circle"></ion-icon>
+                                </div>
+                                <div class="pedidos-negados pedidos-pedreiro">
+                                    <p>Abner de Jesus - Reformar Casa</p><ion-icon name="close-circle"></ion-icon>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="chat-pedreiro" class="area-pedreiro-sairM">
+                            <h2>Ultimas mensagens
+                                <hr class="barras2">
+                            </h2>
+                            <div class="accordion">
+                                <div class="accordionDuvidas">
+                                    <span class="spanPedreiro">
+                                        <div>Yago - Oportunidade </div><ion-icon name="checkmark-done"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="painelPedreiro" style="display: block;">
+                                    <div class="container">
+                                        <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/Casimiro-Twitch-Streamer-96x96.jpg"
+                                            alt="Avatar">
+                                            <p>Olá. Estou interessado em seus serviços e gostaria de conversar sobre valores. Por favor entre em contato.</p>
+                                    
+                                            <div>
+                                                <button id="aceitarTrabM" onclick="aceitarJob()">Aceitar</button>
+                                                <a id="linkContatoM"><button id="aaaM">Entrar em contato</button></a>
 
-                    <div class="container darker">
-                        <img src="https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg" alt="Avatar" class="right">
-                        <p>Ok. Estou indo</p>
-                        <span class="time-left">11:01</span>
-                    </div>
+                                                <button id="negarTrabM" onclick="negarJob()">Rejeitar</button>
+                                            </div>
+                                        <span class="time-right">11:00</span>
+                                    </div>
+                                </div>
+                                <div class="accordionDuvidas">
+                                    <span class="spanContratante">
+                                        <div>Abner de Jesus</div><ion-icon name="checkmark-done"></ion-icon>
+                                    </span>
+                                </div>
+                                <div class="painelPedreiro">
+                                    <div class="container">
+                                        <img src="https://s3p.sofifa.net/cc8b650ddfa0cf622ecd7a0dd293939fbceaef23.jpg"
+                                            alt="Avatar">
+                                        <p>Olá. Estou interessado em seus serviços e gostaria de conversar sobre valores. Por favor entre em contato.</p>
+                                    
+                                        <div>
+                                            <!-- <button id="aceitarTrabM" onclick="aceitarJob()">Aceitar</button>
+                                            <a id="linkContatoM"><button id="aaaM">Entrar em contato</button></a> -->
 
-                    <div class="container">
-                        <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/Casimiro-Twitch-Streamer-96x96.jpg" alt="Avatar">
-                        <p>ok</p>
-                        <span class="time-right">11:02</span>
+                                            <button style="background-color: grey;">Rejeitar</button>
+                                        <span class="time-right">11:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="mais-info-contratante" class="area-pedreiro-sairM">
+                            <h2>Mais Informações
+                                <hr class="barras2">
+                            </h2>
+                            <h4><a href="contratos.html" target="_self">Modelos de Contrato</a></h4>
+                            <h4><a href="duvidas.html" target="_self">Dúvidas e Informações</a></h4>
+                            <h4><a href="index.html" target="_self">Sair</a></h4>
+                        </section>
                     </div>
-                </div>
+                </aside>
+                <section id="area-pedreiro-lateral">
+                    <section id="meus-pedidos-pedreiro" class="area-pedreiro-sairD">
+                        <h2>Meus Pedidos</h2><hr class="barras2">
+                        <div id="area-pedido-pedreiro">
+                            <div class="pedidos-aceitos pedidos-pedreiro" id="aceitou">
+                                <p>Yago Aparecido</p><ion-icon name="checkmark-circle"></ion-icon>
+                            </div>
+                            <div class="pedidos-aceitos pedidos-pedreiro" id="rejeitou">
+                                <p>Yago Aparecido</p><ion-icon name="close-circle"></ion-icon>
+                            </div>
+                            <div class="pedidos-negados pedidos-pedreiro">
+                                <p>Abner de Jesus</p><ion-icon name="close-circle"></ion-icon>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="chat-pedreiro" class="area-pedreiro-sairD">
+                        <h2>Ultimas mensagens
+                            <hr class="barras2">
+                        </h2>
+                        <div class="accordions">
+                            <div class="accordionDuvidas">
+                                <span class="spanPedreiro">
+                                    <div>Yago - Oportunidade </div><ion-icon name="checkmark-done"></ion-icon>
+                                </span>
+                            </div>
+                            <div class="painelPedreiro" style="display: none;">
+                                <div class="container">
+                                    <img src="https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg"
+                                        alt="Avatar">
+                                    <p>Olá. Estou interessado em seus serviços e gostaria de conversar sobre valores. Por favor entre em contato.</p>
+                                    
+                                    <button id="aceitarTrab" onclick="aceitarJob()">Aceitar</button>
 
-                <div class="accordionDuvidas">
-                    <span class="spanpedreiro">
-                        <div>Iran Ferreira</div><ion-icon name="checkmark-done"></ion-icon>
-                    </span>
-                </div>
-                <div class="painelPedreiro">
-                    <div class="container">
-                        <img src="https://s3p.sofifa.net/cc8b650ddfa0cf622ecd7a0dd293939fbceaef23.jpg" alt="Avatar">
-                        <p>Boa tarde. Peço que RECEBA os materiais necessários para a reforma, serão entregues hoje</p>
-                        <span class="time-right">11:00</span>
-                    </div>
+                                    <a id="linkContato"><button id="aaa">Entrar em contato</button></a>
 
-                    <div class="container darker">
-                        <img src="https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg" alt="Avatar" class="right">
-                        <p>Ok.</p>
-                        <span class="time-left">11:01</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="mais-info-pedreiro">
-            <h2>Mais Informações</h2>
-            <h4><a href="contratos.html" target="_self">Modelos de Contrato</a></h4>
-            <h4><a href="duvidas.html" target="_self">Dúvidas e Informações</a></h4>
-            <h4><a href="index.html" target="_self">Sair</a></h4>
-        </section>
+                                    <button id="negarTrab" onclick="negarJob()">Rejeitar</button>
+                                    <span class="time-right">11:00</span>
+                                </div>
+                            </div>
+                            <div class="accordionDuvidas">
+                                <span class="spanContratante">
+                                    <div>Abner de Jesus</div><ion-icon name="checkmark-done"></ion-icon>
+                                </span>
+                            </div>
+                            <div class="painelPedreiro">
+                                <div class="container">
+                                    <img src="https://s3p.sofifa.net/cc8b650ddfa0cf622ecd7a0dd293939fbceaef23.jpg"
+                                        alt="Avatar">
+                                    <p>Olá. Estou interessado em seus serviços e gostaria de conversar sobre valores. Por favor entre em contato.</p>
+                                    
+                                    <button style="background-color: grey;">Rejeitar</button>
+                                    <span class="time-right">11:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="mais-info-contratante" class="area-pedreiro-sairD">
+                        <h2>Mais Informações
+                            <hr class="barras2">
+                        </h2>
+                        <h4><a href="contratos.html" target="_self">Modelos de Contrato</a></h4>
+                        <h4><a href="duvidas.html" target="_self">Dúvidas e Informações</a></h4>
+                        <h4><a href="index.html" target="_self">Sair</a></h4>
+                    </section>
+                </section>
+            </article>
             
-            
-        </article>
-        
     </main>
 
     <footer class="rodape">

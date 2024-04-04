@@ -32,7 +32,7 @@ input:focus {
 }
 
 label,
-.paragrafo_cadastro {
+.paragrafo_cadastro, .paragrafo_cadastroc {
     display: block;
     font-weight: 600;
     padding-bottom: 2px;
@@ -98,7 +98,7 @@ header {
 }
 
 .change .bar1 {
-    /*Altera a forma do icone de menu-hamburgue para um X*/
+    /*Altera a forma do icone de menu-hamburguer para um X*/
     transform: translate(0, 11px) rotate(-45deg);
 }
 
@@ -161,7 +161,7 @@ nav {
 }
 
 .menu-lateral {
-
+    /*  Criando o menu lateral    */
     height: 0;
     width: 250px;
     position: fixed;
@@ -189,7 +189,7 @@ nav {
 }
 
 .abrir {
-    /*Abre o menu-hamburguer*/
+    /*     abre o menu lateral */
     padding-top: 5%;
     height: 100%;
     width: 250px;
@@ -365,6 +365,13 @@ nav {
     font-size: 1em;
     color: white;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#trocalink{
+    text-decoration: none;
 }
 
 .login-registrar {
@@ -400,7 +407,6 @@ nav {
 
 #fundo-main {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     background-image: url(../img/home-pedreiro3.jfif);
     background-repeat: no-repeat;
@@ -413,7 +419,6 @@ nav {
 
 #buscar-pedreiro{
     width: 100%;
-    /* max-width: 400px; */
     margin-top: 20px;
 }
 
@@ -439,7 +444,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* max-width: 200px; */
 }
 
 #buscar-pedreiro div form input{
@@ -457,13 +461,9 @@ nav {
     color: rgba(252, 252, 252, 0.67);
 }
 
-
-
-
 #categorias-home {
 
     display: flex;
-    /* margin: 10px 0; */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -478,15 +478,10 @@ nav {
     border-radius: 0px;
     font-size: .8em;
     font-weight: 700;
-    /* font-weight: bold; */
-    /* background-color: #3d3b3b;
-    height: 30px; */
 }
 
 #pedreiro {
-    /* background-color: #F29D30; */
     color: white;
-    /* text-transform: uppercase; */
     text-decoration: none;
     background-color: #F29D30;
     border-radius: 10px 0 0 10px;
@@ -496,18 +491,13 @@ nav {
 #contratante {
     background-color: #3d3b3b;
     color: white;
-    /* text-transform: uppercase; */
     text-decoration: none;
     border-radius: 0px 10px 10px 0px;
 }
 
 #baixe-app {
-    /* margin: 10px auto; */
-    /* margin: 20px; */
     width: 100%;
-    /* max-width: 500px; */
     text-align: center;
-    /* background-color: #3d3b3b59; */
     border-radius: 10px;
     padding: 10px 0;
 }
@@ -523,13 +513,11 @@ nav {
 }
 
 #baixe-app h2 {
-    /* display: none; */
     margin: 0;
     padding: 0 10px;
     font-size: 1em;
     color: #3d3b3b;
     text-shadow: none;
-    /* font-weight: 700; */
     text-transform: none;
 }
 
@@ -543,7 +531,7 @@ nav {
 }
 
 .login-popUp-home{
-    /* position: absolute; */
+
     width: 100%;
     max-width: 360px;
     height: 440px;
@@ -555,9 +543,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    /* transition: opacity 0.5s; */
-    /* margin-top: 40px; */
+
 }
 
 .login-popUp-home .form-box {
@@ -569,18 +555,6 @@ nav {
 .login-popUp-home h2{
     margin: 10px 0;
 }
-
-
-
-/* #login-home {
-
-    background: transparent;
-    border: 2px solid rgba(128, 128, 128, 0.41);
-    border-radius: 20px;
-    background-color: #3d3b3bb2;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    overflow: hidden;
-} */
 
 .conteudo-login-campos {
     margin: 30px 0;
@@ -596,19 +570,11 @@ nav {
     width: 90%;
     max-width: 400px;
     text-indent: 20px;
-    /* text-transform: uppercase; */
     font-size: .8em;
     font-weight: 700;
     margin: 0;
 
 }
-
-/* .conteudo-login-campos input:{
-    font-size: .9em;
-    color: #3d3b3b;
-    box-shadow: none;
-    
-} */
 
 .conteudo-login-campos input::placeholder {
     color: #3d3b3b5c;
@@ -626,19 +592,15 @@ nav {
 
 .login-extra {
     font-size: .8em;
-    /* font-weight: 600; */
     color: white;
     text-shadow: #3d3b3b 2px 2px 2px;
-    /* display: block; */
     text-decoration: none;
-    /* margin: 10px 0; */
 }
 
 #botao-entrar-login {
     font-size: .8em;
     text-transform: uppercase;
     font-weight: bold;
-    /* margin-bottom: 20px; */
 }
 
 
@@ -654,14 +616,11 @@ nav {
 
 #parceiro-pp-home {
     width: 100%;
-    background-image: url(../img/imagem9.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../img/imgem9-5.jpg);
+    background-color: #3d3b3be6;
     background-size: cover;
     padding: 30px 0;
     border-radius: 10px 10px 0 0;
-    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.568); */
-
 }
 
 #parceiro-pp-home h2 {
@@ -686,22 +645,18 @@ nav {
     display: block;
     max-width: 360px;
     width: 100%;
-    /* height: 380px; */
     text-align: center;
     margin: 10px;
     background-color: #3d3b3bda;
     box-shadow: 0 4px 8px 0;
     border-radius: 15px;
-    /* border: 2px solid #ffffff5d; */
     box-shadow: 0 0 5px #d4d4d4d0;
 }
 
 .cartao-parceiros h4 {
     color: white;
     font-size: 1.5em;
-    /* text-transform: uppercase; */
     margin: 10px 0;
-    /* padding: 10px 0; */
 }
 
 .cartao-parceiros img {
@@ -713,9 +668,7 @@ nav {
 
 .info-parceiros {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     color: white;
     font-size: 1em;
@@ -734,6 +687,10 @@ nav {
     border-radius:  10px;
 }
 
+.cartao-parceiros a{
+    width: 100%;
+}
+
 #seja-parceiro-home {
     width: 100%;
     padding: 0;
@@ -750,6 +707,10 @@ nav {
     width: 90%;
     margin: 0 auto;
     padding: 0;
+}
+
+#parceiros-banner-conteudo button, .info-parceiros button{
+    cursor: pointer;
 }
 
 #parceiros-banner-conteudo figcaption p {
@@ -852,7 +813,6 @@ nav {
 }
 
 .contato ion-icon {
-    /* color: #f47907; */
     color: #3d3b3b;
     font-size: 30px;
 }
@@ -903,17 +863,6 @@ nav {
 }
 
 /* ------------------------Cadastro Pedreiro------------------------------------------- */
-/* #titulo-cadastro-pedreiro {
-    background-color: #f47907;
-    color: white;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.cadastro-pedreiro h2 {
-    border-radius: 5px;
-    text-align: center;
-} */
 
 .container-pe {
     font-size: 20px;
@@ -935,6 +884,7 @@ nav {
 .input-radiope1 {
     display: flex;
     gap: 25px;
+    margin-bottom:15px;
 }
 
 .input-boxpe input {
@@ -954,13 +904,14 @@ nav {
     flex-direction: column;
     margin-bottom: 1.1rem;
     flex-direction: column;
-    /* justify-content: space-between; */
     text-indent: 10px;
 
 }
 
 .input-radiope {
     padding-bottom: 20px;
+    display:flex;
+    gap: 20px;
 }
 
 .continue-buttonpe {
@@ -972,9 +923,10 @@ nav {
 .continue-buttonpe button {
     background-color: #f47907;
     color: white;
+    font-size:1.1em;
     border: none;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 
@@ -989,7 +941,6 @@ nav {
 
 #imgtpe {
     display: none;
-
 
 }
 
@@ -1012,14 +963,12 @@ nav {
 
 }
 
-/* 
+ 
 .input-checkpe input {
     display: none;
-} */
+} 
 
 .input-checkpe input+label:before {
-    /* background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
-    */
     content: "";
     width: 25px;
     height: 25px;
@@ -1047,7 +996,6 @@ nav {
 .input-radiope1 input+label::before,
 .input-radiope input+label::before,
 .input-checkpe+label::before {
-    /* background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E"); */
     content: "";
     width: 25px;
     height: 25px;
@@ -1062,8 +1010,8 @@ nav {
 
 }
 
-.input-radiope1 input:checked+label::before,
-.input-radiope input:checked+label::before {
+.input-radiope input:checked+label::before,
+.input-checkpe input:checked+label::before {
     content: "✓";
     background-color: #f47907;
     font-size: 18px;
@@ -1105,7 +1053,6 @@ nav {
 
 .input-boxc,
 .cadastroc p {
-    /* font-weight: bold; */
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
@@ -1183,7 +1130,6 @@ nav {
 
 .input-checkc input+label:before,
 .input-radioc input+label::before {
-    /* background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E"); */
     content: "";
     width: 25px;
     height: 25px;
@@ -1237,14 +1183,11 @@ nav {
     margin: 0;
     font-size: 1em;
     font-weight: 600;
-    /* color: white; */
 }
 
 .accordionDuvidas {
     cursor: pointer;
     font-weight: 600;
-    /* font-size: 3vmax; */
-    /* margin: 10px 10px; */
 }
 
 .spanDuvidas div {
@@ -1346,6 +1289,10 @@ nav {
 
 /* ----------------- Area-pedreiro */
 
+.area-pedreiro-sairD{
+    display: none;
+}
+
 #conteudo-geral-area-pedreiro{
     width: 100%;
     height: 100%;
@@ -1355,30 +1302,28 @@ nav {
     border-radius: 10px;
 }
 
-#conteudo-principal-pedreiro{
+#conteudo-principal-pedreiro {
     margin: 2%;
 }
 
 #area-perfil-pedreiro{
     background-color: #3d3b3b;
-    /* max-width: 300px; */
     width: 100%;
     padding: 10px 0;
     border-radius: 10px;
 }
 
-#area-avatar-pedreiro{
+#area-avatar-pedreiro {
     display: flex;
     gap: 0 5%;
     justify-content: space-evenly;
-    /* margin: 2%; */
     padding:10px;
     background-color: #f47907;
     border-radius: 10px;
 }
 
 #avatar-pedreiro{
-    background-image: url(https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg);
+    background-image: url(https://conteudo.imguol.com.br/c/esporte/10/2022/01/21/o-streamer-casimiro-durante-uma-live-na-twitch-1642799338784_v2_450x600.jpg);
     background-size: cover;
 }
 
@@ -1387,14 +1332,14 @@ nav {
     margin-left: 10px;
 }
 
+#reputacao-pedreiro ion-icon{
+    font-size: 20px;
+}
+
 .icones-area-pedreiro a, .icones-area-pedreiro a:visited{
     text-decoration: none;
     cursor: pointer;
     color: white;
-}
-
-#reputacao-pedreiro ion-icon{
-    font-size: 20px;
 }
 
 #conteudo-icones-pedreiro{
@@ -1410,7 +1355,6 @@ nav {
 }
 
 #info-perfil-pedreiro{
-    
     border-radius: 10px;
     padding: 10px;
 }
@@ -1435,40 +1379,14 @@ nav {
     color: white;
 }
 
-#chat-pedreiro h2, #mais-info-pedreiro, #mais-info-pedreiro h4 a{
-    color: white;
-}
-
-.info-pedreiro-perfil {
+.info-pedreiro-perfil{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#mais-info-pedreiro a{
-    text-decoration: none;
-    color: #3d3b3b;
-}
-
-.spanpedreiro div {
-    width: 80%;
-    color: #3d3b3b;
-}
-
-.spanpedreiro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    padding: 1% 10px;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
-
-.spanpedreiro ion-icon {
-    font-size: 1.5em;
-    color: #3d3b3b;
+#chat-pedreiro h2, #mais-info-pedreiro, #mais-info-pedreiro h4 a, #meus-pedidos-pedreiro h2{
+    color: white;
 }
 
 .painelPedreiro {
@@ -1484,7 +1402,70 @@ nav {
     margin: 0;
     font-size: 1em;
     font-weight: 600;
-    /* color: white; */
+}
+
+.spanPedreiro div {
+    width: 80%;
+    color: #3d3b3b;
+}
+
+.spanPedreiro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 1% 10px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.spanPedreiro ion-icon {
+    font-size: 1.5em;
+    color: #3d3b3b;
+}
+
+#mais-info-pedreiro a{
+    text-decoration: none;
+    color: #3d3b3b;
+}
+
+#area-pedido-pedreiro{
+    display: flex;
+    gap: 0 20px;
+}
+
+.pedidos-pedreiro{
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: white;
+}
+
+.pedidos-pedreiro ion-icon{
+    font-size: 1.4em;
+}
+
+.pedidos-aceitos{
+    background-color: #f47907;
+    border-radius: 10px;
+    padding: 0 10px;
+    display: none;
+}
+
+.pedidos-negados{
+    background-color: #F1282B;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#aaa, #aaaM{
+    background-color: grey;
+}
+
+#negarTrab, #negarTrabaM{
+    background-color: #F1282B;
+    cursor: pointer;
 }
 
 /* --------------- Area-contratante */
@@ -1499,15 +1480,15 @@ nav {
 
 #conteudo-principal-contratante {
     margin: 2%;
-    /* max-width: 450px; */
-    /* border-radius: 10px; */
-    /* display: flex; */
+}
 
+.barras2{
+    border: 2px solid white;
+    border-radius: 10px;
 }
 
 #area-perfil-contratante{
     background-color: #3d3b3b;
-    /* max-width: 300px; */
     width: 100%;
     padding: 10px 0;
     border-radius: 10px;
@@ -1574,8 +1555,7 @@ nav {
     /*  */
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
-    /* margin: 10px; */
+
 }
 
 #form-area-contratante input {
@@ -1666,6 +1646,11 @@ nav {
     margin: 10px 0;
   }
   
+  .container div{
+    gap: 5px;
+    display: flex;
+  }
+  
   /* Darker chat container */
   .darker {
     border-color: #0CA4F2;
@@ -1707,6 +1692,10 @@ nav {
     color: #999;
   }
 
+#btn-entrarContato button{
+    cursor: pointer;
+}
+
 
 /* Mapa */
 #conteudo-mapa{
@@ -1721,38 +1710,60 @@ nav {
     border: 2px solid #3d3b3b;
 }
 
-#card-mapa-perfil{
+#card-mapa-contratante{
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 250px;
-    /* height: 100%; */
+    flex-direction: column;
+    
+    text-align: center;
+    gap: 5px 0;
 }
 
-#card-mapa-perfil img{
+#card-mapa-contratante img{
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#card-mapa-contratante h3{
+    margin: 0;
+    font-size: 1.3em;
+}
+
+#card-mapa-contratante p{
+    margin: 0;
+}
+
+#card-mapa-contratante div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 2%;
     width: 100%;
 }
 
-#card-mapa-perfil h3{
-    margin: 0;
-    font-size: 1.5em;
+#card-mapa-contratante div button{
+    cursor: pointer;
 }
 
-#card-mapa-perfil div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 5px 0;
+#btn-zap{
+   background-color: #2cb317;
+   display: flex;
+   align-items: center;
 }
 
-#card-mapa-perfil div p{
-    margin: 5px 0;
-
+#btn-zap ion-icon{
+    font-size: 1.2em;
 }
 
-.info-contratante-perfil {
+
+.info-contratante-perfil{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1899,7 +1910,6 @@ nav {
 
     .input-boxpe input {
         width: 45vw;
-        /* margin-right: 40px; */
     }
 
     .input-checkpe {
@@ -1911,7 +1921,6 @@ nav {
         display: flex;
         flex-wrap: wrap;
         gap: 20px 3vw;
-        /* justify-content: space-between; */
 
     }
 
@@ -1920,19 +1929,14 @@ nav {
     }
 
     /* ---------------------------------------cadastro contratante------------------------------ */
-    #nome,
+     #nome,
     #rua {
         width: 94vw;
     }
 
     .input-boxc input {
         width: 45vw;
-        /* margin-right: 40px; */
     }
-
-    /* .input-boxc input:focus{
-        outline: none;
-    } */
 
     .input-checkc {
         gap: 8vw;
@@ -1949,8 +1953,6 @@ nav {
 
     .containerc1 {
         display: flex;
-        /* justify-content: space-around; */
-        /* gap: 20vw; */
     }
 /* ----------Contrato------------------ */
 .tipoc{
@@ -2274,9 +2276,54 @@ nav {
     #credito {
         margin: 0;
     } 
+    
+    
+/* ----Area Pedreiro ------ */
+.area-pedreiro-sairM{
+    display: none;
+}
+
+.area-pedreiro-sairD{
+    display: block;
+}
+
+
+#conteudo-geral-area-pedreiro{
+    max-width: 350px;
+    max-height: 600px;
+    overflow: scroll;
+    
+}
+
+#conteudo-geral-area-pedreiro::-webkit-scrollbar{
+    display: none;
+}
+
+#area-pedreiro-container{
+    display: flex;
+    gap: 0 1%;
+}
+
+#area-pedreiro-lateral{
+    height: 600px;
+    width: 100%;
+    background-color: #3d3b3b95;
+    padding: 1%;
+    overflow: scroll;
+    border-radius: 10px;
+}
+
+#area-pedreiro-lateral::-webkit-scrollbar{
+    display: none;
+}
+
+#aceitarTrab, #aaa{
+    cursor: pointer;
+}
 
 
 /* ----Area Contratante --- */
+
 
 #conteudo-geral-area-contratante{
     max-width: 350px;
@@ -2304,66 +2351,6 @@ nav {
 
 }
 @media screen and (min-width:960px) {
-
-    /* ----------------cadastro contratante----------------------
-
-
-        .containerc {
-            display: flex;
-            gap: 20px;
-        }
-
-        .contratoc form {
-            max-width: 930px;
-        }
-
-        .input-groupc {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-
-        #nome {
-            width: 930px;
-            align-items: center;
-        }
-
-        #rua {
-            width: 930px;
-            align-items: center;
-        }
-
-
-        .input-boxc input {
-            width: 400px;
-            align-items: center;
-        } */
-
-
-
-
-
-
-/* -----------Main/Home */
-/* .cartao-parceiros {
-        max-width: 350px;
-        height: 325px;
-    }
-
-    .cartao-parceiros img {
-        height: 150px;
-    }
-
-    .cartao-parceiros h4 {
-        font-size: 1.1em;
-    }
-
-    .info-parceiros {
-        font-size: 1.1em;
-        padding: 0 6%;
-    } */
-
-
 
 /*----------- Sobre Nos---------------*/
 .sobreNos-conteudo {
@@ -2412,15 +2399,11 @@ nav {
 .form-contato {
     width: 100%; 
 }
+
 }
 @media screen and (min-width:1000px) {
 
     /* -----------Main/Home */
-
-/* .cartao-parceiros {
-    max-width: 270px;
-    height: 380px;
-} */
 
 #baixe-app {
     margin: 10px;
@@ -2436,9 +2419,6 @@ nav {
     font-size: 1em;
 }
 
-/* .cartao-parceiros h4 {
-    font-size: 1em;
-} */
 
     /* -------------------------cadastro contratante--------------------------------- */
 
@@ -2466,7 +2446,6 @@ nav {
 
     .input-boxc input {
         width: 22vw;
-        /* margin-right: 50px; */
     }
 
     .continue-buttonc button {
@@ -2488,17 +2467,6 @@ nav {
 
     .aqv:hover {
 
-        /* font-size: 51px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 80px;
-        width: 62px;
-        background-color: rgba(128, 128, 128, 0.41);
-         text-align: center;
-         border-radius: 5px;
-        border-style: dashed;
-        margin: 8px;  */
         background-color: rgba(22, 22, 22, 0.363);
         cursor: pointer;
     }
@@ -2509,54 +2477,59 @@ nav {
 
 
 /* -----------------------cadastro pedreiro-------------------------------- */
-.container-pe {
-    font-size: 20px;
+.cadastroc {
+        font-size: 20px;
+    }
 
+    #imgtc {
+        display: flex;
+        margin-top: 1px;
+        border-radius: 20px;
+        width: 100%;
+        height: 540px;
 
-}
+    }
 
-#imgtpe {
-    display: flex;
-    margin-top: 1px;
-    border-radius: 20px;
-    width: 100%;
-    height: 570px;
+    #formco {
+        width: 1000px;
+    }
+
+    #nome,
+    #rua {
+        width: 47vw;
+    }
+
+    .input-boxc input {
+        width: 22vw;
+    }
+
+    .continue-buttonc button {
+        cursor: pointer;
+    }
+
+    .continue-buttonc button:hover {
+        background-color: #0780bd;
+    }
+
+    .input-checkc input+label:before,
+    .input-radioc input+label::before {
+        cursor: pointer;
+    }
+
+    .aqv {
+        cursor: pointer;
+    }
+
+    .aqv:hover {
+
+        background-color: rgba(22, 22, 22, 0.363);
+        cursor: pointer;
+    }
+
+    .containerc1 {
+        display: block;
+    }
     
-
-
-}
-
-#formco {
-    width: 1000px;
-}
-
-#nome,
-#rua {
-    width: 47vw;
-}
-
-.input-boxpe input {
-    width: 22vw;
-}
-
-.continue-buttonpe button {
-    background-color: #f47907;
-}
-
-.input-radiope1 input+label::before,
-.input-radiope input+label::before,
-.input-checkpe+label::before {
-    cursor: pointer;
-}
-
-.aqvpe {
-    cursor: pointer;
-}
-
-.arqv:hover {
-    background-color: rgba(22, 22, 22, 0.363);
-    cursor: pointer;
-}
 /* -------------------Contrato ------------------*/
 .botao-pf{
     cursor: pointer;

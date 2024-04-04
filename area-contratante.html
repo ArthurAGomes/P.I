@@ -7,9 +7,7 @@
     <title>Area do Contratante</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-    
-    <script type="module" src="js/info-pedreiros-contratantes.js"></script>
+   <script type="module" src="js/info-pedreiros-contratantes.js"></script>
 </head>
 
 <body>
@@ -21,31 +19,32 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-           
+
             <a href="sobre.html" class="menu-itens">Sobre Nós</a>
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
-            
+
             <div id="meu-logo">
-                <a href="#"><img id="logo" src="img/brick4.png" alt="logo">
-                <div id="nome-logo">Portal Pedreiro</div></a>
+                <a href="index.html"><img id="logo" src="img/brick4.png" alt="logo">
+                    <div id="nome-logo">Portal Pedreiro</div>
+                </a>
             </div>
-            
+
             <a href="contato.html" class="menu-itens">Contato</a>
-            <a href="#" class="menu-itens" onclick="acessarConta()">Minha Conta</a>
-            
-            <div id="avatar-minha-conta" onclick="acessarConta()"></div>
+            <a href="#" class="menu-itens" onclick="openForm()">Minha Conta</a>
+
+            <div id="avatar-minha-conta" onclick="openForm()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
             <h3>Portal Pedreiro</h3>
             <a href="sobre.html">Sobre Nós</a>
             <a href="seja-parceiro.html">Parceiros</a>
             <a href="contato.html">Contato</a>
-            <a href="#">Dúvidas</a>
-            <a href="#">Minha Conta</a>
+            <a href="duvidas.html">Dúvidas</a>
+            <a href="contratos.html">Contratos</a>
         </div>
     </header>
 
-    <main id="main-area-contratante">
+   <main id="main-area-contratante">
         <h1>Meu Perfil</h1>
         <hr class="barras">
         <article id="area-contratante-container">
@@ -54,8 +53,12 @@
                     <div id="area-avatar-contratante">
                         <div id="avatar-contratante"></div>
                         <div>
-                            <div id="nome-avatar-contratante"><h3>Yago Aparecido</h3></div>
-                            <div id="reputacao-contratante"><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
+                            <div id="nome-avatar-contratante">
+                                <h3>Yago Aparecido</h3>
+                            </div>
+                            <div id="reputacao-contratante"><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon
+                                    name="star-half"></ion-icon><ion-icon name="star-outline"></ion-icon></div>
                         </div>
                     </div>
 
@@ -65,25 +68,20 @@
                                 <ion-icon name="person"></ion-icon>
                             </a>
                         </div>
-                        <!-- <div class="icones-area-contratante" id="suas-obras-contratante">
-                            <ion-icon name="construct"></ion-icon>
-                        </div> -->
-            
+                        
                         <div class="icones-area-contratante" id="chat-contratante">
                             <a href="#chat-contratante">
                                 <ion-icon name="chatbox-ellipses"></ion-icon>
                             </a>
                         </div>
-                        
-                        <div class="icones-area-contratante" id="btn-fotos-contratante">
-                            <a href="#mais-info-contratante">
-                                <ion-icon name="help-circle"></ion-icon>
-                            </a>
-                        </div>
-
                         <div class="icones-area-contratante" id="btn-mapa-contratante">
                             <a href="#conteudo-mapa">
                                 <ion-icon name="map"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="icones-area-contratante" id="btn-fotos-contratante">
+                            <a href="#mais-info-contratante">
+                                <ion-icon name="help-circle"></ion-icon>
                             </a>
                         </div>
                     </div>
@@ -91,10 +89,10 @@
                     <div id="area-perfil-contratante">
                         <div id="info-perfil-contratante">
                             <form action="#" id="form-area-contratante" onload="perfilContratante()">
-            
+
                                 <div class="info-contratante-perfil">
-                                    <label for="">Nome/Nome Social</label>
-                                    <input type="text" id="nome-contratante" disabled>
+                                    <label for="nome-area-contratante">Nome/Nome Social</label>
+                                    <input type="text" name="nome-area-contratante" id="nome-contratante" disabled>
                                 </div>
                                 <div class="info-cpf-celular">
                                     <div class="info-contratante-perfil">
@@ -113,26 +111,26 @@
                                     </div>
                                     <div class="info-contratante-perfil">
                                         <label for="">Cidade</label>
-                                        <input type="text" id="cidade-contratante" disabled>
+                                        <input type="text" id="cidade-contratante" disabled value="São Paulo">
                                     </div>
                                     <div class="info-contratante-perfil" style="width: 10%;">
                                         <label for="">UF</label>
-                                        <input type="text" id="uf-contratante" disabled>
+                                        <input type="text" id="uf-contratante" disabled value="SP">
                                     </div>
                                 </div>
                                 <div class="info-contratante-perfil">
                                     <label for="">Rua</label>
-                                    <input type="text" id="rua-contratante" disabled>
+                                    <input type="text" id="rua-contratante" disabled value="Rua Diamante do Norte">
                                 </div>
                                 <div class="info-complemento">
                                     <div class="info-contratante-perfil">
                                         <label for="">Bairro</label>
-                                        <input type="text" id="bairro-contratante" disabled>
+                                        <input type="text" id="bairro-contratante" disabled value="Jardim Pirituba"> 
                                     </div>
-            
+
                                     <div class="info-contratante-perfil">
                                         <label for="">Complemento</label>
-                                        <input type="text" id="complemento-contratante" disabled>
+                                        <input type="text" id="complemento-contratante" disabled value="256">
                                     </div>
                                 </div>
                             </form>
@@ -141,37 +139,32 @@
                     <!-- <section id="meus-pedidos-contratante">
                         <h2>Meus Pedidos</h2><hr class="barras">
                     </section> -->
-                   
+
                     <section id="chat-contratante">
-                        <h2>Ultimas conversas</h2>
-                        <hr class="barras">
+                        <h2>Ultimas mensagens
+                            <hr class="barras2">
+                        </h2>
+
                         <div class="accordions">
                             <div class="accordionDuvidas">
                                 <span class="spanContratante">
-                                    <div>Casimiro Miguel</div><ion-icon name="checkmark-done"></ion-icon>
+                                    <div>Casimiro Miguel - Retorno </div><ion-icon name="checkmark-done"></ion-icon>
                                 </span>
                             </div>
                             <div class="painelContratante" style="display: block;">
                                 <div class="container">
-                                    <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/Casimiro-Twitch-Streamer-96x96.jpg" alt="Avatar">
-                                    <p>Bom dia. Me chamo Casimiro Miguel e estou interessado em aceitar o seu pedido. Caso seja do seu interesse, entre em contato comigo para conversarmos pelo WhatsApp.Basta clicar no botão abaixo</p>
-                                    <button>Entrar em Contato</button>
+                                    <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/Casimiro-Twitch-Streamer-96x96.jpg"
+                                        alt="Avatar">
+                                    <p>Olá, contratante. Me chamo Casimiro Miguel e estou disposto a aceitar o serviço
+                                        oferecido. Entrarei em contato assim que possível para conversarmos sobre os
+                                        detalhes. Mas caso prefira pode entrar em contato comigo pressionando o botão
+                                        abaixo.</p>
+                                    <a href="https://wa.me/11957069027" id="btn-entrarContato"><button>Entrar em
+                                            Contato</button></a>
                                     <span class="time-right">11:00</span>
                                 </div>
-            
-                                <div class="container darker">
-                                    <img src="https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg" alt="Avatar" class="right">
-                                    <p>Ok. Estou indo</p>
-                                    <span class="time-left">11:01</span>
-                                </div>
-            
-                                <div class="container">
-                                    <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/Casimiro-Twitch-Streamer-96x96.jpg" alt="Avatar">
-                                    <p>ok</p>
-                                    <span class="time-right">11:02</span>
-                                </div>
                             </div>
-            
+
                             <div class="accordionDuvidas">
                                 <span class="spanContratante">
                                     <div>Iran Ferreira</div><ion-icon name="checkmark-done"></ion-icon>
@@ -179,34 +172,32 @@
                             </div>
                             <div class="painelContratante">
                                 <div class="container">
-                                    <img src="https://s3p.sofifa.net/cc8b650ddfa0cf622ecd7a0dd293939fbceaef23.jpg" alt="Avatar">
-                                    <p>Boa tarde. Peço que RECEBA os materiais necessários para a reforma, serão entregues hoje</p>
+                                    <img src="https://s3p.sofifa.net/cc8b650ddfa0cf622ecd7a0dd293939fbceaef23.jpg"
+                                        alt="Avatar">
+                                    <p>Boa tarde. Me chamo Iran Ferreira e infelizmente não estou interessado na sua
+                                        oferta. Obrigado por entrar em contato.</p>
                                     <span class="time-right">11:00</span>
-                                </div>
-            
-                                <div class="container darker">
-                                    <img src="https://pbs.twimg.com/profile_images/1159853984963866626/50dRzHVk_400x400.jpg" alt="Avatar" class="right">
-                                    <p>Ok.</p>
-                                    <span class="time-left">11:01</span>
                                 </div>
                             </div>
                         </div>
                     </section>
 
                     <section id="mais-info-contratante">
-                        <h2>Mais Informações</h2>
+                        <h2>Mais Informações
+                            <hr class="barras2">
+                        </h2>
                         <h4><a href="contratos.html" target="_self">Modelos de Contrato</a></h4>
                         <h4><a href="duvidas.html" target="_self">Dúvidas e Informações</a></h4>
                         <h4><a href="index.html" target="_self">Sair</a></h4>
                     </section>
                 </div>
             </aside>
-            
+
             <section id="conteudo-mapa" class="mapa-pequeno">
                 <div id="map"></div>
             </section>
         </article>
-        
+
     </main>
 
     <footer class="rodape">
@@ -276,14 +267,13 @@
         </div>
     </footer>
 
-    <script src="js/jquery.3.6.0.js"></script>
     <script src="js/interacoes.js"></script>
+    <script src="js/jquery.3.6.0.js"></script>
+     <script type="module" src="js/info-pedreiros-contratantes.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/info-pedreiros-contratantes.js"></script>
     <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
     ({key: "AIzaSyAGGSfJVZ53PXHe4x8RfVrond5IdhLg7W8", v: "beta"});</script>
-
-
 </body>
 </html>
