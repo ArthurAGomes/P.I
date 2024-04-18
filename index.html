@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/style.css">
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <script type="module" src="js/info-pedreiros-contratantes.js"></script>
-        <title>Home - Portal Pedreiro</title>
-    
-    </head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="js/info-pedreiros-contratantes.js"></script>
+    <title>Home - Portal Pedreiro</title>
+    <script src="js/politica.js"></script>
+</head>
+
 <body>
-
+    <div class="politica">
+        <div id="cookie-consent" class="cookie-consent">
+            <p>Este site usa cookies para garantir que você obtenha a melhor experiência.</p>
+            <div class="botoes-cookie">
+                <button id="accept-btn">Aceitar</button>
+                <button id="not-btn">Recusar</button>
+            </div>
+        </div>
+    </div>
     <header>
         <nav id="menu-principal">
             <div class="menu-icon" id="menu-hamburguer" onclick="abrirNav()">
@@ -50,7 +61,7 @@
         </div>
     </header>
 
-    
+
 
     <main id="home-main">
         <section id="baixe-app">
@@ -67,22 +78,23 @@
                     <div id="map"></div>
                 </div>
             </div>
-            
+
             <div id="popUpLogin-home">
-                
+
                 <div class="login-popUp-home" id="myForm">
-                    
+
                     <div class="form-box loginMinhaconta">
                         <h2>Acessar Conta</h2>
                         <section id="categorias-home">
-                            <button id="pedreiro" onclick="escolherPedreiro(), mudarTemaP()" class="categorias-home-escolha">Pedreiro</button>
-                            <button id="contratante" onclick="escolherContratante(), mudarTemaC()" class="categorias-home-escolha"
-                                disable>Contratante</button>
+                            <button id="pedreiro" onclick="escolherPedreiro(), mudarTemaP()"
+                                class="categorias-home-escolha">Pedreiro</button>
+                            <button id="contratante" onclick="escolherContratante(), mudarTemaC()"
+                                class="categorias-home-escolha" disable>Contratante</button>
                         </section>
                         <form action="#">
                             <div class="input-box" id="cpf-login">
                                 <span class="icon"><ion-icon name="person"></ion-icon></span>
-                                <input type="text" required maxlength="14" >
+                                <input type="text" required maxlength="14">
                                 <label>CPF</label>
                             </div>
                             <div class="input-box" id="senha-login">
@@ -94,7 +106,9 @@
                                 <label><input type="checkbox">Lembrar senha</label>
                                 <a href="#">Esqueceu a senha?</a>
                             </div>
-                           <a href="area-pedreiro.html" id="trocalink"><div class="btn-popUp" id="botao-entrar-login">Entrar</div></a>
+                            <a href="area-pedreiro.html" id="trocalink">
+                                <div class="btn-popUp" id="botao-entrar-login">Entrar</div>
+                            </a>
                             <div class="login-registrar">
                                 <p> <a id="link-cadastro" href="cadastrope.html"
                                         class="register-link"><strong>Cadastre-se</strong></a>
@@ -108,12 +122,13 @@
 
         <article id="seja-parceiro-home">
             <figure id="parceiros-banner-conteudo">
-                
+
                 <img src="img/parceiros2.png" alt="Imagem de Parceiros">
                 <figcaption>
                     <h2>Seja Parceiro</h2>
-                    <p>Faça parte do PP como um dos nosso parceiros!</p> 
-                    <p>A nossa equipe está pronta para encarar novos desafios e alçar novos voos com parceiros confiáveis</p>
+                    <p>Faça parte do PP como um dos nosso parceiros!</p>
+                    <p>A nossa equipe está pronta para encarar novos desafios e alçar novos voos com parceiros
+                        confiáveis</p>
                     <a href="seja-parceiro.html"><button>Seja um Parceiro Portal Pedreiro</button></a>
                 </figcaption>
             </figure>
@@ -125,7 +140,7 @@
                 <div class="cartao-parceiros">
                     <h4>Goianão</h4>
                     <img src="img/parceiro1.png" alt="">
-                
+
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
@@ -135,7 +150,7 @@
                 <div class="cartao-parceiros">
                     <h4>Goianão</h4>
                     <img src="img/parceiro1.png" alt="">
-                
+
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
@@ -145,7 +160,7 @@
                 <div class="cartao-parceiros">
                     <h4>Goianão</h4>
                     <img src="img/parceiro1.png" alt="">
-                
+
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
@@ -155,7 +170,7 @@
                 <div class="cartao-parceiros">
                     <h4>Goianão</h4>
                     <img src="img/parceiro1.png" alt="">
-                
+
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
@@ -165,7 +180,7 @@
                 <div class="cartao-parceiros">
                     <h4>Goianão</h4>
                     <img src="img/parceiro1.png" alt="">
-                
+
                     <div class="info-parceiros">
                         <span>R. Backer, 221 - Cambuci</span>
                         <span>3271-0322</span>
@@ -174,8 +189,9 @@
                 </div>
                 <div class="cartao-parceiros">
                     <h4>Goianão</h4>
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipPU5yx7wYtDZTzj94UIh79ZMCItSSWBEO1TB02j=s680-w680-h510" alt="">
-                
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipPU5yx7wYtDZTzj94UIh79ZMCItSSWBEO1TB02j=s680-w680-h510"
+                        alt="">
+
                     <div class="info-parceiros">
                         <span>Av. R. Pereira de Magalhães, 11980</span>
                         <span>3271-0322</span>
@@ -183,11 +199,11 @@
                     </div>
                 </div>
             </div>
-            
-        </article>       
+
+        </article>
 
     </main>
-    
+
     <footer class="rodape">
         <div class="conteudo-geral-footer">
             <div class="rodape-conteudo">
@@ -259,8 +275,8 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!--<script src="js/info-pedreiros-contratantes.js"></script>-->
-    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-    ({key: "AIzaSyAGGSfJVZ53PXHe4x8RfVrond5IdhLg7W8", v: "beta"});</script>
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyAGGSfJVZ53PXHe4x8RfVrond5IdhLg7W8", v: "beta" });</script>
 
 </body>
 
