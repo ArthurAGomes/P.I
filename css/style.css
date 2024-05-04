@@ -68,6 +68,11 @@ main {
 
 }
 /* ----------------------COOKIES----------------------- */
+.politica a{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
 .cookie-consent {
     position: fixed;
     bottom: 0;
@@ -1841,7 +1846,7 @@ nav {
 
 .menu-rodape li a {
     text-decoration: none;
-    color: gray;
+    color: white;
 }
 
 .redes ion-icon {
@@ -2050,7 +2055,7 @@ nav {
     }
 
     .menu-rodape li a:hover {
-        color: #f1f0f0;
+        color: gray;
     }
 
     .panel {
@@ -2252,7 +2257,7 @@ nav {
     }
 
     .menu-rodape li a:hover {
-        color: #f1f0f0;
+        color: gray;
     }
 
     .menu-rodape {
