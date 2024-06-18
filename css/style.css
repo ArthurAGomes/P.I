@@ -464,7 +464,7 @@ nav {
     background-size: cover;
     padding: 2% 2% 2% 2%;
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 #buscar-pedreiro{
@@ -655,7 +655,7 @@ nav {
 
 
 .subtitulos-sombra {
-    text-shadow: #3d3b3b 2px 2px 2px;
+    /* text-shadow: #3d3b3b 2px 2px 2px; */
     color: white;
     padding: 2%;
     text-transform: uppercase;
@@ -666,10 +666,10 @@ nav {
 
 #parceiro-pp-home {
     width: 100%;
-    background-image: url(../img/imgem9-5.jpg);
-    background-color: #3d3b3be6;
+    /* background-image: url(../img/imgem9-5.jpg);
+    background-color: #3d3b3be6; */
     background-size: cover;
-    padding: 30px 0;
+    padding: 0;
     border-radius: 10px 10px 0 0;
 }
 
@@ -677,7 +677,8 @@ nav {
     width: 100%;
     padding: 0 2%;
     text-align: center;
-    color: white;
+    color: #3d3b3b;
+    margin: 0;
 
 }
 
@@ -745,6 +746,7 @@ nav {
     width: 100%;
     padding: 0;
     margin: 10px 0;
+    background-color: white;
 }
 
 #seja-parceiro-home img {
