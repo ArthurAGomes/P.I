@@ -804,6 +804,10 @@ nav {
 }
 
 /* -----------------------CONTRATO------------------------------------------------------ */
+
+.contrato{
+    margin: 15px;
+}
 .botao-contrato {
     position: relative;
 }
@@ -914,162 +918,7 @@ nav {
     background-color: #3d3b3b;
 }
 
-/* ------------------------Cadastro Pedreiro------------------------------------------- */
 
-.container-pe {
-    font-size: 20px;
-    max-width: 100%;
-
-
-}
-
-#nome,
-#rua {
-    width: 95vw;
-}
-
-
-.fotope {
-    display: flex;
-}
-
-.input-radiope1 {
-    display: flex;
-    gap: 25px;
-    margin-bottom:15px;
-}
-
-.input-boxpe input {
-
-    background-color: #00000010;
-    border: none;
-    color: black;
-    height: 35px;
-    border-radius: 20px;
-    text-indent: 10px;
-    border-radius: 10px;
-    border-bottom: #f47907 2px solid;
-}
-
-.input-boxpe {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.1rem;
-    flex-direction: column;
-    text-indent: 10px;
-
-}
-
-.input-radiope {
-    padding-bottom: 20px;
-    display:flex;
-    gap: 20px;
-}
-
-.continue-buttonpe {
-    text-align: center;
-    padding: 20px;
-    text-decoration: none;
-}
-
-.continue-buttonpe button {
-    background-color: #f47907;
-    color: white;
-    font-size:1.1em;
-    border: none;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-#ftope input {
-    display: none;
-}
-
-#ftope {
-    display: flex;
-    padding-bottom: 20px;
-}
-
-#imgtpe {
-    display: none;
-
-}
-
-.aqvpe {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    width: 60px;
-    background-color: rgba(128, 128, 128, 0.41);
-    text-align: center;
-    border-radius: 5px;
-    border-style: dashed;
-    margin: 5px;
-}
-
-.input-checkpe1 {
-    padding: 10px 0;
-
-}
-
- 
-.input-checkpe input {
-    display: none;
-} 
-
-.input-checkpe input+label:before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-radius: 4px;
-    background-color: white;
-    border: 1px solid gray;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px;
-    margin-bottom: 5px;
-
-
-}
-
-.input-checkpe input:checked+label::before {
-    background-color: #f47907;
-}
-
-
-.input-radiope1 input,
-.input-radiope input {
-    display: none;
-}
-
-.input-radiope1 input+label::before,
-.input-radiope input+label::before,
-.input-checkpe+label::before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: white;
-    border: 1px solid gray;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 8px;
-    margin-bottom: 5px;
-
-
-}
-
-.input-radiope input:checked+label::before,
-.input-checkpe input:checked+label::before {
-    content: "✓";
-    background-color: #f47907;
-    font-size: 18px;
-    text-align: center;
-    color: white;
-}
 
 /* ---------------------Cadastro Contratante-------------------------------- */
 
@@ -1954,32 +1803,6 @@ nav {
         width: 40%;
     }
 
-    /* -------------------------------------CADASTRO PEDREIRO----------------------------------------------------------------------------------- */
-    #nome,
-    #rua {
-        width: 94vw;
-    }
-
-    .input-boxpe input {
-        width: 45vw;
-    }
-
-    .input-checkpe {
-        gap: 8vw;
-        margin-left: 2%;
-    }
-
-    .input-grouppe {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px 3vw;
-
-    }
-
-    .container-pe {
-        display: flex;
-    }
-
     /* ---------------------------------------cadastro contratante------------------------------ */
      #nome,
     #rua {
@@ -2528,60 +2351,7 @@ nav {
     }
 
 
-/* -----------------------cadastro pedreiro-------------------------------- */
-.cadastroc {
-        font-size: 20px;
-    }
 
-    #imgtc {
-        display: flex;
-        margin-top: 1px;
-        border-radius: 20px;
-        width: 100%;
-        height: 540px;
-
-    }
-
-    #formco {
-        width: 1000px;
-    }
-
-    #nome,
-    #rua {
-        width: 47vw;
-    }
-
-    .input-boxc input {
-        width: 22vw;
-    }
-
-    .continue-buttonc button {
-        cursor: pointer;
-    }
-
-    .continue-buttonc button:hover {
-        background-color: #0780bd;
-    }
-
-    .input-checkc input+label:before,
-    .input-radioc input+label::before {
-        cursor: pointer;
-    }
-
-    .aqv {
-        cursor: pointer;
-    }
-
-    .aqv:hover {
-
-        background-color: rgba(22, 22, 22, 0.363);
-        cursor: pointer;
-    }
-
-    .containerc1 {
-        display: block;
-    }
-    
 /* -------------------Contrato ------------------*/
 .botao-pf{
     cursor: pointer;

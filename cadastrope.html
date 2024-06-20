@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedreiro</title>
+    <title>Cadastro Pedreiro</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastrope.css">
 </head>
- 
+
 <body>
     <header>
         <nav id="menu-principal">
@@ -16,19 +17,15 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-
             <a href="sobre.html" class="menu-itens">Sobre Nós</a>
             <a href="seja-parceiro.html" class="menu-itens">Parceiros</a>
-
             <div id="meu-logo">
                 <a href="index.html"><img id="logo" src="img/brick4.png" alt="logo">
                     <div id="nome-logo">Portal Pedreiro</div>
                 </a>
             </div>
-
             <a href="contato.html" class="menu-itens">Contato</a>
             <a href="#" class="menu-itens" onclick="openForm()">Minha Conta</a>
-
             <div id="avatar-minha-conta" onclick="openForm()"></div>
         </nav>
         <div id="menuLateral" class="menu-lateral">
@@ -40,218 +37,159 @@
             <a href="contratos.html">Contratos</a>
         </div>
     </header>
- <div id="popUpLogin">
-        <div class="login-popUp" id="myForm">
-            <span class="icon-close" onclick="closePopup()"><ion-icon name="close-outline"></ion-icon>
-            </span>
-            <div class="form-box loginMinhaconta">
-                <h2>Login</h2>
-                <section id="categorias-home">
-                    <button id="pedreiro" onclick="escolherPedreiro()" class="categorias-home-escolha">Pedreiro</button>
-                    <button id="contratante" onclick="escolherContratante()" class="categorias-home-escolha"
-                        disable>Contratante</button>
-                </section>
-                <form action="#">
-                    <div class="input-box" id="cpf-login">
-                        <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input type="text" required maxlength="14">
-                        <label>CPF</label>
-                    </div>
-                    <div class="input-box" id="senha-login">
-                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" required id="senha-login">
-                        <label>Senha</label>
-                    </div>
-                    <div class="lembrar-senha">
-                        <label><input type="checkbox">Lembrar senha</label>
-                        <a href="#">Esqueceu a senha?</a>
-                    </div>
-                    <a href="area-pedreiro.html" id="trocalink"><div class="btn-popUp" id="botao-entrar-login">Entrar</div></a>
-                    <div class="login-registrar">
-                        <p> <a id="link-cadastro" href="cadastrope.html"
-                                class="register-link"><strong>Cadastre-se</strong></a>
-                        </p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+
     <main>
-        <h1>pedreiro</h1>
+        <h1 id="h1pe">Cadastro Pedreiro</h1>
         <hr class="barras">
         <div class="container-pe">
-            <div class="fotope">
-                <form action="#" method="post" id="formpe">
-                    <div class="input-radiope">
-                        <div>
-                            <input type="radio" id="pf" name="pessoa" checked>
-                            <label for="pf">Pessoa Física</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="pj" name="pessoa">
-                            <label for="pj">Pessoa Jurídica</label>
-                        </div>
+            <form action="#" method="post" id="formpe" onsubmit="return validateFormPe()">
+                <div class="input-radioc">
+                    <div>
+                        <input type="radio" id="pf" name="pessoa" checked>
+                        <label for="pf">Pessoa Física</label>
                     </div>
-
+                    <div>
+                        <input type="radio" id="pj" name="pessoa">
+                        <label for="pj">Pessoa Jurídica</label>
+                    </div>
+                </div>
+                <div class="input-boxpe">
+                    <label for="nome">Nome / Nome social</label>
+                    <input type="text" id="nome" name="nome" class="inputs required" oninput="validateNomePe()">
+                    <span class="span-required">Digite um nome com no mínimo 3 caracteres</span>
+                </div>
+                <div class="input-grouppe">
                     <div class="input-boxpe">
-                        <label for="nome">Nome/Nome social</label>
-                        <input required type="text" id="nome" name="nome"class="inputs required" oninput="validarNome()">
-                        
-                        <span class="span-required">Digite um nome com no mínimo 3 caracteres</span>
+                        <label for="senha">Senha</label>
+                        <input type="password" id="password" name="senha" class="inputs required" oninput="validateSenhaPe()">
+                        <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                     </div>
-
-                    <div class="input-grouppe">
-                        <div class="input-boxpe">
-                            <label for="senha">Senha</label>
-                            <input required type="password" id="senha" name="senha"class="inputs required"oninput=" validarSenha()">
-                        </div>
-                            
-                        <div class="input-boxpe">
-                            <label for="senha1">Confirme a Senha</label>
-                            <input type="password" id="password1" name="senha1" class="inputs required"
-                                oninput=" compareSenha()">
-                            <span class="span-required">As senhas devem ser compativeis</span>   
-                        </div>    
-                        
-                        <div class="input-boxpe">
-                            <label for="cpf">CPF/CNPJ</label>
-                            <input required type="tel" id="cpf" name="cpf"autocomplete="off" onkeyup="mascara_cpf(event)"
-                            class="inputs required" oninput="validarcpf()">
-                            <span class="span-required">Digite um CPF/CNPJ válido</span>
-                        </div>
-                        <div class="input-boxpe">
-                            <label for="Celular">Celular</label>
-                            <input required type="text" id="Celular" name="Celular">
-                        </div>
-                        <div class="input-boxpe">
-                            <label for="Telefone">Telefone</label>
-                            <input required type="tel" id="Telefone" name="Telefone">
-                        </div>
+                    <div class="input-boxpe">
+                        <label for="senha1">Confirme a Senha</label>
+                        <input type="password" id="password1" name="senha1" class="inputs required" oninput="compareSenhaPe()">
+                        <span class="span-required">As senhas devem ser compatíveis</span>
                     </div>
-
-                    <p class="paragrafo_cadastroc">Gênero</p>
-                    <div class="container-pe1">
-                        <div class="input-radiope1">
-                            <div>
-                                <input type="radio" id="homem" name="Genero">
-                                <label for="homem">Homem</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="mulher" name="Genero">
-                                <label for="mulher">Mulher</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="outro" name="Genero">
-                                <label for="outro">Outro</label>
-                            </div>
+                    <div class="input-boxpe">
+                        <label for="cpf">CPF/CNPJ</label>
+                        <input type="text" id="cpf" name="cpf" autocomplete="off" onkeyup="mascaraCpf(event)" class="inputs required" oninput="validateCpfPe()">
+                        <span class="span-required">Digite um CPF/CNPJ válido</span>
+                    </div>
+                    <div class="input-boxpe">
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular" class="inputs required">
+                    </div>
+                    <div class="input-boxpe">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" class="inputs required">
+                    </div>
+                </div>
+                <p class="paragrafo_cadastro">Gênero</p>
+                <div class="container-pe1">
+                    <div class="input-radioc">
+                        <div>
+                            <input type="radio" id="homem" name="genero">
+                            <label for="homem">Homem</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="mulher" name="genero">
+                            <label for="mulher">Mulher</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="outro" name="genero">
+                            <label for="outro">Outro</label>
                         </div>
                     </div>
-
-                    <div class="input-radiope1">
-                        <input type="checkbox" id="mei" name="Interesse">
+                </div>
+                <div class="input-checkc">
+                    <div>
+                        <input type="checkbox" id="mei" name="interesse">
                         <label for="mei">Você é MEI?</label>
                     </div>
                     <p><a href="https://www.youtube.com/watch?v=Zk9J1Jppfxk" target="_blank">Saiba o que é e as vantagens de ser MEI</a></p>
-
-                    <div class="input-radiope1">
-                        <div>
-                            <input type="checkbox" id="experiencia" name="Interesse">
-                            <label for="experiencia">Possuo experiência?</label>
-                        </div>
-                    </div>
-
-
-                    <p class="paragrafo_cadastroc">Dias Disponíveis</p>
-                    <div class="input-radiope">
-                        <div>
-                            <input type="radio" id="todos" name="DIAS DISPONÍVEIS">
-                            <label for="todos">Todos</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="segunda" name="DIAS DISPONÍVEIS">
-                            <label for="segunda">Segunda a Sexta</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="sabado" name="DIAS DISPONÍVEIS">
-                            <label for="sabado">Sábado e/ou Domingo</label>
-                        </div>
-                    </div>
-
-                    <div class="input-grouppe">
-                        <div class="input-boxpe">
-                            <label for="cep">CEP</label>
-                            <input  type="tel" id="cep" name="cep" onkeyup="mascara_cep()">
-                           
-                        </div>
-                        <div class="input-boxpe">
-                            <label for="cidade">Cidade</label>
-                            <input required type="text" id="cidade" name="cidade">
-                        </div>
-                        <div class="input-boxpe">
-                            <label for="estado">Estado</label>
-                            <input required type="text" id="estado" name="estado">
-                        </div>
-                        <div class="input-boxpe">
-                            <label for="bairro">Bairro</label>
-                            <input required type="text" id="bairro" name="bairro">
-                        </div>
-                        <div class="input-boxpe">
-                            <label for="rua">Rua</label>
-                            <input required type="text" id="rua" name="rua">
-                        </div>
-                    </div>
-
-                    <p class="paragrafo_cadastro">Tipos de Trabalho</p>
-                    <div class="input-radiope">
-                        <div>
-                            <input type="radio" id="obras-gerais" name="tipos-trabalho">
-                            <label for="obras-gerais">Obras Gerais</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="pequenas-reformas" name="tipos-trabalho">
-                            <label for="pequenas-reformas">Pequenas Reformas</label>
-                        </div>
-                    </div>
-
-                    <p class="paragrafo_cadastroc">Adicionar Fotos</p>
-                    <div id="ftope">
-                        <div>
-                            <label for="arquivope1" class="aqvpe">+</label>
-                            <input type="file" id="arquivope1" name="arquivope1">
-                        </div>
-                        <div>
-                            <label for="arquivope2" class="aqvpe">+</label>
-                            <input type="file" id="arquivope2" name="arquivope2">
-                        </div>
-                        <div>
-                            <label for="arquivope3" class="aqvpe">+</label>
-                            <input type="file" id="arquivope3" name="arquivope3">
-                        </div>
-                    </div>
-
-                    <div class="input-checkpe">
-                        <div>
-                            <input type="checkbox" id="Aceitar" name="Interesse">
-                            <label for="Aceitar">Aceitar</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="Declaro" name="Interesse">
-                            <label for="Declaro">Declaro</label>
-                        </div>
-                    </div>
-
-                    <div class="continue-buttonpe">
-                        <button id="botao" onclick="window.location.href='area-pedreiro.html';">CADASTRAR</button>
-                    </div>
-                </form>
-
-                <div id="fotcope">
-                    <img src="img/cadastro01.webp" alt="Mexendo no computador" id="imgtpe">
                 </div>
+                <div class="input-checkc">
+                    <div>
+                        <input type="checkbox" id="experiencia" name="interesse">
+                        <label for="experiencia">Possuo experiência</label>
+                    </div>
+                </div>
+                <p class="paragrafo_cadastro">Dias Disponíveis</p>
+                <div class="input-radioc">
+                    <div>
+                        <input type="radio" id="todos" name="dias_disponiveis">
+                        <label for="todos">Todos</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="segunda" name="dias_disponiveis">
+                        <label for="segunda">Segunda a Sexta</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="sabado" name="dias_disponiveis">
+                        <label for="sabado">Sábado e/ou Domingo</label>
+                    </div>
+                </div>
+                <div class="input-grouppe">
+                    <div class="input-boxpe">
+                        <label for="cep">CEP</label>
+                        <input type="tel" id="cep" name="cep" onkeyup="mascaraCep()">
+                    </div>
+                    <div class="input-boxpe">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" id="cidade" name="cidade" class="inputs required">
+                    </div>
+                    <div class="input-boxpe">
+                        <label for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado" class="inputs required">
+                    </div>
+                    <div class="input-boxpe">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" name="bairro" class="inputs required">
+                    </div>
+                    <div class="input-boxpe">
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" name="rua" class="inputs required">
+                    </div>
+                </div>
+                <p class="paragrafo_cadastro">Tipos de Trabalho</p>
+                <div class="input-radioc">
+                    <div>
+                        <input type="radio" id="obras-gerais" name="tipos_trabalho">
+                        <label for="obras-gerais">Obras Gerais</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pequenas-reformas" name="tipos_trabalho">
+                        <label for="pequenas-reformas">Pequenas Reformas</label>
+                    </div>
+                </div>
+                <p class="paragrafo_cadastro">Adicionar Fotos</p>
+                <div id="ftoc">
+                    <label for="arquivo1" class="aqv">+</label>
+                    <input type="file" id="arquivo1" name="arquivo1">
+                    <label for="arquivo2" class="aqv">+</label>
+                    <input type="file" id="arquivo2" name="arquivo2">
+                    <label for="arquivo3" class="aqv">+</label>
+                    <input type="file" id="arquivo3" name="arquivo3">
+                </div>
+                <div class="input-checkc">
+                    <div>
+                        <input type="checkbox" id="aceitar" name="interesse">
+                        <label for="aceitar">Li e aceito os termos e condições.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="declaro" name="interesse">
+                        <label for="declaro">Declaro que as informações são verdadeiras.</label>
+                    </div>
+                </div>
+                <div class="continue-buttonpe">
+                    <button id="botao" type="submit">CADASTRAR</button>
+                </div>
+            </form>
+            <div id="fotoco">
+                <img src="img/cadastro01.webp" alt="Mexendo no computador" id="imgtc">
             </div>
         </div>
     </main>
- 
+
     <footer class="rodape">
         <div class="conteudo-geral-footer">
             <div class="rodape-conteudo">
@@ -273,7 +211,6 @@
                             <li><a href="contato.html">Contato</a></li>
                             <li><a href="#">Baixe o App</a></li>
                             <li><a href="duvidas.html">Dúvidas</a></li>
-
                         </div>
                     </ul>
                     <hr>
@@ -296,7 +233,6 @@
                             <a href="#"><ion-icon name="logo-tiktok"></ion-icon></ion-icon>
                                 <div>@PortalPedreiro</div>
                             </a>
-
                         </li>
                         <li class="redes-icones" id="rede">
                             <a href="#"><ion-icon name="logo-instagram"></ion-icon>
@@ -312,17 +248,15 @@
                 </div>
             </div>
         </div>
-
         <div class="assinatura">
             <p id="logo-footer">Portal Pedreiro</p>
             <p id="credito">Desenvolvido pelo time de TI SCCP - Senac / 2024</p>
         </div>
     </footer>
     <script src="js/jquery.3.6.0.js"></script>
-    <script src="js/interacoes.js"></script>
     <script src="js/interacoes2.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
- 
+
 </html>
