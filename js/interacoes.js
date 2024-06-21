@@ -72,9 +72,6 @@ function escolherPedreiro() {
 
   document.getElementById("pedreiro").style.backgroundColor = "#F29D30"
 
-  // document.getElementById("fundo-main").style.backgroundImage = "url(img/home-pedreiro3.jfif)"
-
-
   document.getElementById("senha-login").style.borderColor = "#F29D30"
 
   document.getElementById("cpf-login").style.borderColor = "#F29D30"
@@ -93,9 +90,6 @@ function escolherContratante() {
 
   document.getElementById("contratante").style.backgroundColor = "#0CA4F2"
 
-  // document.getElementById("fundo-main").style.backgroundImage = "url(img/home-contratante-1.png)"
-
-
   document.getElementById("senha-login").style.borderColor = "#0CA4F2"
 
   document.getElementById("cpf-login").style.borderColor = "#0CA4F2"
@@ -110,7 +104,7 @@ function escolherContratante() {
 // Mudar tema Home
 
 function mudarTemaP(){
-  document.getElementById("fundo-main").style.backgroundImage = "url(img/home-pedreiro3.jfif)"
+  document.getElementById("fundo-main").style.backgroundImage = "url(img/home-pedreiro3.jpg)"
   document.getElementById("fundo-main").style.justifyContent = "right"
   document.getElementById("buscar-pedreiro").style.display = "none"
 
@@ -119,7 +113,7 @@ function mudarTemaP(){
 }
 
 function mudarTemaC(){
-  document.getElementById("fundo-main").style.backgroundImage = "url(img/home-contratante-1.png)"
+  document.getElementById("fundo-main").style.backgroundImage = "url(img/home-contratante-1.jpg)"
 
   document.getElementById("conteudo-mapa").style.display = "block"
   

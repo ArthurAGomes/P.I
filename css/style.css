@@ -455,10 +455,16 @@ nav {
     padding: 0;
 }
 
+.chamada{
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+}
+
 #fundo-main {
     display: flex;
     flex-direction: column;
-    background-image: url(../img/home-pedreiro3.jfif);
+    background-image: url(../img/home-pedreiro3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -550,25 +556,18 @@ nav {
     text-align: center;
     border-radius: 10px;
     padding: 10px 0;
+    margin-bottom: 20px;
 }
 
 #baixe-app button {
-    display: none;
+    /* display: none; */
     background: #F1282B;
     box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.617);
+    font-size: 1.5em;
 }
 
 #baixe-app h1 {
     margin: 0;
-}
-
-#baixe-app h2 {
-    margin: 0;
-    padding: 0 10px;
-    font-size: 1em;
-    color: #3d3b3b;
-    text-shadow: none;
-    text-transform: none;
 }
 
 #popUpLogin-home{
@@ -666,11 +665,7 @@ nav {
 
 #parceiro-pp-home {
     width: 100%;
-    /* background-image: url(../img/imgem9-5.jpg);
-    background-color: #3d3b3be6; */
-    background-size: cover;
     padding: 0;
-    border-radius: 10px 10px 0 0;
 }
 
 #parceiro-pp-home h2 {
@@ -683,13 +678,20 @@ nav {
 }
 
 #container-cartao-parceiro{
-    margin: auto;
+    margin: 20px auto;
+    padding: 30px 0;
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: #3d3b3b;
+}
+
+#container-cartao-parceiro h2{
+    color: white;
+    margin: 10px;
 }
 
 .cartao-parceiros {
@@ -698,14 +700,14 @@ nav {
     width: 100%;
     text-align: center;
     margin: 10px;
-    background-color: #3d3b3bda;
+    background-color: white;
     box-shadow: 0 4px 8px 0;
     border-radius: 15px;
-    box-shadow: 0 0 5px #d4d4d4d0;
+    box-shadow: 0 2px 3px  #a0a0a0;
 }
 
 .cartao-parceiros h4 {
-    color: white;
+    color: #3d3b3b;
     font-size: 1.5em;
     margin: 10px 0;
 }
@@ -721,7 +723,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #3d3b3b;
     font-size: 1em;
     height: 100px;
     padding: 0 15px;
@@ -730,10 +732,10 @@ nav {
 
 .cartao-parceiros button {
     border: none;
-    padding:    5px 0;
+    padding: 5px 0;
     margin: 10px 0;
     width: 100%;
-    background-color: #3df267d0;
+    background-color: #3d3b3b;
     font-size: 1.2em;
     border-radius:  10px;
 }
@@ -744,8 +746,8 @@ nav {
 
 #seja-parceiro-home {
     width: 100%;
-    padding: 0;
-    margin: 10px 0;
+    padding: 30px 0;
+    margin: 20px 0;
     background-color: white;
 }
 
@@ -986,9 +988,11 @@ nav {
 }
 
 .input-radioc {
+    padding: 20px 0;
     display: flex;
-    gap: 25px;
-    margin-left: 5px;
+    justify-content: space-around;
+    /* gap: 25px; */
+    /* margin-left: 5px; */
 }
 
 .input-checkc {
@@ -1053,10 +1057,6 @@ nav {
     background-color: #0CA4F2;
 
 
-}
-
-.input-radioc {
-    padding-bottom: 20px;
 }
 
 .span-required {
@@ -1781,6 +1781,7 @@ nav {
     #conteudo-buscar{
         width: 100%;
         display: flex;
+        justify-content: center;
         flex-direction: column;
     }
 
@@ -1815,7 +1816,7 @@ nav {
 
     .input-checkc {
         gap: 8vw;
-        margin-left: 2%;
+        /* margin-left: 2%; */
     }
 
     .input-groupc {
@@ -2281,17 +2282,20 @@ nav {
     /* -----------Main/Home */
 
 #baixe-app {
-    margin: 10px;
     padding: 1%;
     border-radius: 10px;
-}
-
-#baixe-app h2 {
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info-parceiros {
     font-size: 1em;
+}
+
+#fundo-main{
+    height: 70vw;
+
 }
 
 
@@ -2299,6 +2303,9 @@ nav {
 
     .cadastroc {
         font-size: 20px;
+        max-width: 1000px;
+        margin: auto;
+        justify-content: center;
     }
 
     #imgtc {
@@ -2316,11 +2323,15 @@ nav {
 
     #nome,
     #rua {
-        width: 47vw;
+        max-width: 1000px;
     }
 
     .input-boxc input {
-        width: 22vw;
+        max-width: 450px;
+    }
+
+    .input-groupc{
+        justify-content: space-between;
     }
 
     .continue-buttonc button {

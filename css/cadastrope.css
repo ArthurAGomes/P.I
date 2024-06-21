@@ -37,10 +37,11 @@
 }
 
 .input-radioc {
-    padding-bottom: 20px;
+    padding: 20px 0;
     display: flex;
-    gap: 25px;
-    margin-left: 5px;
+    justify-content: space-around;
+    /* gap: 25px; */
+    /* margin-left: 5px; */
 }
 
 .continue-buttonpe {
@@ -126,7 +127,7 @@
 
     .input-checkc {
         gap: 8vw;
-        margin-left: 2%;
+        /* margin-left: 2%; */
     }
 
     .input-grouppe {
@@ -143,6 +144,9 @@
 @media screen and (min-width:1000px) {
     .container-pe {
         font-size: 20px;
+        max-width: 1000px;
+        margin: auto;
+        justify-content: center;
     }
 
     #imgtc {
@@ -157,13 +161,16 @@
         width: 1000px;
     }
 
-    #nome,
-    #rua {
-        width: 47vw;
+    #nome, #rua{
+        max-width: 1000px;
     }
 
     .input-boxpe input {
-        width: 22vw;
+        max-width: 450px;
+    }
+
+    .input-grouppe{
+        justify-content: space-between;
     }
 
     .continue-buttonpe button {
